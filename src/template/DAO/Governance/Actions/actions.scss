@@ -1,0 +1,82 @@
+.action-container {
+  padding: 25px 145px;
+}
+
+.action-content {
+  .description-line {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--mc-text-color);
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  ::v-deep {
+    .el-textarea__inner {
+      min-height: 142px !important;
+    }
+  }
+}
+
+.sub-suffix {
+  color: var(--mc-text-color-white);
+}
+
+::v-deep {
+  .el-form-item {
+    margin-bottom: 5px;
+  }
+}
+
+.label-line {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--mc-text-color);
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.sub-line {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--mc-text-color-white);
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+::v-deep {
+  .el-input__inner {
+    font-size: 14px !important;
+    color: var(--mc-text-color-white) !important;
+  }
+}
+
+.sub-selected {
+  width: 68px;
+
+  ::v-deep {
+    .el-input__inner {
+      width: 40px;
+      color: var(--mc-text-color-white);
+      padding-right: 0;
+    }
+    .el-input {
+      border: unset;
+      background-color: transparent;
+    }
+
+    .el-input:focus, .el-input:hover {
+      border: unset;
+    }
+  }
+}
+
+.max-button {
+  font-size: 12px;
+  width: 50px;
+  height: 20px;
+}

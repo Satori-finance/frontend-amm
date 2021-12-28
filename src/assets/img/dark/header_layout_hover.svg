@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="16px" viewBox="0 0 17 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>layout-hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="14.9879808%" y1="32.710496%" x2="79.767701%" y2="49.9032576%" id="linearGradient-1">
+            <stop stop-color="#93B6F2" offset="0%"></stop>
+            <stop stop-color="#6C9EF5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wallet" transform="translate(-1158.000000, -1051.000000)" fill="url(#linearGradient-1)">
+            <path d="M1163,1056 C1163.55228,1056 1164,1056.44772 1164,1057 L1164,1066 C1164,1066.55228 1163.55228,1067 1163,1067 L1159,1067 C1158.44772,1067 1158,1066.55228 1158,1066 L1158,1057 C1158,1056.44772 1158.44772,1056 1159,1056 L1163,1056 Z M1174,1056 C1174.55228,1056 1175,1056.44772 1175,1057 L1175,1066 C1175,1066.55228 1174.55228,1067 1174,1067 L1167,1067 C1166.44772,1067 1166,1066.55228 1166,1066 L1166,1057 C1166,1056.44772 1166.44772,1056 1167,1056 L1174,1056 Z M1174,1051 C1174.55228,1051 1175,1051.44772 1175,1052 L1175,1053 C1175,1053.55228 1174.55228,1054 1174,1054 L1159,1054 C1158.44772,1054 1158,1053.55228 1158,1053 L1158,1052 C1158,1051.44772 1158.44772,1051 1159,1051 L1174,1051 Z" id="layout-hover"></path>
+        </g>
+    </g>
+</svg>

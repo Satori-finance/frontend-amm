@@ -1,0 +1,85 @@
+.el-form {
+  .el-form-item {
+
+    &.button-container {
+      margin-top: 30px;
+    }
+
+    ::v-deep {
+      .el-form-item__label {
+        width: 385px;
+        padding-right: 20px;
+        font-size: 14px;
+        font-weight: 400;
+
+        .iconfont {
+          padding-left: 4px;
+        }
+      }
+    }
+
+    .el-radio__label {
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .el-input {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .multiple-item {
+    display: flex;
+    align-items: center;
+
+    .el-form-item {
+      ::v-deep .el-form-item__label {
+        padding: 0;
+        text-align: center;
+      }
+    }
+    .el-input {
+      width: 90px;
+    }
+  }
+
+  .icon-triangle-bottom {
+    font-size: 10px;
+  }
+}
+
+.control-item {
+  width: 450px;
+}
+
+.radio-group-tabs {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.iconfont {
+  margin-left: 4px;
+}
+
+.iconfont:hover {
+  color: var(--mc-color-primary);
+}
+
+.dex-theme-dark {
+  .el-form {
+    .el-form-item {
+
+      ::v-deep {
+        .el-form-item__label {
+          color: var(--mc-text-color);
+        }
+
+        .el-radio__label {
+          color: var(--mc-text-color);
+        }
+      }
+    }
+  }
+}
+

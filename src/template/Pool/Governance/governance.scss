@@ -1,0 +1,87 @@
+.primary-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--mc-text-color-white);
+}
+
+::v-deep {
+  .el-radio {
+    margin-right: 20px;
+  }
+
+  .el-radio__label {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--mc-text-color);
+  }
+
+  .el-radio__input.is-checked+.el-radio__label {
+    color: var(--mc-text-color);
+  }
+}
+
+.icon {
+  width: 10px;
+  height: 10px;
+  font-size: 10px;
+  color: var(--mc-text-color);
+  margin-left: 4px;
+  display: inline;
+}
+
+.step-item {
+  margin-bottom: 30px;
+  .step-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--mc-text-color);
+
+    .info {
+      color: var(--mc-text-color-white);
+    }
+  }
+
+  .step-body {
+    margin-top: 30px;
+  }
+
+  .step-button-box {
+    margin-top: 30px;
+  }
+}
+
+.create-button {
+  ::v-deep .el-button {
+    width: 190px;
+  }
+}
+
+.info-button {
+  ::v-deep .el-button {
+    width: 136px;
+  }
+}
+
+.perp-select-list {
+  table {
+    width: 413px;
+
+    tr {
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    th,td {
+      height: 40px;
+    }
+  }
+
+  ::v-deep {
+    .el-radio__label {
+      display: none;
+    }
+    .el-radio {
+      margin: 0;
+    }
+  }
+}

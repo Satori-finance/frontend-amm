@@ -1,0 +1,73 @@
+import Vue from 'vue'
+import {
+  Icon,
+  NavBar,
+  Popup,
+  Tabbar,
+  TabbarItem,
+  Button,
+  Radio,
+  RadioGroup,
+  Form,
+  Field,
+  List,
+  Image,
+  Step,
+  Steps,
+  Toast,
+  Tab,
+  Tabs,
+  Checkbox,
+  Picker,
+  Divider,
+  Row,
+  Col,
+  Sticky,
+  Collapse,
+  CollapseItem,
+  NumberKeyboard,
+  Search,
+  Circle,
+  Skeleton,
+  Overlay,
+  Progress,
+  Popover,
+  Loading,
+  Switch,
+} from 'vant/lib'
+import 'vant/lib/index.less'
+
+Vue.use(NavBar)
+Vue.use(Tabbar)
+Vue.use(TabbarItem)
+Vue.use(Icon)
+Vue.use(Popup)
+Vue.use(Button)
+Vue.use(Radio)
+Vue.use(RadioGroup)
+Vue.use(Form)
+Vue.use(Field)
+Vue.use(List)
+Vue.use(Image)
+Vue.use(Step)
+Vue.use(Steps)
+Vue.use(Toast)
+Vue.use(Tab)
+Vue.use(Tabs)
+Vue.use(Checkbox)
+Vue.use(Picker)
+Vue.use(Divider)
+Vue.use(Col)
+Vue.use(Row)
+Vue.use(Sticky)
+Vue.use(Collapse)
+Vue.use(CollapseItem)
+Vue.use(NumberKeyboard)
+Vue.use(Search)
+Vue.use(Circle)
+Vue.use(Skeleton)
+Vue.use(Overlay)
+Vue.use(Progress)
+Vue.use(Popover)
+Vue.use(Loading)
+Vue.use(Switch)

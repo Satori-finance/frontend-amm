@@ -1,0 +1,197 @@
+{
+    "_type": "日本語",
+    "hintInfos": {
+        "positionsAndOrders": {
+            "orderAmount": "注文の契約総数です。",
+            "size": "現在のポジションです。<br/> プラスはロングポジションで、マイナスはショートポジションです。",
+            "orderCreatedAt": "注文の作成時間",
+            "orderCanceled": "取消された注文の数です。詳しくは詳細ページまでご確認ください。",
+            "symbol": "このポジションの契約のコードです。",
+            "liqPrice": "マーク価格がこの価格に達すると、ポジションは清算されます。",
+            "orderFillPrice": "平均約定価格",
+            "orderDetails": "注文の詳細を表示いたします。基本情報、取引情報、取消理由等を含めます。",
+            "infinityPrompt": "このポジションには十分なマージンがあり、清算されません。",
+            "orderStatus": "注文の状態",
+            "entryPrice": "このロング/ショートの平均買い/売り価格です。",
+            "orderType": "注文のタイプ",
+            "roe": "元本の損益率です。.",
+            "orderFilled": "約定済みの数",
+            "orderPrice": "指値注文の価格です。成行注文でこの数値はありません。",
+            "positionPnl": "実現した損益です（資金調達を含む）。",
+            "value": "ポジションの現在の名義価値です。",
+            "orderClosedAt": "注文のクローズ時間",
+            "funding": "ポジション開設後に支払った/受け取った資金調達料の総額。",
+            "markPrice": "マーク価格は、取引時間中に永久契約が評価される価格です。\n        これは、（一時的に）操作可能な取引から保護するために、実際の永久市場価格とは異なる場合があります。"
+        },
+        "recentTrades": {
+            "price": "色はテイカー側の方向を示している：グリーンは買いでオレンジは売りです。"
+        },
+        "viewTransaction": "etherscanで取引を確認します。",
+        "statisticsBar": {
+            "Volume24h": "過去24時間のMCDEX取引契約ボリューム"
+        }
+    },
+    "statisticsBar": {
+        "amountIn24Hours": "24時間取引高",
+        "accumulatedFundingRate": "累積資金調達率/8時間",
+        "accumulatedFundingRatePrompt": "過去8時間の累積資金調達率。トレーダーが1のロングポジションを持っている場合、過去8時間に支払った/受け取った累積資金料金 = 累積資金調達率 × 現在の指数 × 1。"
+    },
+    "tableTitle": {
+        "funding": "資金調達料",
+        "pnl": "損益",
+        "orderCloseTime": "完了時間",
+        "fillPrice": "約定平均価格",
+        "roe": "損益率",
+        "type": "タイプ",
+        "quantity": "数量",
+        "creationTime": "作成時間",
+        "total": "総計",
+        "entryPrice": "平均価格",
+        "canceled": "取消済み",
+        "sizeNumber": "数量",
+        "liqPrice": "決済価格",
+        "amount": "数量",
+        "symbol": "シンボル",
+        "filled": "約定済み",
+        "markPrice": "マーク価格",
+        "side": "方向",
+        "time": "時間",
+        "status": "状態",
+        "details": "詳細",
+        "price": "価格",
+        "operation": "操作"
+    },
+    "connectWallet": {
+        "walletHint": {
+            "wc": "Trust、imTokenウォレットなど",
+            "wl": "Coinbase",
+            "metamask": "Chromeブラウザアプリ"
+        },
+        "confirmConnection2": "おサイフケータイで二次元コードをスキャンしてください",
+        "caption": "ウォレットと接続します"
+    },
+    "status": {
+        "fundingRate": "資金調達率/8時間",
+        "indexPrice": "指数価格",
+        "fundingRatePrompt": "この瞬間の計算された資金調達率。 これは、ロングがショートを支払うレートです。 負の場合、ショーツはロングを支払います。",
+        "markPricePrompt": "\n          マーク価格は、取引時間中に永久契約が評価される価格です。これは、操作的な取引から保護するために、実際の永続的な市場価格と（一時的に）異なる場合があります。",
+        "markPrice": "マーク価格",
+        "indexPricePrompt": "原資産のスポット価格指数。 過去の価格指数。"
+    },
+    "tableData": {
+        "partialFilled": "一部約定",
+        "cancel": "キャンセル",
+        "canceled": "取消済",
+        "pending": "進行中",
+        "fullyFilled": "全部約定"
+    },
+    "trade": "取引",
+    "messageTip": {
+        "orderFilled": "注文は約定しました",
+        "orderCreated": "注文は発注されました",
+        "error": "エラー",
+        "orderCanceled": "注文は取消されました",
+        "orderMatched": "注文はマッチングされました"
+    },
+    "footer": {
+        "contactUs": "問い合わせ",
+        "references": "参考情報",
+        "forum": "フォーラム",
+        "fees": "手数料",
+        "mcbAddress": "SATORIアドレス",
+        "mcbTokenLink": "https://etherscan.io/token/0x4e352cf164e64adcbad318c3a1e222e9eba4ce42"
+    },
+    "placeOrder": {
+        "orderTypeSelect": {
+            "stopLimit": "ストップ指値注文",
+            "market": "成行注文",
+            "limit": "指値注文"
+        },
+        "sideSelector": {
+            "buy": "購入 / ロング",
+            "sell": "売却 / ショート"
+        },
+        "price": {
+            "marketPrice": "市場価格"
+        }
+    },
+    "loading": "ローディング中...",
+    "header": {
+        "defaultLayout": "デフォルトレイアウト",
+        "dark": "ダーク",
+        "theme": "テーマ"
+    },
+    "connectWalletButton": {
+        "auth": "認証する",
+        "header": "ウォレットと接続する"
+    },
+    "tradeAMM": {
+        "settleStatePrompt": "この機能は、グローバル決済状態では使用できません。"
+    },
+    "retry": "リトライ",
+    "vote": "投票",
+    "orderNotifications": {
+        "sell": "売却",
+        "closed": " 注文はクローズされました。",
+        "buy": "購入"
+    },
+    "copiedToClipboard": "コピーボードに保存しました。",
+    "recentTrades": "直近取引一覧",
+    "positionsOrders": "ポジションと注文",
+    "AMMDepth": "注文一覧",
+    "saveAsCsv": "CSVとして保存",
+    "preferences": {
+        "caption": "環境設定"
+    },
+    "account": "アカウント",
+    "noRecords": "記録がない",
+    "priceChart": "価格チャート",
+    "globalNotification": {
+        "wrongNetwork": "現在ご利用のイーサリアムネットワークはエラーが発生しています！Metamaskでイーサリアム{NetworkName}ネットワークにお切り替えください。",
+        "wsError": "ネットワークが切断しました！再度の接続をしております。",
+        "readBlockChainError": "イーサリアムチェーン上のデータの読み取りに失敗しました！ もう一度お試しください...",
+        "isEmergencyPrompt": "みなさん、こんにちは。{contractSymbol}がグローバル決済を開始しました。 現在のところ、取引や引き出しはご利用いただけません。 決済が完了した後、ユーザーは残りのマージン残高をすべ て引き出すことができます。",
+        "isGlobalSettledPrompt": "皆さん、こんにちは。{contractSymbol}がグローバルな和解を完了しました。 これで、ユーザーは「決済」ボタンをクリックして、残りのマージンをすべて決済および撤回できます。"
+    },
+    "errors": {
+        "captionError": "エラー",
+        "unavailableWallet": "使用可能なウォレットがありません。",
+        "captionCanceled": "キャンセル",
+        "userCanceled": "操作をキャンセルしました。",
+        "captionSystemError": "システムエラー",
+        "messageFormat": "{message}",
+        "unknownError": "不明なエラーが発生しました。",
+        "captionWalletError": "ウォレットエラー",
+        "wrongNetwork": "現在のイーサリアムネットワークにエラーがあります！ ウォレットでイーサリアム{networkName}ネットワークに切り替えます。",
+        "retryButton": "再試行",
+        "captionInsufficientETH": "ETHが不十分です",
+        "insufficientETHMessage": "イーサリアムGas料金を支払うには、少なくとも{minETH} ETHが必要です。",
+        "executeTransaction": "ブロックチェーンでトランザクションを実行できませんでした"
+    },
+    "apiErrors": {
+        "apiNetworkError": "ネットワークエラーが発生した為、サーバーにアクセスできません。",
+        "apiResponseStatusError": "サーバーからのデータ取得が失敗しました。",
+        "apiResponseFormatError": "サーバーリスポンスの解析が失敗しました。解決できない際、当社までご連絡ください。",
+        "apiAuthenticationError": "身分認証が失敗しました。",
+        "apiInvalidParameterError": "無効な情報です。サーバーからデータは取得できません。",
+        "apiUnknownError": "ネットワーク内部エラーです。当社までご連絡ください。",
+        "apiError_1": "サーバー内部エラーです。",
+        "apiError_2": "無効なAPI情報です。",
+        "apiError_3": "連携エラーです。",
+        "apiError_4": "この契約はご利用できません：{marketID}.",
+        "apiError_5": "無効な価格または数量です。",
+        "apiError_6": "注文は存在しません。",
+        "apiError_7": "サインは正しくありません。",
+        "apiError_8": "{token}残高が足りません。現残高{has}、必要な残高{need}。",
+        "apiError_9": "{token}利用可能額に足りません。現在の利用可能額{has}，必要な利用可能額{need}。",
+        "apiError_10": "認証情報エラーです。",
+        "apiError_11": "認証失敗です。",
+        "apiError_12": "注文は存在しないか、もしくはご自身の注文ではありません。",
+        "apiError_13": "API HTTPエラー。 URLまたはパラメーターが正しくありません。",
+        "apiError_14": "API速度制限に達しました。",
+        "apiError_15": "有効期限はこの区間を超えられません：[{begin}, {end}]",
+        "apiError_16": "本契約は決済しました。取引を停止しています。",
+        "apiError_17": "ロング価格{price}は決済価格{settlement}と同じまたはより高いです。",
+        "apiError_18": "ショート価格{price}は決済価格{settlement}と同じまたはより低いです。"
+    }
+}

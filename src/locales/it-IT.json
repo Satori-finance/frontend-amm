@@ -1,0 +1,190 @@
+{
+    "_type": "Italiano",
+    "hintInfos": {
+        "positionsAndOrders": {
+            "orderAmount": "Numero di contratti in un ordine.",
+            "size": "La tua posizione su questo strumento. <br/> Se positiva sei lungo (LONG), se negativa sei corto (SHORT).",
+            "orderCreatedAt": "Data di creazione di un ordine",
+            "orderCanceled": "Numero di contratti in un ordine che sono stati cancellati. Vedi la pagine dettagli dell'ordine per maggiori informazioni.",
+            "symbol": "Il ticker del contratto che questa posizione rappresenta.",
+            "liqPrice": "La tua posizione verrà liquidata quando il prezzo di di riferimento raggiungerà questo prezzo.",
+            "orderFillPrice": "Prezzo medio calcolato di tutti gli eseguiti in un ordine.",
+            "orderDetails": "Mostra tutti i dettagli di un ordine comprese le informazioni di base, gli scambi e i motivi di annullamento.",
+            "infinityPrompt": "Questa posizione ha un margine sufficiente e non sarà liquidata.",
+            "orderStatus": "Lo stato dell'ordine",
+            "entryPrice": "Prezzo medio di acquisto / vendita eseguito per la posizione corrente lunga / corta.",
+            "orderType": "Il tipo di ordine",
+            "roe": "La % di ritorno sul capitale.",
+            "orderFilled": "Numero di contratti in un ordine che sono stati comprati / venduti.",
+            "orderPrice": "Prezzo Limite. Gli ordini a mercato non hanno questo valore.",
+            "positionPnl": "profitti e perdite realizzati (compreso il funding) su questa posizione.",
+            "value": "Il valore nozionale corrente di questa posizione.",
+            "orderClosedAt": "La data quando l'ordine è chiuso",
+            "funding": "L'importo totale dei fondi che hai pagato / ricevuto dall'apertura della posizione.",
+            "markPrice": "Il prezzo di riferimento è il prezzo al quale verrà valutato il contratto perpetuo durante l'orario di negoziazione. Questo può (temporaneamente) variare dai prezzi di mercato perpetui effettivi in protezione di tecniche manipolativa."
+        },
+        "recentTrades": {
+            "price": "Il colore indica il lato: il verde è per chi compra e l'arancione per chi vende."
+        },
+        "viewTransaction": "Vedi la transazione su Etherscan",
+        "statisticsBar": {
+            "Volume24h": "Il totale dei contratti scambiati nelle ultime 24 ore in SATORI."
+        }
+    },
+    "statisticsBar": {
+        "amountIn24Hours": "Volume 24H",
+        "accumulatedFundingRate": "Tasso di finanziamento accumulato/8H",
+        "accumulatedFundingRatePrompt": "Il tasso di finanziamento accumulato nelle ultime 8 ore. Se un trader apre 1 posizioni lunghe, la commissione di finanziamento accumulata che ha pagato / ricevuto durante le ultime 8 ore = tasso di finanziamento accumulato × prezzo indice corrente × 1."
+    },
+    "tableTitle": {
+        "funding": "Funding",
+        "pnl": "PnL",
+        "orderCloseTime": "Data di chiusura",
+        "roe": "RoE",
+        "type": "Tipo",
+        "quantity": "Quantità",
+        "creationTime": "Data di Creazione",
+        "total": "Totale",
+        "entryPrice": "Prezzo di Entrata",
+        "sizeNumber": "Importo",
+        "liqPrice": "Prezzo Liquidazione",
+        "amount": "Importo",
+        "symbol": "Simbolo",
+        "filled": "Eseguito",
+        "markPrice": "Prezzo Riferimento",
+        "side": "Lato",
+        "time": "Data",
+        "status": "Stato",
+        "details": "Dettagli",
+        "price": "Prezzo",
+        "operation": "Operazione"
+    },
+    "connectWallet": {
+        "walletHint": {
+            "wc": "Trust, imToken Wallet, etc.",
+            "wl": "Coinbase Wallet",
+            "metamask": "Estensione Chrome"
+        },
+        "confirmConnection2": "Scannerizza il QR Code con un wallet compatibile con WalletConnect",
+        "caption": "Collega il wallet"
+    },
+    "status": {
+        "fundingRate": "Tasso di Finanziamento / 8 ore",
+        "indexPrice": "Prezzo dell'indice",
+        "fundingRatePrompt": "Il tasso di finanziamento calcolato in questo momento. Questo è il tasso che i le posizioni lunghe (LONG) pagheranno alle posizioni corte (SHORT). Se negativo, sarà il tasso che le posizioni corte pagheranno alle lunghe.",
+        "markPricePrompt": "Il prezzo di riferimento è il prezzo al quale verrà valutato il contratto perpetuo durante l'orario di negoziazione. Questo può (temporaneamente) variare dai prezzi di mercato perpetui effettivi in protezione da eventuali manipolazioni",
+        "markPrice": "Prezzo di riferimento",
+        "indexPricePrompt": "Il prezzo di mercato dell'indice dell'asset sottostante. Indice storico dei prezzi."
+    },
+    "tableData": {
+        "partialFilled": "Parzialmente Eseguito",
+        "cancel": "Cancella",
+        "canceled": "Annullato",
+        "pending": "In attesa",
+        "fullyFilled": "Completamente Eseguito"
+    },
+    "trade": "Scambia",
+    "messageTip": {
+        "orderFilled": "Ordine Eseguito",
+        "orderCreated": "Ordine Creato",
+        "error": "Errore",
+        "orderCanceled": "Ordine Cancellato"
+    },
+    "footer": {
+        "contactUs": "Contattaci",
+        "fees": "Commissioni",
+        "mcbAddress": "Indirizzo di SATORI",
+        "mcbTokenLink": "https://etherscan.io/token/0x4e352cf164e64adcbad318c3a1e222e9eba4ce42"
+    },
+    "placeOrder": {
+        "orderTypeSelect": {
+            "market": "Ordine a Mercato",
+            "limit": "Ordine Limite"
+        },
+        "sideSelector": {
+            "buy": "Compra / Long",
+            "sell": "Vendi / Short"
+        },
+        "price": {
+            "marketPrice": "prezzo di mercato"
+        }
+    },
+    "loading": "Caricamento...",
+    "header": {
+        "defaultLayout": "Layout Predefinito",
+        "dark": "Scuro",
+        "theme": "Tema"
+    },
+    "connectWalletButton": {
+        "auth": "Autenticati",
+        "header": "Collega il wallet"
+    },
+    "tradeAMM": {
+        "settleStatePrompt": "Questa funzione non è disponibile durante il settlement globale."
+    },
+    "retry": "Prova di nuovo",
+    "orderNotifications": {
+        "sell": "Vendi",
+        "closed": "L'ordine è chiuso",
+        "buy": "Compra"
+    },
+    "copiedToClipboard": "Copiato nelle note",
+    "recentTrades": "Scambi recenti",
+    "positionsOrders": "Posizioni e Ordini",
+    "AMMDepth": "Registro ordini",
+    "saveAsCsv": "Salva come CSV",
+    "preferences": {
+        "caption": "Preferenza"
+    },
+    "account": "Conto",
+    "noRecords": "Nessun dato",
+    "priceChart": "Grafico del prezzo",
+    "globalNotification": {
+        "wrongNetwork": "Oops, sei nel network errato. Apri il wallet e seleziona la rete {networkName} Ethereum.",
+        "wsError": "Network disconnesso! Connessione in corso.. ",
+        "readBlockChainError": "Errore di lettura nella blockchain! Riprovare...",
+        "isEmergencyPrompt": "Ciao a tutti, {contractSymbol} ha avviato il settlement globale. Transazioni e prelievi non sono disponibili in questo momento. Una volta completato il settlement, gli utenti potranno ritirare tutto il saldo rimanente nel conto a margine.",
+        "isGlobalSettledPrompt": "Ciao a tutti, {contractSymbol} ha completato il settlement globale. Da ora gli utenti possono cliccare su \"Settle\" per eseguire il settlement e prelevare tutto il saldo amargine."
+    },
+    "errors": {
+        "captionError": "Errore",
+        "unavailableWallet": "Wallet non disponibile.",
+        "captionCanceled": "Cancellato",
+        "userCanceled": "Hai cancellato l'operazione.",
+        "captionSystemError": "Errore di sistema",
+        "messageFormat": "{messaggio}",
+        "unknownError": "Si è verificato un errore sconosciuto.",
+        "captionWalletError": "Errore nel wallet",
+        "wrongNetwork": "Sei nel network Ethereum errato. Per favore seleziona {networkName}.",
+        "retryButton": "Prova di nuovo",
+        "captionInsufficientETH": "ETH insufficienti",
+        "insufficientETHMessage": "Hai bisogno di almeno {minETH} ETH per pagare le commissioni (gas) di transazione.",
+        "executeTransaction": "Transazione fallita sulla blockchain."
+    },
+    "apiErrors": {
+        "apiNetworkError": "Impossibile accedere al server a causa di un errore di rete.",
+        "apiResponseStatusError": "Impossibile recuperare i dati dal server.",
+        "apiResponseFormatError": "Impossibile analizzare la risposta del server. Contattaci per ulteriore assistenza.",
+        "apiAuthenticationError": "Impossibile recuperare i dati dal server, è richiesta l'autenticazione.",
+        "apiInvalidParameterError": "Impossibile recuperare i dati dal server, parametri invalidi.",
+        "apiUnknownError": "Errore interno del server. Contattaci per assistenza.",
+        "apiError_1": "Errore interno del server.",
+        "apiError_2": "Parametri API non validi",
+        "apiError_3": "Errore di collegamento",
+        "apiError_4": "Mercato non supportato: {marketID}.",
+        "apiError_5": "Prezzo o importo non valido",
+        "apiError_6": "L'order id non esiste",
+        "apiError_7": "Firma errata",
+        "apiError_8": "Saldo insufficiente di {token}, hai bisogno di {need}, hai {has}.",
+        "apiError_9": "Disponibilità insufficiente di {token}, hai bisogno di {need}, hai {has}.",
+        "apiError_10": "Errore dei parametri di convalida.",
+        "apiError_11": "Autenticazione fallita.",
+        "apiError_12": "L'ordine id non esiste o non appartiene a te",
+        "apiError_13": "Errore HTTP API. URL o parametri errati.",
+        "apiError_14": "Raggiunto il limite di chiamate API.",
+        "apiError_15": "La scadenza deve essere compresa nell'intervallo [{begin}, {end}]",
+        "apiError_16": "Il contratto è regolato, non è più possibile effettuare ordini.",
+        "apiError_17": "Il prezzo di acquisto {price} è maggiore o uguale al prezzo di regolamento {settlement}.",
+        "apiError_18": "Il prezzo di vendita {price} è minore o uguale al prezzo di regolamento {settlement}"
+    }
+}

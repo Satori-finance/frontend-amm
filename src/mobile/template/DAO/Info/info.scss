@@ -1,0 +1,129 @@
+.info-box-item {
+  margin: 32px 0 16px;
+
+  .info-title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    color: var(--mc-text-color-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .info-content {
+
+  }
+
+  .link {
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: var(--mc-color-primary);
+
+    .icon-details-bold {
+      margin-right: 4px;
+      font-size: 20px;
+    }
+  }
+
+  .info-content {
+    width: 100%;
+    border: 1px solid var(--mc-border-color);
+    border-radius: 12px;
+    background-color: var(--mc-background-color-darkest);
+    padding: 16px;
+
+    .price {
+      margin-bottom: 16px;
+
+      .price-box {
+        display: flex;
+        align-items: flex-end;
+
+        .pn-number {
+          margin-left: 8px;
+          font-size: 16px;
+          line-height: 24px;
+          display: inline-block;
+          margin-bottom: 3px;
+        }
+      }
+
+      .value {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+      }
+    }
+
+    .info-card {
+      .info-card-item {
+        border-radius: 12px;
+        background-color: var(--mc-background-color-dark);
+        padding: 24px;
+        margin-bottom: 16px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .left {
+          width: 135px;
+        }
+
+        .top {
+          width: 100%;
+          border-bottom: 1px solid var(--mc-border-color);
+          padding-bottom: 16px;
+        }
+
+        .bottom {
+          width: 100%;
+          padding-top: 16px;
+        }
+      }
+    }
+
+    .value {
+      font-size: 20px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+
+      ::v-deep .token-image-view {
+        margin-left: 4px;
+      }
+    }
+
+    .text {
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 4px;
+      color: var(--mc-text-color);
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .tooltip-box {
+    width: 13px;
+    height: 13px;
+    line-height: 13px;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5.5px;
+    background-color: #3c486a;
+
+    .svg-icon {
+      width: 9px;
+      height: 7px;
+      color: var(--mc-text-color-white);
+    }
+  }
+}

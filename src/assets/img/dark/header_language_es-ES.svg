@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>header_language_Es</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="25.5208333%" y1="0%" x2="72.2395833%" y2="72.7213542%" id="linearGradient-1">
+            <stop stop-color="#70768B" offset="0%"></stop>
+            <stop stop-color="#4A4F62" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="70.8984375%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#A9AEBF" offset="0%"></stop>
+            <stop stop-color="#70768B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="header_language_Es">
+            <rect id="矩形" fill="url(#linearGradient-1)" fill-rule="nonzero" opacity="0.495854" x="4" y="0" width="16" height="16" rx="1"></rect>
+            <rect id="矩形-copy" fill="url(#linearGradient-2)" fill-rule="nonzero" x="0" y="4" width="16" height="16" rx="1"></rect>
+            <text id="Es" font-family="Helvetica-Bold, Helvetica" font-size="10" font-weight="bold" fill="#FFFFFF">
+                <tspan x="1.88427734" y="16">Es</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

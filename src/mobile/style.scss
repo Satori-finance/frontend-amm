@@ -1,0 +1,346 @@
+@import '~@mcdex/style/common/var';
+
+.safe-area-inset-bottom {
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.safe-area-inset-top {
+  padding-bottom: constant(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-top);
+}
+
+.van-button {
+  &.van-button--default {
+    background: var(--mc-color-primary-gradient);
+    border: 1px solid var(--mc-color-primary-gradient);
+
+    &.blue {
+      background: var(--mc-color-blue-gradient);
+      border: 1px solid var(--mc-color-blue-gradient);
+    }
+
+    &.orange {
+      background: var(--mc-color-orange-gradient);
+      border: 1px solid var(--mc-color-orange-gradient);
+    }
+
+    &.secondary {
+      background: var(--mc-color-secondary);
+      border: 1px solid var(--mc-color-secondary);
+    }
+
+    &.error {
+      background: var(--mc-color-error);
+      border: 1px solid var(--mc-color-error);
+    }
+
+    &.warning {
+      background: var(--mc-color-warning);
+      border: 1px solid var(--mc-color-warning);
+    }
+
+    &.success {
+      background: var(--mc-color-success);
+      border: 1px solid var(--mc-color-success);
+    }
+
+    &.primary {
+      background: var(--mc-color-primary);
+      border: 1px solid var(--mc-color-primary);
+    }
+  }
+
+  &.van-button--plain {
+    background: none;
+
+    &.van-button--default {
+      border: 1px solid #d8dbeb;
+      color: #b8dbeb;
+    }
+  }
+}
+
+.van-button.round {
+  border-radius: 12px;
+
+  &.van-button--mini {
+    border-radius: 8px;
+  }
+}
+
+.van-button.round__medium {
+  border-radius: 8px;
+
+  &.van-button--mini {
+    border-radius: 4px;
+  }
+}
+
+.van-button.large {
+  height: 56px;
+  line-height: 56px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.van-button.medium {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.van-nav-bar__left {
+  .icon-left-back {
+    font-size: 22px;
+    font-weight: 400;
+  }
+}
+
+.van-nav-bar__title {
+  max-width: 80%;
+}
+
+.van-nav-bar.main-header {
+  .van-icon {
+    font-size: 16px;
+  }
+
+  .logo {
+    height: 20px;
+  }
+}
+
+.van-skeleton {
+  padding: 0;
+}
+
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  & > .header-bar,
+  & > .back-nav-bar {
+    & + .page-container {
+      flex: 1;
+      overflow-y: scroll;
+    }
+  }
+}
+
+#walletconnect-wrapper {
+  color: black;
+}
+
+.mc-mobile__checkbox {
+  cursor: pointer;
+
+  .van-checkbox__label {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--mc-text-color);
+    line-height: 16px;
+    margin-left: 8px;
+  }
+
+  .van-checkbox__icon {
+    line-height: 16px;
+    height: 16px;
+  }
+
+  .box {
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--mc-border-color-light);
+    border-radius: 4px;
+  }
+
+  .selected {
+    background: var(--mc-color-primary);
+
+    &.box {
+      border: 2px solid var(--mc-color-primary);
+    }
+
+    i {
+      font-size: 11px;
+      font-weight: bold;
+      position: relative;
+      top: -5px;
+    }
+  }
+
+  .un-selected {
+  }
+}
+
+.error-message-toast {
+  background-color: rgba($--mc-background-color-darkest, 0.95);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--mc-text-color-white);
+  padding: 14px 16px;
+  min-width: 120px;
+}
+
+.van-field__input {
+  padding: 0;
+  background: none;
+  overflow: visible;
+  position: relative;
+
+  .van-field__body {
+    color: var(--mc-text-color-white);
+    background: var(--mc-background-color);
+    border: 1px solid var(--mc-border-color);
+    border-radius: 12px;
+    font-size: 16px;
+  }
+
+  .van-field__error-message {
+    position: absolute;
+    top: 100%;
+    margin-top: 8px;
+    left: 0;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  input::placeholder {
+    color: var(--mc-text-color);
+  }
+
+  &.large {
+    .van-field__body {
+      padding: 14px 16px;
+    }
+  }
+
+  &.van-field--error {
+    .van-field__body {
+      border-color: var(--mc-color-error);
+    }
+
+    .van-field__control {
+      color: inherit;
+    }
+  }
+}
+
+.van-field--disabled {
+  background-color: var(--mc-background-color-light) !important;
+
+  .van-field__control {
+    color: var(--mc-text-color);
+    -webkit-text-fill-color: var(--mc-text-color);
+  }
+}
+
+.mc-mobile__radio {
+  justify-content: flex-end;
+  height: 24px;
+
+  .radio-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .radio-checked {
+    border: 1px solid var(--mc-color-orange);
+
+    .radio-checked-content {
+      background: var(--mc-color-orange);
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: 2px;
+    }
+  }
+
+  .radio-unchecked {
+    border: 1px solid var(--mc-icon-color-light);
+  }
+}
+
+.van-popup {
+  background: var(--mc-background-color-dark);
+  box-shadow: 0 0 0 1px var(--mc-border-color);
+
+  .popup-header {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--mc-text-color-white);
+    line-height: 24px;
+  }
+
+  .van-popup__close-icon {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .van-popup__close-icon--top-right {
+    color: var(--mc-text-color-white);
+    opacity: 0.75;
+  }
+
+  .title {
+    padding: 16px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .content-box {
+    padding: 12px;
+  }
+
+  .popup-container {
+    max-height: calc(100vh - 160px);
+    overflow: scroll;
+  }
+}
+
+.inverse-card {
+  display: inline-block;
+  margin-left: 4px;
+  color: var(--mc-color-orange);
+  background: rgba($--mc-color-orange, 0.1);
+  border-radius: 8px;
+  height: 22px;
+  line-height: 19px;
+  font-size: 12px;
+  width: 56px;
+  text-align: center;
+  border: 1px solid rgba($--mc-color-orange, 0.1);
+}
+
+.satori-fantasy {
+  .van-nav-bar {
+    background-color: var(--mc-background-color-darkest);
+  }
+}
+
+.van-cell {
+  background: var(--mc-background-color);
+  border-radius: 8px;
+  height: 40px;
+  padding: 11px 12px;
+  align-items: center;
+
+  &:active {
+    background: var(--mc-background-color);
+  }
+}
+
+.van-overlay {
+  background: rgba($--mc-background-color-darkest, 0.75);
+}
+
+
+.van-popup--bottom.van-popup--round {
+  border-radius: 12px 12px 0 0;
+}

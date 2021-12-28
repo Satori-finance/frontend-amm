@@ -1,0 +1,147 @@
+.panel-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+
+  .title-box {
+    .title {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    .promp {
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 4px;
+
+      .mining-learn {
+        margin-left: 4px;
+      }
+    }
+  }
+
+  .title-tip {
+    line-height: 16px;
+
+    i {
+      font-size: 13.3px;
+      margin-left: 6px;
+    }
+  }
+}
+
+::v-deep .mc-loading {
+  min-height: 290px;
+
+  .mc-loading__mask {
+    background: transparent!important;
+  }
+}
+
+.table-container {
+  .no-data {
+    height: 280px;
+  }
+}
+
+.icon {
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.click-line {
+  cursor: pointer;
+  text-decoration: underline ;
+}
+
+i {
+  cursor: pointer;
+}
+
+.mining-link{
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  line-height: 24px;
+
+  i {
+    font-size: 20px;
+  }
+
+  span{
+    margin-left: 4px;
+  }
+
+  &:hover span{
+    text-decoration: underline;
+  }
+}
+
+.tooltip-box {
+  width: 13px;
+  height: 13px;
+  line-height: 13px;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5.5px;
+
+  .svg-icon {
+    width: 9px;
+    height: 7px;
+  }
+}
+
+
+.satori-fantasy {
+  .panel-item-header {
+    .title-box {
+      .promp {
+        color: var(--mc-text-color);
+      }
+
+      .mining-learn {
+        color: var(--mc-color-primary);
+      }
+    }
+  }
+
+  .icon {
+    color: var(--mc-text-color);
+  }
+
+  .unit {
+    color: var(--mc-text-color);
+  }
+
+  .icon:hover {
+    color: var(--mc-color-primary);
+  }
+
+  .click-line {
+    color: var(--mc-color-primary);
+  }
+
+  .mining-link{
+    color: var(--mc-color-primary);
+
+    i {
+      color: var(--mc-color-primary);
+    }
+  }
+
+  .tooltip-box {
+    background-color: #3c486a;
+
+    .svg-icon {
+      color: var(--mc-text-color-white);
+    }
+  }
+
+  .token-mcb {
+    background-color: var(--mc-text-color-white);
+  }
+}

@@ -1,0 +1,43 @@
+.filter-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+
+  .left {
+    display: flex;
+    align-items: center;
+
+    .mc-simple-time-range {
+      margin-left: 32px;
+
+      ::v-deep .range-item {
+        height: 24px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .el-select {
+    width: 150px;
+
+    ::v-deep .el-input--medium {
+      font-size: 12px;
+    }
+
+    ::v-deep .el-input--medium .el-input__inner {
+      height: 24px;
+      line-height: 24px;
+    }
+
+    ::v-deep .el-input--medium .el-input__icon {
+      line-height: 24px;
+    }
+  }
+
+  .right {
+    .el-button {
+      height: 24px;
+    }
+  }
+}

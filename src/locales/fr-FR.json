@@ -1,0 +1,195 @@
+{
+    "_type": "Français",
+    "hintInfos": {
+        "positionsAndOrders": {
+            "orderAmount": "Nombre de contrats dans une commande.",
+            "size": "Votre position sur cet instrument. <br/> Si positif, vous êtes long, si négatif, court.",
+            "orderCreatedAt": "Heure de création d'une commande.",
+            "orderCanceled": "Nombre de contrats dans une commande qui ont été annulés. Consultez la page des détails de la commande pour plus d'informations.",
+            "symbol": "Le symbole boursier du contrat que représente cette position.",
+            "liqPrice": "Votre position sera liquidée lorsque le prix du mark atteindra ce prix. Les contrats du Market protocole n'ont pas cette valeur.",
+            "orderFillPrice": "Prix ​​moyen calculé de toutes les exécutions d'une commande.",
+            "orderDetails": "Afficher tous les détails d'une commande, y compris les informations de base, les transactions et les raisons d'annulation.",
+            "infinityPrompt": "Cette position a une marge suffisante et ne sera pas liquidée.",
+            "orderStatus": "Le statut de la commande.",
+            "entryPrice": "Prix ​​moyen d'achat / vente exécuté pour votre position longue / courte actuelle.",
+            "orderType": "Le type de commande.",
+            "roe": "Le pourcentage de rendement du capital.",
+            "orderFilled": "Nombre de contrats dans une commande qui ont été achetés / vendus.",
+            "orderPrice": "Prix ​​limite. Les ordres de marché n'ont pas cette valeur.",
+            "positionPnl": "Profits et pertes réalisés (y compris le financement) sur cette position.",
+            "value": "La valeur notionnelle actuelle de cette position.",
+            "orderClosedAt": "L'heure de clôture de la commande.",
+            "funding": "Le montant total des fonds que vous avez payés / reçus depuis l'ouverture de la position. Les contrats du Market protocole n'ont pas cette valeur.",
+            "markPrice": "Le prix de marque est le prix auquel le contrat perpétuel sera évalué pendant les heures de négociation. Cela peut (temporairement) différer des prix réels du marché perpétuel pour se protéger contre les transactions manipulatrices. <br/>\n        Les contrats du Market protocole n'ont pas cette valeur."
+        },
+        "recentTrades": {
+            "price": "La couleur indique le côté du preneur: le vert signifie acheter et l'orange signifie vendre."
+        },
+        "viewTransaction": "Voir la transaction sur Etherscan",
+        "statisticsBar": {
+            "Volume24h": "Le total des contrats échangés au cours des dernières 24 heures dans SATORI."
+        }
+    },
+    "statisticsBar": {
+        "amountIn24Hours": "Volume 24h",
+        "accumulatedFundingRate": "Taux de financement accumulé / 8H",
+        "accumulatedFundingRatePrompt": "Le taux de financement accumulé au cours des 8 dernières heures. Si un trader ouvre 1 positions longues, les frais de financement accumulés qu'il / elle a payés / reçus au cours des 8 dernières heures = taux de financement accumulé × prix actuel de l'indice × 1."
+    },
+    "tableTitle": {
+        "funding": "Le financement",
+        "pnl": "PnL",
+        "orderCloseTime": "Période de fermeture",
+        "fillPrice": "Remplir le prix",
+        "roe": "RoE",
+        "type": "Type",
+        "quantity": "Quantité",
+        "creationTime": "Temps de creation",
+        "total": "Total",
+        "entryPrice": "Prix d'entrée",
+        "canceled": "Annulé",
+        "sizeNumber": "Taille",
+        "liqPrice": "Prix ​​de liquidation",
+        "amount": "Montant",
+        "symbol": "Symbole",
+        "filled": "Rempli",
+        "markPrice": "Prix de marque",
+        "side": "Côté",
+        "time": "Temps",
+        "status": "Statut",
+        "details": "Détails",
+        "price": "Prix",
+        "operation": "Opération"
+    },
+    "connectWallet": {
+        "walletHint": {
+            "wc": "Trust portefeuille, imToken, etc.",
+            "wl": "Portefeuille Coinbase",
+            "metamask": "Extension Chrome"
+        },
+        "confirmConnection2": "Scanner le code QR avec un portefeuille compatible WalletConnect",
+        "caption": "Connecter le portefeuille"
+    },
+    "status": {
+        "fundingRate": "Taux de financement / 8H",
+        "indexPrice": "Prix ​​de l'indice",
+        "fundingRatePrompt": "Le taux de financement calculé pour ce moment. C'est le taux auquel les longs paieront les shorts. Si négatif, les shorts paient des longs.",
+        "markPricePrompt": "Le prix de marque est le prix auquel le contrat perpétuel sera évalué pendant les heures de négociation. Cela peut (temporairement) différer des prix réels du marché perpétuel pour se protéger contre les transactions manipulatrices.",
+        "markPrice": "Prix de marque",
+        "indexPricePrompt": "L'indice des prix au comptant de l'actif sous-jacent. Indice de prix historique."
+    },
+    "tableData": {
+        "partialFilled": "Partiellement rempli",
+        "cancel": "Annuler",
+        "canceled": "Annulé",
+        "pending": "En attente",
+        "fullyFilled": "Entièrement rempli"
+    },
+    "trade": "Echange",
+    "messageTip": {
+        "orderFilled": "Commande remplie",
+        "orderCreated": "Commande créée",
+        "error": "Erreur",
+        "orderCanceled": "Commande annulée",
+        "orderMatched": "Ordre correspondant"
+    },
+    "footer": {
+        "contactUs": "Nous contacter",
+        "references": "Références",
+        "forum": "Forum",
+        "fees": "Honoraires",
+        "mcbAddress": "Adresse SATORI",
+        "mcbTokenLink": "https://etherscan.io/token/0x4e352cf164e64adcbad318c3a1e222e9eba4ce42"
+    },
+    "placeOrder": {
+        "orderTypeSelect": {
+            "market": "Ordre du marché",
+            "limit": "Ordre limité"
+        },
+        "sideSelector": {
+            "buy": "Acheter / Long",
+            "sell": "Vendre / Short"
+        },
+        "price": {
+            "marketPrice": "prix du marché"
+        }
+    },
+    "loading": "Chargement...",
+    "header": {
+        "defaultLayout": "Disposition par défaut",
+        "dark": "Sombre",
+        "theme": "Thème"
+    },
+    "connectWalletButton": {
+        "auth": "Authentifier",
+        "header": "Connecter le portefeuille"
+    },
+    "tradeAMM": {
+        "settleStatePrompt": "Cette fonction n'est pas disponible pendant le règlement global."
+    },
+    "retry": "Réessayer",
+    "orderNotifications": {
+        "sell": "Vendre",
+        "closed": "La commande est fermée.",
+        "buy": "Acheter"
+    },
+    "copiedToClipboard": "Copié dans le presse-papier.",
+    "recentTrades": "Echanges récents",
+    "positionsOrders": "Positions et Ordres",
+    "AMMDepth": "Carnet de commande",
+    "saveAsCsv": "Enregistrer au format CSV",
+    "preferences": {
+        "caption": "Préférences"
+    },
+    "account": "Compte",
+    "noRecords": "Pas d'enregistrements",
+    "priceChart": "Tableau des prix",
+    "globalNotification": {
+        "wrongNetwork": "Oups, vous êtes sur le mauvais réseau. Ouvrez simplement le portefeuille et passez au réseau Ethereum {networkName}.",
+        "wsError": "Réseau déconnecté! Reconnexion ...",
+        "readBlockChainError": "Impossible de lire la blockchaine Ethereum! Recommencez...",
+        "isEmergencyPrompt": "Bonjour à tous, {contractSymbol} a commencé le règlement global. Les transactions et les retraits ne sont pas disponibles pour le moment. Une fois le règlement terminé, les utilisateurs peuvent retirer tout le solde de marge restant.",
+        "isGlobalSettledPrompt": "Bonjour à tous, {contractSymbol} a terminé le règlement global. Maintenant, l'utilisateur peut cliquer sur le bouton «Régler» pour régler et retirer toute la marge restante."
+    },
+    "errors": {
+        "captionError": "Erreur",
+        "unavailableWallet": "Il n'y a pas de portefeuille disponible.",
+        "captionCanceled": "Annulé",
+        "userCanceled": "Vous avez annulé l'opération.",
+        "captionSystemError": "Erreur système",
+        "messageFormat": "{message}",
+        "unknownError": "Une erreur inconnue s'est produite.",
+        "captionWalletError": "Erreur de portefeuille",
+        "wrongNetwork": "Vous êtes sur le mauvais réseau Ethereum. Veuillez basculer vers {networkName}.",
+        "retryButton": "Réessayer",
+        "captionInsufficientETH": "ETH insuffisant",
+        "insufficientETHMessage": "Vous avez besoin d'au moins {minETH} ETH pour payer les frais de gaz Ethereum.",
+        "executeTransaction": "La transaction a échoué sur la blockchain."
+    },
+    "apiErrors": {
+        "apiNetworkError": "Impossible d'accéder au serveur en raison d'une erreur réseau.",
+        "apiResponseStatusError": "Échec de la récupération des données du serveur.",
+        "apiResponseFormatError": "Échec de l'analyse de la réponse du serveur. Veuillez nous contacter pour obtenir de l'aide.",
+        "apiAuthenticationError": "Échec de la récupération des données du serveur, authentification requise.",
+        "apiInvalidParameterError": "Échec de la récupération des données du serveur, paramètre(s) non valide(s).",
+        "apiUnknownError": "Erreur Interne du Serveur. Veuillez nous contacter pour obtenir de l'aide.",
+        "apiError_1": "Erreur interne du serveur.",
+        "apiError_2": "Paramètres d'API non valides.",
+        "apiError_3": "Erreur de liaison.",
+        "apiError_4": "Marché non pris en charge: {marketID}.",
+        "apiError_5": "Prix <200b><200b>ou montant invalide",
+        "apiError_6": "L'identifiant de commande n'existe pas.",
+        "apiError_7": "Mauvaise signature.",
+        "apiError_8": "Solde insuffisant de {token}, need {need}, has {has}.",
+        "apiError_9": "Allocation insuffisante de {token}, need {need}, has {has}.",
+        "apiError_10": "Erreur des paramètres de validation.",
+        "apiError_11": "Authentification échouée.",
+        "apiError_12": "L'identifiant de commande n'existe pas ou ne vous appartient pas.",
+        "apiError_13": "Erreur HTTP API. URL ou paramètres incorrects.",
+        "apiError_14": "Atteindre la limite de taux de l'API.",
+        "apiError_15": "La date d'expiration doit être comprise entre [{begin}, {end}]",
+        "apiError_16": "Le contrat est réglé, interdit de passer des commandes.",
+        "apiError_17": "Le prix long {price} est supérieur ou égal au prix de règlement {settlement}.",
+        "apiError_18": "Le prix court {price} est inférieur ou égal au prix de règlement {settlement}."
+    }
+}

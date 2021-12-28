@@ -1,0 +1,24 @@
+.mobile-table {
+  width: 100%;
+  //border: 1px solid white;
+  //border-collapse: collapse;
+
+  td, th {
+    height: 40px;
+    //border-top: 1px solid white;
+  }
+
+  td .cell {
+    text-align: center;
+  }
+
+  td:last-of-type .cell {
+    position: relative;
+    .van-icon-arrow {
+      position: absolute;
+      right: 0;
+      height: 16px;
+      top: calc(50% - 8px);
+    }
+  }
+}

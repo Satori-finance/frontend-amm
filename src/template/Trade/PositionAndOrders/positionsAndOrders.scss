@@ -1,0 +1,240 @@
+.position-order-common-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+  overflow-y: auto;
+
+  .mc-data-table {
+    thead {
+      font-size: 12px;
+      border-bottom-color: var(--mc-border-color);
+
+      th{
+        height: 32px;
+
+        span {
+          line-height: 16px;
+          display: inline-block;
+        }
+      }
+    }
+
+    tbody {
+      tr,
+      td {
+        height: 76px;
+      }
+
+      tr {
+        border-bottom: 1px solid var(--mc-border-color);
+
+        &:last-child {
+          border-bottom: unset;
+        }
+      }
+    }
+  }
+  .no-data-table {
+    tbody {
+      tr {
+        height: 100%;
+      }
+    }
+  }
+
+  .more-line {
+    line-height: 22px;
+  }
+
+  .symbol-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--mc-text-color-white);
+    cursor: pointer;
+
+    .symbol-link {
+      margin-left: 8px;
+    }
+  }
+
+  .symbol {
+    width: 100%;
+
+    .is-danger {
+      margin: 0 4px 0 4px;
+      display: inline-block;
+      width: 16px;
+
+      .icon-danger {
+        font-size: 14px;
+        color: var(--mc-color-error);
+      }
+    }
+
+    .circle {
+      flex: 0 0 0.08rem;
+      height: 0.08rem;
+      margin-right: 0.1rem;
+      border-radius: 50%;
+    }
+  }
+
+  .side-box {
+    .long,
+    .short {
+      display: none;
+    }
+
+    &.is-long .long {
+      display: inline;
+    }
+
+    &.is-short .short {
+      display: inline;
+    }
+
+    &.is-short {
+      color: var(--mc-color-orange);
+    }
+
+    &.is-long {
+      color: var(--mc-color-blue);
+    }
+  }
+
+  .unit {
+    color: white;
+  }
+
+  .operation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible !important;
+  }
+
+  .operate-group {
+    flex: 0 0 1rem;
+    width: 1rem;
+    height: 0.24rem;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    position: relative;
+
+    input {
+      height: 100%;
+      border: 0;
+      flex: auto;
+      width: 0;
+      background: none;
+      outline: none;
+      text-indent: 0.06rem;
+      font-size: 0.12rem;
+      cursor: text;
+    }
+  }
+
+  .small-btn {
+    font-size: 0.12rem;
+    padding: 0 0.06rem;
+    line-height: 0.24rem;
+
+    &.verify-failed {
+      opacity: 0.3;
+      cursor: no-drop !important;
+    }
+  }
+
+  .settle-button {
+    width: 1.53rem;
+    height: 0.24rem;
+
+    .iconfont {
+      margin-left: 0.06rem;
+    }
+  }
+
+  .sin-hint {
+    position: absolute;
+    z-index: 9999;
+    font-size: 0.14rem;
+    border-radius: 2px;
+    padding: 0.1rem;
+    line-height: 0.2rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 100%;
+      border-bottom: 0.06rem solid transparent !important;
+      border-left: 0.06rem solid transparent !important;
+      border-right: 0.06rem solid transparent !important;
+    }
+  }
+}
+
+.dex-theme-dark {
+  .position-order-common-container {
+    color: var(--mc-text-color-white);
+    max-width: 1600px;
+
+    .symbol {
+      .circle {
+        background: var(--mc-text-color-white);
+
+        &.long {
+          background: var(--mc-color-blue);
+        }
+
+        &.short {
+          background: var(--mc-color-orange);
+        }
+      }
+    }
+
+    .size,
+    .side {
+      color: var(--mc-text-color-white);
+
+      &.long {
+        color: var(--mc-color-blue);
+      }
+
+      &.short {
+        color: var(--mc-color-orange);
+      }
+    }
+
+    .operate-group {
+      input {
+        border: 1px solid transparent;
+        background: var(--mc-background-color-dark);
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2) inset;
+        color: var(--mc-text-color-white);
+        border-radius: 0.04rem 0 0 0.04rem;
+
+        &:hover {
+          background: var(--mc-background-color);
+        }
+
+        &.error {
+          border: 1px solid #ea3d89;
+        }
+      }
+    }
+
+    .sin-hint {
+      background-image: linear-gradient(134deg, #5d6da9 0%, #2f428a 100%);
+      color: var(--mc-text-color-white);
+      box-shadow: 0 0px 4px 0 rgb(18, 24, 44, 0.2), 0 0 2px 0 rgb(50, 62, 106) inset;
+
+      &:before {
+        border: 0.06rem solid #5d6da9;
+      }
+    }
+  }
+}

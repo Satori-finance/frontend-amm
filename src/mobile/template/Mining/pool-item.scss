@@ -1,0 +1,76 @@
+.mining-head {
+  margin-bottom: 16px;
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    line-height: 24px;
+
+    .left {
+      font-size: 18px;
+      color: var(--mc-text-color-white);
+      line-height: 24px;
+    }
+
+    .right {
+      .link-text {
+        font-size: 16px;
+        color: var(--mc-color-primary);
+        display: flex;
+
+        i {
+          font-size: 20px;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+
+  .sub-title {
+    margin-top: 4px;
+    color: var(--mc-text-color);
+    line-height: 20px;
+    font-size: 14px;
+
+    .link-text {
+      color: var(--mc-color-primary);
+    }
+  }
+}
+
+.bg {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 0;
+  top: -60px;
+  filter: blur(100px);
+  z-index: -1;
+  user-select: none;
+
+  ::v-deep img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.tooltip-box {
+  width: 13px;
+  height: 13px;
+  line-height: 13px;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5.5px;
+  background-color: #3c486a;
+
+  .svg-icon {
+    width: 9px;
+    height: 7px;
+    color: var(--mc-text-color-white);
+  }
+}

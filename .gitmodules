@@ -1,0 +1,3 @@
+[submodule "vendor/charting_library"]
+	path = vendor/charting_library
+    url = git@github.com:mcarloai/charting_library.git

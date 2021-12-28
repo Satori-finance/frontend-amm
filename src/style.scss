@@ -1,0 +1,18 @@
+.satori-fantasy {
+
+  &.trade-main-page .v-modal {
+    backdrop-filter: none;
+  }
+
+  .el-popover.fantasy {
+    background: linear-gradient(90deg, #00D8E2 0%, #27A2F8 100%);
+    border-radius: var(--mc-border-radius-l);
+    padding: 1px;
+    border: none;
+
+    .popover-content {
+      background-color: var(--mc-background-color-darkest);
+      border-radius: var(--mc-border-radius-l);
+    }
+  }
+}

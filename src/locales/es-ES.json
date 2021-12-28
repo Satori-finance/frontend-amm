@@ -1,0 +1,193 @@
+{
+    "_type": "Español",
+    "hintInfos": {
+        "positionsAndOrders": {
+            "orderAmount": "Número de contratos en una orden.\n",
+            "size": "Su posición en este instrumento.<br/> Si es positiva, es larga, si es negativa, es corta.",
+            "orderCreatedAt": "Tiempo de creación de una orden.",
+            "orderCanceled": "Números de contratos en una orden que han sido cancelados. Vea la página de detalle de orden para más información",
+            "symbol": "El símbolo del contrato que representa esta posición.\n",
+            "liqPrice": "Su posición será liquidada cuando el precio de la marca alcance este precio.",
+            "orderFillPrice": "Precio medio calculado de todos los llenados de una orden.\n",
+            "orderDetails": "Mostrar los detalles de una orden incluyendo información básica, negociaciones y razones de cancelación.",
+            "infinityPrompt": "Esta posición tiene un margen suficiente y no será liquidada.\n",
+            "orderStatus": "Estado de la orden",
+            "entryPrice": "Promedio del precio de compra/venta ejecutado para su actual posición larga/corta.\n",
+            "orderType": "Tipo de orden.",
+            "roe": "El porcentaje de rendimiento del capital.\n",
+            "orderFilled": "Número de contratos en una orden que han sido comprados/vendidos.\n",
+            "orderPrice": "Precio límite. Las órdenes de mercado no tienen este valor.\n",
+            "positionPnl": "Ganancias y pérdidas realizadas (incluyendo la financiación) en esta posición.",
+            "value": "El valor nocional actual de esta posición.\n",
+            "orderClosedAt": "Tiempo de cierre al cerrar.",
+            "funding": "La cantidad total de fondos que ha pagado / recibido desde que se abrió el puesto.",
+            "markPrice": "El precio de marca es el precio al que se valorará el contrato perpetuo durante las horas de comercio. Esto puede variar (temporalmente) de los precios reales del mercado perpetuo para protegerse de la manipulación del mercado."
+        },
+        "recentTrades": {
+            "price": "El color indica el lado del tomador: verde significa comprar y naranja significa vender.\n\n"
+        },
+        "viewTransaction": "Ver transaccion en Etherscan",
+        "statisticsBar": {
+            "Volume24h": "Total de contratos negociados en las últimas 2Horas"
+        }
+    },
+    "statisticsBar": {
+        "amountIn24Hours": "Volumen 24h",
+        "accumulatedFundingRate": "Tasa De Financiación Acumulada /8H",
+        "accumulatedFundingRatePrompt": "La tasa de financiación acumulada en las últimas 8 horas. Si un comerciante abre 1 posiciones largas, la tasa de financiación acumulada que ha pagado/recibido durante las últimas 8 horas = tasa de financiación acumulada × precio del índice actual × 1."
+    },
+    "tableTitle": {
+        "funding": "Financiación",
+        "pnl": "PnL",
+        "orderCloseTime": "Hora De Cierre",
+        "fillPrice": "Precio Para Llenar",
+        "roe": "RoE",
+        "type": "Tipo",
+        "quantity": "Cantidad",
+        "creationTime": "Tiempo De Creación",
+        "total": "Total",
+        "entryPrice": "Precio De Entrada",
+        "canceled": "Cancelado",
+        "sizeNumber": "Tamaño",
+        "liqPrice": "Precio De Liquidación",
+        "amount": "Cantidad",
+        "symbol": "Símbolo",
+        "filled": "Llenado",
+        "markPrice": "Precio De Marca",
+        "side": "Lado",
+        "time": "Tiempo",
+        "status": "Estado",
+        "details": "Detalles",
+        "price": "Precio",
+        "operation": "Operación"
+    },
+    "connectWallet": {
+        "walletHint": {
+            "wc": "Trust, imToken wallet etc.",
+            "wl": "Coinbase Wallet\n",
+            "metamask": "Extensión de chrome"
+        },
+        "confirmConnection2": "Escanee el código QR con una cartera compatible con WalletConnect",
+        "caption": "Conectar cartera"
+    },
+    "status": {
+        "fundingRate": "Tasa De Financiación",
+        "indexPrice": "Precio Del Índice",
+        "fundingRatePrompt": "La tasa de financiación calculada para este momento. Esta es la tasa que pagarán las posiciones en larga a las posiciones en corta. Si es negativa, las posiciónes en corta pagan las posiciones en larga.",
+        "markPricePrompt": "  El precio de marca es el precio al que se valorará el contrato perpetuo durante las horas de negociación. Esto puede variar (temporalmente) de los precios reales del mercado perpetuo para protegerse de la manipulación de mercado",
+        "markPrice": "Precio De La Marca",
+        "indexPricePrompt": "El índice de precios al contado del activo subyacente. Índice de precios históricos."
+    },
+    "tableData": {
+        "partialFilled": "Llenado Parcialmente",
+        "cancel": "Cancelar",
+        "canceled": "Cancelado",
+        "pending": "Pendiente",
+        "fullyFilled": "Llenado Completemanete"
+    },
+    "trade": "Negociar",
+    "messageTip": {
+        "orderFilled": "Orden Llenada",
+        "orderCreated": "Orden Creada",
+        "error": "Error",
+        "orderCanceled": "Orden Cancelada",
+        "orderMatched": "Orden Compatible"
+    },
+    "footer": {
+        "contactUs": "Contactenos",
+        "fees": "Comisiones",
+        "mcbAddress": "Dirección de SATORI",
+        "mcbTokenLink": "https://etherscan.io/token/0x4e352cf164e64adcbad318c3a1e222e9eba4ce42"
+    },
+    "placeOrder": {
+        "orderTypeSelect": {
+            "market": "Orden de Mercado",
+            "limit": "Límite"
+        },
+        "sideSelector": {
+            "buy": "Comprar / Larga",
+            "sell": "Cender / Corta"
+        },
+        "price": {
+            "marketPrice": "Precio De Mercado"
+        }
+    },
+    "loading": "cargando...",
+    "header": {
+        "defaultLayout": "Disposición Predeterminada",
+        "dark": "Oscuro",
+        "theme": "Tema"
+    },
+    "connectWalletButton": {
+        "auth": "Autenticar",
+        "header": "Conectar Cartera"
+    },
+    "tradeAMM": {
+        "settleStatePrompt": "Esta función no está disponible durante la liquidación global."
+    },
+    "retry": "Reintentar",
+    "orderNotifications": {
+        "sell": "Vender",
+        "closed": ".La orden ha sido cerrada.",
+        "buy": "Comprar"
+    },
+    "copiedToClipboard": "Copiado a portapapeles",
+    "recentTrades": "PosicionesRecientes",
+    "positionsOrders": "Posición y Ordenes",
+    "AMMDepth": "Libro De Ordenes",
+    "saveAsCsv": "Guardar Como Csv",
+    "preferences": {
+        "caption": "Preferencias"
+    },
+    "account": "Cuenta",
+    "noRecords": "Sin Registros",
+    "priceChart": "Gráfico De Precio",
+    "globalNotification": {
+        "wrongNetwork": "Oops, está en la red incorrecta. Simplemente abra la cartera y cambie {networkName}  a Etherum Network",
+        "wsError": "Red desconectada! Reconectado",
+        "readBlockChainError": "Falla en lectura de la red de etherum, por favor reintente",
+        "isEmergencyPrompt": "Hola a todos, {contractSymbol}  ha empezado una liquidación global. Las transacciones y retiros no están disponibles en este momento. Después de que la liquidación se complete, los usuarios podrán retirar el resto del balance de margen. ",
+        "isGlobalSettledPrompt": "Hola a todos, {contractSymbol}  ha completado la liquidación global. Ahora, Los usuarios pueden usar el botón \"Liquidar\" para liquidar y retirar su margen restante."
+    },
+    "errors": {
+        "captionError": "Error",
+        "unavailableWallet": "No hay cartera disponible",
+        "captionCanceled": "Cancelado",
+        "userCanceled": "Ha cancelado la operación",
+        "captionSystemError": "Error en sistema",
+        "messageFormat": "{message}",
+        "unknownError": "Error desconocido",
+        "captionWalletError": "Error en cartera",
+        "wrongNetwork": "Está en la red incorrecta de Etherum. Por favor cambie a {networkName}.",
+        "retryButton": "Reintentar",
+        "captionInsufficientETH": "ETH Insuficiente",
+        "insufficientETHMessage": "Usted necesita al menos {minETH} ETH para pagar la comisión de transacción.",
+        "executeTransaction": "Transacción fallida en la blockchain"
+    },
+    "apiErrors": {
+        "apiNetworkError": "Fallo en acceder al servidor por error en la red.",
+        "apiResponseStatusError": "No se pueden obtener datos del servidor.",
+        "apiResponseFormatError": "No analizar la respuesta del servidor. Por favor, contáctenos para más ayuda.",
+        "apiAuthenticationError": "No se pueden obtener datos del servidor, se requiere autenticación.",
+        "apiInvalidParameterError": "No se pueden obtener datos del servidor, parámetro(s) inválido(s).\n",
+        "apiUnknownError": "Error interno del servidor. Por favor, póngase en contacto con nosotros para obtener ayuda.",
+        "apiError_1": "Error interno del servidor.",
+        "apiError_2": "Parámetros API inválidos.",
+        "apiError_3": "Error de encuadernación.\n",
+        "apiError_4": "Mercado sin soporte: {marketID}.",
+        "apiError_5": "Precio o cantidad invalido",
+        "apiError_6": "El id de la orden no existe",
+        "apiError_7": "Fallo en firma.",
+        "apiError_8": "Balance insuficiente de {token}, necesita {need}, tiene {has}.",
+        "apiError_9": "Insuficiente asignación de {token}, {needs}, tiene {has}.\n",
+        "apiError_10": "Error en validación de parametros.",
+        "apiError_11": "Autenticación Fallida",
+        "apiError_12": "La identificación de la orden no existe o no es de su propiedad.\n",
+        "apiError_13": "Error HTTP de la API. URL o parámetros incorrectos.\n",
+        "apiError_14": "Alcanza el límite del índice API.\n",
+        "apiError_15": "Los vencimientos deben estar dentro del rango [{begin}, {end}]",
+        "apiError_16": "El contrato ya se acordó, se prohíbe hacer pedidos.\n",
+        "apiError_17": "El precio en larga {price} es mayor o igual que el precio de acuerdo {settlement}.\n",
+        "apiError_18": "El precio en corta {price} es menor o igual que el precio de acuerdo{settlement}."
+    }
+}
