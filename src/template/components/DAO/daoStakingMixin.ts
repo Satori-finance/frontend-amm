@@ -12,16 +12,22 @@ import {
 } from '@mcdex/mai3.js'
 import {
   CHAIN_ID_TO_DAO_MINING_ADDRESS,
-  CHAIN_ID_TO_DAO_XSATORI_ADDRESS,
+  CHAIN_ID_TO_DAO_XMCB_ADDRESS,
   DAO_STAKE_TOKEN_SYMBOL,
   getRewardDistributionContract,
   getXmcbContract,
-  stakeSATORI,
-  unstakeSATORI,
+  stakeMCB as stakeSATORI,
+  unstakeMCB as unstakeSATORI,
 } from '@mcdex/mcdex-governance.js'
 import { namespace } from 'vuex-class'
 import { ClaimMiningRewardMixin } from '@/template/components/Mining/claimMiningRewardMixin'
-import { ALLOWANCE_AMOUNT, DAOUnstakePenalty, SATORI_ADDRESS, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import {
+  ALLOWANCE_AMOUNT,
+  DAOUnstakePenalty,
+  SATORI_ADDRESS,
+  SUPPORTED_NETWORK_ID,
+  TARGET_NETWORK_ID,
+} from '@/constants'
 import { ButtonState, TokenBalanceDirectoryItem } from '@/type'
 import { ethers } from 'ethers'
 import { ellipsisMiddle, nullIfNotDeployed } from '@/utils'
@@ -43,14 +49,18 @@ export interface daoClaimableItem {
 
 @Component
 export class DaoStakingMixin extends Mixins(ClaimMiningRewardMixin) {
-  @wallet.Getter('provider') provider !: Provider
-  @wallet.Getter('providerL1') providerL1 !: Provider
+  @wallet.Getter('provider') provider!: Provider
+  @wallet.Getter('providerL1') providerL1!: Provider
   @wallet.Getter('signer') signer!: ethers.Signer
-  @wallet.Getter('address') userAddress !: string | null
-  @wallet.Getter('isConnectedWallet') isConnectedWallet !: boolean
+  @wallet.Getter('address') userAddress!: string | null
+  @wallet.Getter('isConnectedWallet') isConnectedWallet!: boolean
   @account.Getter('tokenBalanceFunc') tokenBalanceFunc!: (tokenAddress: string) => TokenBalanceDirectoryItem | null
   @account.Action('updateTokenBalance') updateTokenBalance!: (params: { tokenAddress: string }) => Promise<void>
-  @account.Action('updateAllowance') updateAllowance!: (params: { tokenAddress: string, spenderAddress: string, networkId?: SUPPORTED_NETWORK_ID }) => Promise<void>
+  @account.Action('updateAllowance') updateAllowance!: (params: {
+    tokenAddress: string
+    spenderAddress: string
+    networkId?: SUPPORTED_NETWORK_ID
+  }) => Promise<void>
   @account.Getter('allowanceFunc') allowanceFunc!: (tokenAddress: string, spender: string) => BigNumber
   @price.Getter('tokenPriceFunc') tokenPriceFunc!: (token: string) => BigNumber | null
   @price.Action('updateTokenPrice') updateTokenPrice!: (tokens: string[]) => Promise<void>
@@ -76,7 +86,8 @@ export class DaoStakingMixin extends Mixins(ClaimMiningRewardMixin) {
 
   mounted() {
     this.updateTokenPrice([SATORI_ADDRESS])
-    this.xmcbAddress = TARGET_NETWORK_ID === SUPPORTED_NETWORK_ID.BSC ? SATORI_ADDRESS : CHAIN_ID_TO_DAO_XSATORI_ADDRESS[TARGET_NETWORK_ID] // todo delete
+    this.xmcbAddress =
+      TARGET_NETWORK_ID === SUPPORTED_NETWORK_ID.BSC ? SATORI_ADDRESS : CHAIN_ID_TO_DAO_XMCB_ADDRESS[TARGET_NETWORK_ID] // todo delete
 
     VUE_EVENT_BUS.on(MINING_EVENT.SATORIStakingRefreshAccount, () => {
       this.updateUserDataDebounce()
@@ -108,14 +119,16 @@ export class DaoStakingMixin extends Mixins(ClaimMiningRewardMixin) {
   }
 
   get claimIsDisabled(): boolean {
-    if (this.claimableTokens.length === 0 || this.isWrongNetwork ||
-      !this.isConnectedWallet || this.claiming) {
+    if (this.claimableTokens.length === 0 || this.isWrongNetwork || !this.isConnectedWallet || this.claiming) {
       return true
     }
-    return this.claimableTokens.reduce(
-      (total, currentValue) => {
+    return this.claimableTokens
+      .reduce((total, currentValue) => {
         return new BigNumber(total).plus(new BigNumber(currentValue.value))
-      }, new BigNumber(0)).lte(0) ? true : false
+      }, new BigNumber(0))
+      .lte(0)
+      ? true
+      : false
   }
 
   get mcbPrice() {
@@ -149,15 +162,16 @@ export class DaoStakingMixin extends Mixins(ClaimMiningRewardMixin) {
     this.miningApy = this.rewardValuePerDayUSD.times(365).times(100).div(poolTotalValueUSD)
   }
 
-  async miningRewardAmount(tokenAddress: string, daoMiningAddress: string, rewardTokenDecimals: number): Promise<BigNumber> {
+  async miningRewardAmount(
+    tokenAddress: string,
+    daoMiningAddress: string,
+    rewardTokenDecimals: number
+  ): Promise<BigNumber> {
     const reward = await this.callChainReadFunc(async () => {
       if (!this.provider || !this.userAddress || daoMiningAddress === '') {
         return new BigNumber(0)
       }
-      const daoContract = getRewardDistributionContract(
-        daoMiningAddress,
-        this.provider
-      )
+      const daoContract = getRewardDistributionContract(daoMiningAddress, this.provider)
       return await daoContract.callStatic.earned(tokenAddress, this.userAddress)
     })
     return normalizeBigNumberish(reward).shiftedBy(-rewardTokenDecimals)
@@ -166,10 +180,10 @@ export class DaoStakingMixin extends Mixins(ClaimMiningRewardMixin) {
   async updateUserShareRate() {
     await this.callChainReadFunc(async () => {
       if (!this.provider || !this.userAddress) {
-        return this.myShareRate = new BigNumber(0)
+        return (this.myShareRate = new BigNumber(0))
       }
       const erc20Contract = getERC20Contract(this.xmcbAddress, this.provider)
-      const balanceOf = normalizeBigNumberish((await erc20Contract.balanceOf(this.userAddress))).shiftedBy(-DECIMALS)
+      const balanceOf = normalizeBigNumberish(await erc20Contract.balanceOf(this.userAddress)).shiftedBy(-DECIMALS)
       this.myShareBalance = balanceOf
       this.myShareRate = balanceOf.div(this.totalShareSupply).times(100)
     })
@@ -194,7 +208,7 @@ export class DaoStakingMixin extends Mixins(ClaimMiningRewardMixin) {
       this.updateUserShareRate(),
       this.updateUserBalance(),
       this.updateAllowanceInfo(),
-      this.updateUserClaimList()
+      this.updateUserClaimList(),
     ])
     this.loading = false
   }, 200)
@@ -210,9 +224,7 @@ export class DaoStakingMixin extends Mixins(ClaimMiningRewardMixin) {
 
   private updateDataDebounce = _.debounce(async () => {
     this.loading = true
-    await Promise.all([
-      this.updateDaoStakingInfo(),
-    ])
+    await Promise.all([this.updateDaoStakingInfo()])
     this.loading = false
   }, 200)
 
@@ -241,7 +253,10 @@ export class DaoStakingMixin extends Mixins(ClaimMiningRewardMixin) {
     if (!this.provider) {
       return
     }
-    const rewardDistributionContract = getRewardDistributionContract(CHAIN_ID_TO_DAO_MINING_ADDRESS[TARGET_NETWORK_ID], this.provider)
+    const rewardDistributionContract = getRewardDistributionContract(
+      CHAIN_ID_TO_DAO_MINING_ADDRESS[TARGET_NETWORK_ID],
+      this.provider
+    )
     const rewardTokens = await rewardDistributionContract.getRewardTokens()
 
     let rewardValuePerDayUSD = new BigNumber(0)
@@ -252,10 +267,7 @@ export class DaoStakingMixin extends Mixins(ClaimMiningRewardMixin) {
     for (let i in rewardTokens) {
       const rewardTokenAddress: string = rewardTokens[i]
       const erc20Contract = getERC20Contract(rewardTokenAddress, this.provider)
-      const [
-        rewardTokenDecimals,
-        rewardTokenName
-      ] = await Promise.all([
+      const [rewardTokenDecimals, rewardTokenName] = await Promise.all([
         erc20Decimals(erc20Contract).catch((e: Error) => nullIfNotDeployed(e)),
         erc20Name(erc20Contract).catch((e: Error) => nullIfNotDeployed(e)),
       ])
@@ -273,7 +285,9 @@ export class DaoStakingMixin extends Mixins(ClaimMiningRewardMixin) {
       await this.updateTokenPrice([rewardTokenAddress])
       const rewardTokenPrice = this.tokenPriceFunc(rewardTokenAddress)
       if (rewardTokenPrice) {
-        const rewardTokenValuePerDayUSD = rewardTokenPrice.times(rewardRate.toNumber()).times(currentChainConfig.blockNumberPerDay)
+        const rewardTokenValuePerDayUSD = rewardTokenPrice
+          .times(rewardRate.toNumber())
+          .times(currentChainConfig.blockNumberPerDay)
         rewardValuePerDayUSD = rewardValuePerDayUSD.plus(rewardTokenValuePerDayUSD)
       }
 
@@ -291,8 +305,7 @@ export class DaoStakingMixin extends Mixins(ClaimMiningRewardMixin) {
 
   @Watch('liveRewardTokens', { immediate: true, deep: true })
   async updateUserClaimList() {
-    if (!this.provider || !this.userAddress || this.userAddress === ''
-      || this.liveRewardTokens.length === 0) {
+    if (!this.provider || !this.userAddress || this.userAddress === '' || this.liveRewardTokens.length === 0) {
       return
     }
     for (let i = 0; i < this.claimableTokens.length; i++) {
@@ -301,14 +314,14 @@ export class DaoStakingMixin extends Mixins(ClaimMiningRewardMixin) {
       const tokenDecimals = item.tokenDecimals || 0
       this.$set(this.claimableTokens, i, {
         ...item,
-        value: (await this.miningRewardAmount(tokenAddress, CHAIN_ID_TO_DAO_MINING_ADDRESS[TARGET_NETWORK_ID], tokenDecimals)).toFixed()
+        value: (
+          await this.miningRewardAmount(tokenAddress, CHAIN_ID_TO_DAO_MINING_ADDRESS[TARGET_NETWORK_ID], tokenDecimals)
+        ).toFixed(),
       })
     }
   }
 
-  async approve(onTransactionStart: () => void = () => {
-  },
-  ): Promise<ethers.providers.TransactionReceipt | null> {
+  async approve(onTransactionStart: () => void = () => {}): Promise<ethers.providers.TransactionReceipt | null> {
     if (!this.signer) {
       return null
     }
@@ -317,7 +330,12 @@ export class DaoStakingMixin extends Mixins(ClaimMiningRewardMixin) {
     try {
       const erc20Contract = getERC20Contract(SATORI_ADDRESS, this.signer)
       const decimals = await erc20Decimals(erc20Contract)
-      const promiseInstance = await approveToken(erc20Contract, this.xmcbAddress, new BigNumber(ALLOWANCE_AMOUNT), decimals)
+      const promiseInstance = await approveToken(
+        erc20Contract,
+        this.xmcbAddress,
+        new BigNumber(ALLOWANCE_AMOUNT),
+        decimals
+      )
       const transaction = waitTransaction(promiseInstance)
       this.$transaction({
         transaction: transaction,
@@ -344,8 +362,7 @@ export class DaoStakingMixin extends Mixins(ClaimMiningRewardMixin) {
 
   async stakeSATORIToken(
     amount: BigNumber,
-    onTransactionStart: () => void = () => {
-    },
+    onTransactionStart: () => void = () => {}
   ): Promise<ethers.providers.TransactionReceipt | null> {
     if (!this.signer) {
       return null
@@ -382,8 +399,7 @@ export class DaoStakingMixin extends Mixins(ClaimMiningRewardMixin) {
 
   async unstakeSATORIToken(
     amount: BigNumber,
-    onTransactionStart: () => void = () => {
-    },
+    onTransactionStart: () => void = () => {}
   ): Promise<ethers.providers.TransactionReceipt | null> {
     if (!this.signer) {
       return null
@@ -423,6 +439,5 @@ export class DaoStakingMixin extends Mixins(ClaimMiningRewardMixin) {
       // refresh reward info
       VUE_EVENT_BUS.emit(MINING_EVENT.SATORIStakingRefreshAccount)
     })
-
   }
 }

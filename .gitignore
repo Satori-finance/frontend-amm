@@ -22,4 +22,4 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
-#.npmrc
+.npmrc

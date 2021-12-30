@@ -8,7 +8,8 @@ import { Provider } from '@ethersproject/providers'
 import { balanceOf, DECIMALS, getERC20Contract, normalizeBigNumberish } from '@mcdex/mai3.js'
 import {
   CHAIN_ID_TO_DAO_GOVERNOR_ADDRESS,
-  CHAIN_ID_TO_DAO_XSATORI_ADDRESS,
+  CHAIN_ID_TO_DAO_XMCB_ADDRESS,
+  
   DAO_UNSTAKE_TOKEN_SYMBOL,
   getDaoGovernorContract,
   getXmcbContract,
@@ -118,7 +119,7 @@ export default class CreateDaoProposalMixin extends Mixins(DaoProposalMixin) {
     if (!this.provider || !this.accountAddress || this.accountAddress === '') {
       return
     }
-    const xmcbAddress = TARGET_NETWORK_ID === SUPPORTED_NETWORK_ID.BSC ? SATORI_ADDRESS : CHAIN_ID_TO_DAO_XSATORI_ADDRESS[TARGET_NETWORK_ID] // todo delete
+    const xmcbAddress = TARGET_NETWORK_ID === SUPPORTED_NETWORK_ID.BSC ? SATORI_ADDRESS : CHAIN_ID_TO_DAO_XMCB_ADDRESS[TARGET_NETWORK_ID] // todo delete
 
     await this.callChainReadFunc(async () => {
       const xMcbContract = getXmcbContract(xmcbAddress, this.provider)

@@ -171,7 +171,7 @@ export default class ShareDialog extends Vue {
       rate: this.positionInfo.roe.times(100).toFormat(1),
       perpetual: this.positionInfo.name,
     }).toString()
-    const params = `original_referer=${encodeURIComponent(window.location.origin)}&text=${encodeURIComponent(text)}&url=${encodeURIComponent('https://mcdex.io')}`
+    const params = `original_referer=${encodeURIComponent(window.location.origin)}&text=${encodeURIComponent(text)}&url=${encodeURIComponent('http://satori.finance/')}`
     window.open(`https://twitter.com/intent/tweet?${params}`, '_blank')
   }
 }

@@ -5,13 +5,6 @@
       <NetworkNotification/>
       <GlobalNotificationBar/>
       <main id="main">
-        <!--        <McMcdexLoading-->
-        <!--          v-show="routeLoading"-->
-        <!--          :show-loading="routing"-->
-        <!--          @show="routeLoading = true"-->
-        <!--          @hide="routeLoading = false"-->
-        <!--        >-->
-        <!--        </McMcdexLoading>-->
         <transition name="switch-stack" mode="out-in">
           <router-view v-bind="{ layout }"></router-view>
         </transition>
@@ -322,8 +315,6 @@ export default class App extends Mixins(WalletSingletonMixin, StoreTrackerSingle
 </script>
 
 <style lang="scss">
-//@import "~@mcdex/style/element-fantasy/index.scss";
-//@import "~@mcdex/style/mcarlo-ui/index.scss";
 @import '~@mcdex/style/common/fantasy-var';
 
 #app {

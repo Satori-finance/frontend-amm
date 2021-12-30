@@ -204,10 +204,10 @@
         "anyway": "仍然",
         "introduction": "简介",
         "index": "指数",
-        "SP500Link": "https://support.mcdex.io/hc/zh-hk/articles/4404834026905-SP500%E5%90%88%E7%BA%A6%E7%AE%80%E4%BB%8B",
-        "DPILink": "https://support.mcdex.io/hc/zh-hk/articles/4404841569689-DPI%E5%90%88%E7%BA%A6%E7%AE%80%E4%BB%8B",
-        "transactionMiningTutorial": "https://support.mcdex.io/hc/en-us/articles/4402964655385-SATORI-3-0-Transaction-Mining-Tutorial",
-        "liquidityMiningTutorial": "https://support.mcdex.io/hc/en-us/articles/1500006907002-SATORI-V3-Testnet-Liquidity-Mining-Tutorial",
+        "SP500Link": "https://support.SATORI.io/hc/zh-hk/articles/4404834026905-SP500%E5%90%88%E7%BA%A6%E7%AE%80%E4%BB%8B",
+        "DPILink": "https://support.SATORI.io/hc/zh-hk/articles/4404841569689-DPI%E5%90%88%E7%BA%A6%E7%AE%80%E4%BB%8B",
+        "transactionMiningTutorial": "https://support.SATORI.io/hc/en-us/articles/4402964655385-SATORI-3-0-Transaction-Mining-Tutorial",
+        "liquidityMiningTutorial": "https://support.SATORI.io/hc/en-us/articles/1500006907002-SATORI-V3-Testnet-Liquidity-Mining-Tutorial",
         "accept": "接受",
         "mode": "模式",
         "more": "更多"
@@ -285,7 +285,7 @@
             "vaultFeeRate": "金库费率",
             "insuranceFundCapPrompt": "保险基金的上限",
             "insuranceFundRatePrompt": "上缴保险基金的罚金比例；<br/> \n 可由LP治理改变",
-            "vaultFeeRatePrompt": "进入DAO金库的交易费率；<br/>\n 可由MCDEX DAO治理改变。",
+            "vaultFeeRatePrompt": "进入DAO金库的交易费率；<br/>\n 可由SATORI DAO治理改变。",
             "insuranceFundCap": "保险基金最大值",
             "operatorFeeRatePrompt": "归属Operator的交易费率；<br/>\n 低于1%；可由LP治理改变",
             "insuranceFundRate": "保险基金费率",
@@ -567,9 +567,9 @@
     },
     "cookie": {
         "privacyPolicy": "隐私政策",
-        "privacyPolicyUrl": "https://support.mcdex.io/hc/zh-hk/articles/4402087029913-隐私政策",
+        "privacyPolicyUrl": "https://support.SATORI.io/hc/zh-hk/articles/4402087029913-隐私政策",
         "cookiePolicy": "Cookie政策",
-        "cookiePolicyUrl": "https://support.mcdex.io/hc/zh-hk/articles/4402107086873-Cookie-政策",
+        "cookiePolicyUrl": "https://support.SATORI.io/hc/zh-hk/articles/4402107086873-Cookie-政策",
         "policyDetail": "我们使用cookies来优化网站，并为你提供最佳体验。如果你希望继续使用此网站，请单击'接受'按钮。"
     },
     "mcbSale": {
@@ -583,7 +583,7 @@
         "subscribeAmount": "认购数量",
         "subscribe": "认购",
         "needToStake": "你需要质押",
-        "stakeDoc": "我承认，我完全理解<a href='mcdex.io'>认购说明</a>中的风险。",
+        "stakeDoc": "我承认，我完全理解<a href='SATORI.io'>认购说明</a>中的风险。",
         "releaseRule": "释放规则",
         "allocation": "实际认购",
         "cost": "支付",
@@ -593,7 +593,7 @@
         "approveSATORI": "授权 SATORI",
         "approveUSDC": "授权USDC",
         "stakeSATORIAndUSDC": "质押SATORI和USDC",
-        "auditReport": "该公募合约由Certik审核。<a target='_blank' href='https://mcdex.io'>审计报告</a>",
+        "auditReport": "该公募合约由Certik审核。<a target='_blank' href='https://SATORI.io'>审计报告</a>",
         "serial": "A轮公募",
         "vested": "已释放",
         "onEthereum": "在以太坊上"
@@ -895,7 +895,7 @@
         "invalidAdapterMissFunction": "无效的价格适配器: 缺少函数 \"{function}\"",
         "invalidAdapterZeroPrice": "无效的价格适配器: 价格为0",
         "invalidAdapterTerminated": "无效的价格适配器: 已终止服务",
-        "oracleLinkPrompt": "如果你想要上链交易的合成资产目前没有预言机喂价，请到MCDEX论坛上的\"<a target=\"_blank\" href=\"https://forum.mcdex.io/t/mcdex-v3-oracle-seek-provide-thread/275\">SATORI V3 Oracle Seek/Provide Thread</a>\" 帖子中寻找或发布需求。",
+        "oracleLinkPrompt": "如果你想要上链交易的合成资产目前没有预言机喂价，请到SATORI论坛上的\"<a target=\"_blank\" href=\"https://forum.SATORI.io/t/SATORI-v3-oracle-seek-provide-thread/275\">SATORI V3 Oracle Seek/Provide Thread</a>\" 帖子中寻找或发布需求。",
         "registeredOracle": "已认证的预言机",
         "uniswapV3Oracle": "Uniswap V3预言机",
         "oracleType": "预言机类型",
@@ -1134,14 +1134,14 @@
     },
     "globalNotification": {
         "wrongNetwork": "错误：不正确的网络。请切换到<span>{networkName}</span>。",
-        "nodeServerError": "{chainName}网络暂时无法使用，MCDEX将在{chainName}网络恢复正常后运行。",
+        "nodeServerError": "{chainName}网络暂时无法使用，SATORI将在{chainName}网络恢复正常后运行。",
         "wsError": "网络已断开！正在尝试重新连接...",
         "readBlockChainError": "读取以太坊链上数据失败! 请重试...",
         "isEmergencyPrompt": "大家好，{contractSymbol}已开始全局结算。结算时不可交易和取款。 结算结束后，用户可提走所有剩余的保证金。",
         "isGlobalSettledPrompt": "大家好, {contractSymbol}已完成全局结算， 用户现在可点击“结算”按钮完成结算并提取所有剩余保证金。",
         "graphServerError": "从 Graph 服务器获取数据失败! 重试...\n",
         "relayerServerError": "从中继器服务器获取数据失败! 重试...",
-        "oracleChartServerError": "MCDEX图表服务错误，无法更新价格",
+        "oracleChartServerError": "SATORI图表服务错误，无法更新价格",
         "marketClosedPrompt": "该市场已收盘",
         "poolNotRunPrompt": "该资金池没有运行。",
         "oracleError": "预言机错误",
@@ -1227,7 +1227,7 @@
         "panel": {
             "myNetWorth": "我的净值",
             "netWorthOnWallet": "钱包净值",
-            "netWorthOnMcdex": "在MCDEX中的净值"
+            "netWorthOnSATORI": "在SATORI中的净值"
         },
         "walletDetails": {
             "addToken": "添加代币",
@@ -1289,7 +1289,7 @@
         "assetDetails": "资产详情",
         "24HCapturedValue": "24小时捕获价值",
         "aboutVault": "关于金库",
-        "MCDEXVault": "MCDEX金库",
+        "MCDEXVault": "SATORI金库",
         "vaultAssetDetails": "金库资产详情",
         "liquidityMining": "流动性挖矿",
         "liquidityMiningPromp": "通过提供流动性获取收益",

@@ -21,7 +21,7 @@ enum Status {
 }
 
 @Component
-export default class McMcdexLoading extends Vue {
+export default class Loading extends Vue {
   @Prop({ default: 0 }) delay!: number
   @Prop({ default: 500 }) minShowTime!: number
   @Prop({ default: false }) showLoading!: boolean

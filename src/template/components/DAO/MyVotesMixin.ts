@@ -5,7 +5,7 @@ import { namespace } from 'vuex-class'
 import { Provider } from '@ethersproject/providers'
 import { DAO_GOVERNOR_VOTES_DECIMALS, SATORI_ADDRESS, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
 import { _0, DECIMALS, normalizeBigNumberish } from '@mcdex/mai3.js'
-import { getXmcbContract, CHAIN_ID_TO_DAO_XSATORI_ADDRESS } from '@mcdex/mcdex-governance.js'
+import { getXmcbContract, CHAIN_ID_TO_DAO_XMCB_ADDRESS } from '@mcdex/mcdex-governance.js'
 import { queryDaoVoteDelegateInfo } from '@/api/daoGovernor'
 import _ from 'lodash'
 import { DAO_GOVERNANCE_EVENT, VUE_EVENT_BUS } from '@/event'
@@ -61,7 +61,7 @@ export default class MyVotesInfoMixin extends Mixins(ErrorHandlerMixin) {
       return
     }
     await this.callChainReadFunc(async () => {
-      const xmcbAddress = TARGET_NETWORK_ID === SUPPORTED_NETWORK_ID.BSC ? SATORI_ADDRESS : CHAIN_ID_TO_DAO_XSATORI_ADDRESS[TARGET_NETWORK_ID] // todo delete
+      const xmcbAddress = TARGET_NETWORK_ID === SUPPORTED_NETWORK_ID.BSC ? SATORI_ADDRESS : CHAIN_ID_TO_DAO_XMCB_ADDRESS[TARGET_NETWORK_ID] // todo delete
 
       const xSATORIContract = getXmcbContract(xmcbAddress, this.provider)
       if (!this.userAddress || this.userAddress === '') {

@@ -2,7 +2,7 @@ import { Component, Mixins } from 'vue-property-decorator'
 import { ErrorHandlerMixin } from '@/mixins'
 import { ethers } from 'ethers'
 import { namespace } from 'vuex-class'
-import { getXmcbContract, CHAIN_ID_TO_DAO_XSATORI_ADDRESS } from '@mcdex/mcdex-governance.js'
+import { getXmcbContract, CHAIN_ID_TO_DAO_XMCB_ADDRESS } from '@mcdex/mcdex-governance.js'
 import { getOperatorName } from '@/config/operator'
 import { ellipsisMiddle } from '@/utils'
 import { Provider } from '@ethersproject/providers'
@@ -55,7 +55,7 @@ export default class DelegateMixin extends Mixins(ErrorHandlerMixin) {
       if (this.userAddress === '' || !this.userAddress || !this.signer) {
         return false
       }
-      const xmcbAddress = TARGET_NETWORK_ID === SUPPORTED_NETWORK_ID.BSC ? SATORI_ADDRESS : CHAIN_ID_TO_DAO_XSATORI_ADDRESS[TARGET_NETWORK_ID] // todo delete
+      const xmcbAddress = TARGET_NETWORK_ID === SUPPORTED_NETWORK_ID.BSC ? SATORI_ADDRESS : CHAIN_ID_TO_DAO_XMCB_ADDRESS[TARGET_NETWORK_ID] // todo delete
 
       const contract = getXmcbContract(xmcbAddress, this.signer)
       const transaction = await contract.delegate(userAddress)
@@ -84,7 +84,7 @@ export default class DelegateMixin extends Mixins(ErrorHandlerMixin) {
       if (!this.provider || !this.userAddress || this.userAddress === '') {
         return
       }
-     const xmcbAddress = TARGET_NETWORK_ID === SUPPORTED_NETWORK_ID.BSC ? SATORI_ADDRESS : CHAIN_ID_TO_DAO_XSATORI_ADDRESS[TARGET_NETWORK_ID] // todo delete
+     const xmcbAddress = TARGET_NETWORK_ID === SUPPORTED_NETWORK_ID.BSC ? SATORI_ADDRESS : CHAIN_ID_TO_DAO_XMCB_ADDRESS[TARGET_NETWORK_ID] // todo delete
 
      const xSATORIContract = getXmcbContract(xmcbAddress, this.provider)
       this.delegateToAddress = (await xSATORIContract.getDelegate(this.userAddress)).toLowerCase()

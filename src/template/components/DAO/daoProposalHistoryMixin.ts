@@ -16,7 +16,7 @@ import { DECIMALS, normalizeBigNumberish } from '@mcdex/mai3.js'
 import {
   getDaoGovernorContract,
   getXmcbContract,
-  CHAIN_ID_TO_DAO_XSATORI_ADDRESS,
+  CHAIN_ID_TO_DAO_XMCB_ADDRESS,
   CHAIN_ID_TO_DAO_GOVERNOR_ADDRESS
 } from '@mcdex/mcdex-governance.js'
 import {
@@ -128,7 +128,7 @@ export class DaoProposalHistoryMixin extends Mixins(DaoProposalMixin) {
       return
     }
     await this.callChainReadFunc(async () => {
-      const xmcbAddress = TARGET_NETWORK_ID === SUPPORTED_NETWORK_ID.BSC ? SATORI_ADDRESS : CHAIN_ID_TO_DAO_XSATORI_ADDRESS[TARGET_NETWORK_ID] // todo delete
+      const xmcbAddress = TARGET_NETWORK_ID === SUPPORTED_NETWORK_ID.BSC ? SATORI_ADDRESS : CHAIN_ID_TO_DAO_XMCB_ADDRESS[TARGET_NETWORK_ID] // todo delete
 
       const xMcbContract = getXmcbContract(xmcbAddress, this.provider)
       this.myVotes = normalizeBigNumberish(await xMcbContract.getCurrentVotes(this.accountAddress)).shiftedBy(-DECIMALS)

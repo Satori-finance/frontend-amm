@@ -210,7 +210,7 @@ if (NETWORK_ENV.CHAIN_ID === SUPPORTED_NETWORK_ID.ARB_TESTNET) {
   SATORI_VESTING_SATORI = '0x40E84224439598289Be3ad3D1eEE81dfCCE5745B' // SATORI address for vesting, s10net
 }
 
-export const PERP_SYMBOL_KEY = 'MCDEX_PERP_SYMBOL'
+export const PERP_SYMBOL_KEY = 'SATORI_PERP_SYMBOL'
 export const PERP_MIN_TRADE_AMOUNT_PREFIX_KEY = 'minTradeAmount-' // minTradeAmount-<perpetualID>
 export const PERP_SLIPPAGE_TOLERANCE_PREFIX_KEY = 'slippageTolerance-' // slippageTolerance-<perpetualID>
 export const REFERRAL_KEY = 'Referral'

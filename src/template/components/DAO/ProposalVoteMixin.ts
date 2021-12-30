@@ -6,7 +6,7 @@ import { DECIMALS, normalizeBigNumberish } from '@mcdex/mai3.js'
 import {
   getDaoGovernorContract,
   getXmcbContract,
-  CHAIN_ID_TO_DAO_XSATORI_ADDRESS,
+  CHAIN_ID_TO_DAO_XMCB_ADDRESS,
   CHAIN_ID_TO_DAO_GOVERNOR_ADDRESS
 } from '@mcdex/mcdex-governance.js'
 import { parseDaoProposalState, toBigNumber } from '@/utils'
@@ -252,7 +252,7 @@ export class ProposalVoteMixin extends Mixins(DaoProposalMixin) {
         }
       }
 
-      const xSATORIContract = getXmcbContract(CHAIN_ID_TO_DAO_XSATORI_ADDRESS[TARGET_NETWORK_ID], this.provider)
+      const xSATORIContract = getXmcbContract(CHAIN_ID_TO_DAO_XMCB_ADDRESS[TARGET_NETWORK_ID], this.provider)
       if (this.userAddress && this.userAddress !== '') {
         this.myVotes = normalizeBigNumberish(await xSATORIContract.getCurrentVotes(this.userAddress)).shiftedBy(-DECIMALS).toNumber()
       }

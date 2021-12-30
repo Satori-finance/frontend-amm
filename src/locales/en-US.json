@@ -1688,8 +1688,8 @@
     "shareDialog": {
         "title": "I'm lovin' my maczombie !",
         "saveImage": "Save Image",
-        "profitText": "I’m lovin’ my mac zombie! I just made {rate}% profit on MCDEX’s {perpetual} perpetual contracts!",
-        "deficitText": "Oops, I just had {rate}% loss on MCDEX’s {perpetual} perpetual contracts..."
+        "profitText": "I’m lovin’ my mac zombie! I just made {rate}% profit on SATORI’s {perpetual} perpetual contracts!",
+        "deficitText": "Oops, I just had {rate}% loss on SATORI’s {perpetual} perpetual contracts..."
     },
     "nodeStatus": {
         "stable": "Stable connection",

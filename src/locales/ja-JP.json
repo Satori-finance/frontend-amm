@@ -28,7 +28,7 @@
         },
         "viewTransaction": "etherscanで取引を確認します。",
         "statisticsBar": {
-            "Volume24h": "過去24時間のMCDEX取引契約ボリューム"
+            "Volume24h": "過去24時間のSATORI取引契約ボリューム"
         }
     },
     "statisticsBar": {
