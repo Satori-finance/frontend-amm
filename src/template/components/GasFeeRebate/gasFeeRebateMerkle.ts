@@ -1,5 +1,5 @@
 import { currentChainConfig } from '@/config/chain'
-import { SUPPORTED_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID } from '@/const'
 
 export type GasFeeRebateEpochClaimUsers = { [epoch: number]: string[][] }
 

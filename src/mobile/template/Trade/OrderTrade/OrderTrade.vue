@@ -328,7 +328,7 @@ import { BigNumber } from 'bignumber.js'
 import { splitAmount, _0 } from '@mcdex/mai3.js'
 import elementResizeDetectorMaker from 'element-resize-detector'
 import TradePanelMixin from '@/template/components/Trade/TradePanelMixin'
-import { ORDER_MIN_DEPOSIT_GAS_BALANCE, ORDER_MIN_GAS_BALANCE } from '@/constants'
+import { ORDER_MIN_DEPOSIT_GAS_BALANCE, ORDER_MIN_GAS_BALANCE } from '@/const'
 
 @Component({
   components: {

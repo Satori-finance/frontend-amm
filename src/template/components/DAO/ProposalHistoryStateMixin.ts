@@ -6,7 +6,7 @@ import { getBlockTimestampFromList } from '@/utils'
 import { namespace } from 'vuex-class'
 import { queryTimeStampByBlockNumber } from '@/api/block'
 import { arbChainConfig, chainConfigs } from '@/config/chain'
-import { L1_NETWORK_ID } from '@/constants'
+import { L1_NETWORK_ID } from '@/const'
 import { ErrorHandlerMixin } from '@/mixins'
 
 const wallet = namespace('wallet')

@@ -77,7 +77,7 @@ import { Component, Mixins } from 'vue-property-decorator'
 import { McMInfoCard, McMTokenImageView } from '@/mobile/components'
 import SATORIInfoMixin from '@/template/components/DAO/Info/SatoriInfoMixin'
 import { McCircleProgress, McLoadingIcon, PNNumber } from '@/components'
-import { SATORI_ADDRESS } from '@/constants'
+import { SATORI_ADDRESS } from '@/const'
 import { copyToClipboard } from '@/utils'
 
 @Component({

@@ -60,7 +60,7 @@ import { Component, Prop, Vue, Watch } from 'vue-property-decorator'
 import { McTabs, McTokenSelector, McNoData } from '@/components'
 import { namespace } from 'vuex-class'
 import { IndexUnderlying, TokenInfoItem, TokenUnderlying, UnderlyingInfo, UnderlyingType } from '@/type'
-import { TARGET_NETWORK_ID } from '@/constants'
+import { TARGET_NETWORK_ID } from '@/const'
 import { searchRegisteredAssets } from '@/config/oracle'
 import { Provider } from '@ethersproject/providers'
 

@@ -296,7 +296,7 @@ import ReStakeRiskPopup from './ReStakeRiskPopup.vue'
 import TradingMiningConfirmPopup from './TradingMiningConfirmPopup.vue'
 import GetMcbPopup from './GetMcbPopup.vue'
 import { currentChainConfig } from '@/config/chain'
-import { SATORI_ADDRESS } from '@/constants'
+import { SATORI_ADDRESS } from '@/const'
 
 @Component({
   components: {

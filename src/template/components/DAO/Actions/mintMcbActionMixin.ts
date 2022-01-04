@@ -1,7 +1,7 @@
 import { Component, Mixins, Prop, Watch } from 'vue-property-decorator'
 import { ErrorHandlerMixin } from '@/mixins'
 import { MintSATORIActionDatas } from '@/template/components/DAO/Actions/types'
-import { TARGET_NETWORK_ID } from '@/constants'
+import { TARGET_NETWORK_ID } from '@/const'
 import BigNumber from 'bignumber.js'
 import { Provider } from '@ethersproject/providers'
 import { namespace } from 'vuex-class'

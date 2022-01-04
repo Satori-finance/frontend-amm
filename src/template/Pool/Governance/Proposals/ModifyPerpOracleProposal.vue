@@ -149,7 +149,7 @@ import {
 } from '@mcdex/mai3.js'
 import { SelectPerpetualOracle, SelectPerpetualOracleView } from '@/business-components'
 import { SelectedOracleParams, UniswapOracle } from '@/business-components/SelectPerpetualOracle/types'
-import { EMPTY_ADDRESS, TARGET_NETWORK_ID } from '@/constants'
+import { EMPTY_ADDRESS, TARGET_NETWORK_ID } from '@/const'
 import { Provider } from '@ethersproject/providers'
 import { ChangeOraclePoolProposal } from '@/template/components/Pool/poolProposalMixin'
 import { OracleLinkWithTunable } from '@/config/oracle'

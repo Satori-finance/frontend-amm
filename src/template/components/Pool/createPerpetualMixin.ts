@@ -34,7 +34,7 @@ import {
   MAX_INT256_VALUE,
   TARGET_NETWORK_ID,
   UNISWAP_V3_FACTORY_ADDRESS,
-} from '@/constants'
+} from '@/const'
 import { LiquidityContractParams, LiquidityOracleParams, LiquidityPoolParams, RiskParams } from '@/template/Pool/type'
 import { ethers } from 'ethers'
 import { namespace } from 'vuex-class'

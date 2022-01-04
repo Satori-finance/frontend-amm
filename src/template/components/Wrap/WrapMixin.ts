@@ -14,7 +14,7 @@ import { ErrorHandlerMixin } from '@/mixins'
 import { ETHTokenList } from '@/config/tokens'
 import { ethers } from 'ethers'
 import { Provider } from '@ethersproject/providers'
-import { TARGET_NETWORK_ID } from '@/constants'
+import { TARGET_NETWORK_ID } from '@/const'
 import { waitTransaction } from '@/utils/transaction'
 import { currentChainConfig } from '@/config/chain'
 

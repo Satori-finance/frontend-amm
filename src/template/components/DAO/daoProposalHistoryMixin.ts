@@ -24,7 +24,7 @@ import {
   L1_NETWORK_ID, SATORI_ADDRESS,
   MCDEX_DAO_GOVERNOR_ID, SUPPORTED_NETWORK_ID,
   TARGET_NETWORK_ID,
-} from '@/constants'
+} from '@/const'
 import debounceAsync from '@seregpie/debounce-async'
 import { DAO_GOVERNANCE_EVENT, VUE_EVENT_BUS } from '@/event'
 import { queryTimeStampByBlockNumber } from '@/api/block'

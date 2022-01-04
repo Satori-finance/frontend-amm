@@ -451,7 +451,7 @@ import {
   WALLET_EVENT,
 } from '@/event'
 import { getReferralAddress, poolHasErrorOracle, toBigNumber } from '@/utils'
-import { ORDER_MIN_DEPOSIT_GAS_BALANCE, ORDER_MIN_GAS_BALANCE } from '@/constants'
+import { ORDER_MIN_DEPOSIT_GAS_BALANCE, ORDER_MIN_GAS_BALANCE } from '@/const'
 
 @Component({
   components: {

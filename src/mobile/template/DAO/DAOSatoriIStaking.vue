@@ -164,7 +164,7 @@ import { ellipsisMiddle, toBigNumber } from '@/utils'
 import {
   DAOUnstakePenalty,
   SATORI_ADDRESS,
-} from '@/constants'
+} from '@/const'
 import BackNavBar from '@/mobile/template/Header/BackNavBar.vue'
 import { DaoStakingMixin } from '@/template/components/DAO/daoStakingMixin'
 import { ElForm } from 'element-ui/types/form'

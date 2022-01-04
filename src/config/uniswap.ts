@@ -1,4 +1,4 @@
-import { SUPPORTED_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID } from '@/const'
 
 export const UNISWAP_V3_QUOTER: { readonly [chainId: number]: string } = {
   [SUPPORTED_NETWORK_ID.MAINNET]: '0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6',

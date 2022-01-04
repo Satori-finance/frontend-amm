@@ -39,7 +39,7 @@ export interface TradeLineChartDataCallGroup {
 const createChartOptions: DeepPartial<ChartOptions> = {
   layout: {
     backgroundColor: '#12182C',
-    textColor: '#6678A9',
+    textColor: '#999897',
     fontSize: 12,
   },
   grid: {
@@ -53,11 +53,11 @@ const createChartOptions: DeepPartial<ChartOptions> = {
   crosshair: {
     mode: CrosshairMode.Normal,
     vertLine: {
-      color: '#6678A9',
+      color: '#999897',
       labelBackgroundColor: '#373F5C',
     },
     horzLine: {
-      color: '#6678A9',
+      color: '#999897',
       labelBackgroundColor: '#373F5C',
     },
   },

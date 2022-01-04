@@ -421,7 +421,7 @@ import { LiquidityContractParams, LiquidityOracleParams } from '@/template/Pool/
 import { ElForm } from 'element-ui/types/form'
 import { toBigNumber } from '@/utils'
 import { _1, getLiquidityPool, getReaderContract, LiquidityPoolStorage } from '@mcdex/mai3.js'
-import { LEVERAGE_DECIMALS } from '@/constants'
+import { LEVERAGE_DECIMALS } from '@/const'
 import AsyncComputed from '@romancow/vue-async-computed-decorator'
 import BigNumber from 'bignumber.js'
 import { namespace } from 'vuex-class'

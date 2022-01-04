@@ -4,7 +4,7 @@ import { Component, Watch } from 'vue-property-decorator'
 import { namespace } from 'vuex-class'
 import { OrderWSStatus } from '@/ts/types'
 import { OrderWSClientSettings } from '@/config/orderWS'
-import { SERVER_WS_URL } from '@/constants'
+import { SERVER_WS_URL } from '@/const'
 import { PLACE_ORDER_EVENT, VUE_EVENT_BUS, WS_EVENTS } from '@/event'
 import { parseOrderStruct } from '@/type/index.validator'
 

@@ -1,7 +1,7 @@
 import { Component, Mixins, Prop } from 'vue-property-decorator'
 import { ButtonState, DataNotFoundError, OrderConfirmParams, PerpetualProperty } from '@/type'
 import { ORDER_SIDE, ORDER_TYPE } from '@/ts'
-import { ALLOWANCE_AMOUNT, TRADE_DEFAULT_SLIPPAGE, SUPPORTED_NETWORK_ID } from '@/constants'
+import { ALLOWANCE_AMOUNT, TRADE_DEFAULT_SLIPPAGE, SUPPORTED_NETWORK_ID } from '@/const'
 import { ErrorHandlerMixin } from '@/mixins'
 import { _1, approveToken, erc20Decimals, getERC20Contract, LiquidityPoolStorage } from '@mcdex/mai3.js'
 import { ethers } from 'ethers'

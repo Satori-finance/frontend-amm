@@ -7,7 +7,7 @@ import { getOperatorName } from '@/config/operator'
 import { ellipsisMiddle } from '@/utils'
 import { Provider } from '@ethersproject/providers'
 import { DAO_GOVERNANCE_EVENT, VUE_EVENT_BUS } from '@/event'
-import { SATORI_ADDRESS, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { SATORI_ADDRESS, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 import { waitTransaction } from '@/utils/transaction'
 
 const wallet = namespace('wallet')

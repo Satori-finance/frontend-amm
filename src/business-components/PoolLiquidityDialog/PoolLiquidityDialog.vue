@@ -272,7 +272,7 @@ import { COMMON_EVENT, VUE_EVENT_BUS } from '@/event'
 import BigNumber from 'bignumber.js'
 import { _0, computeAMMShareToMint } from '@mcdex/mai3.js'
 import { ElForm } from 'element-ui/types/form'
-import { SATORI_ADDRESS_CONFIG, SUPPORTED_NETWORK_ID } from '@/constants'
+import { SATORI_ADDRESS_CONFIG, SUPPORTED_NETWORK_ID } from '@/const'
 import AddLiquidityRiskDialog from '@/template/Dialogs/AddLiquidityRiskDialog.vue'
 
 @Component({

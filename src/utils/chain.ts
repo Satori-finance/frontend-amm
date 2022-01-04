@@ -7,7 +7,7 @@ import {
   NETWORK_ID_NAME,
   SUPPORTED_NETWORK_ID,
   TARGET_NETWORK_ID,
-} from '@/constants'
+} from '@/const'
 import { MetaMaskInjectedProvider, SUPPORTED_WALLET } from '@/business-components/wallet/wallet-connector'
 import vuexStore from '@/store'
 

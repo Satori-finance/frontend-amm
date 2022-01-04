@@ -21,7 +21,7 @@ import {
   SUPPORTED_NETWORK_ID,
   TRADING_MINING_STAKE_CONTRACT_ADDRESS,
   TRADING_MINING_STAKE_CONTRACT_ADDRESS_CONFIG,
-} from '@/constants'
+} from '@/const'
 import { approveToken, DECIMALS, erc20Decimals, getERC20Contract, normalizeBigNumberish } from '@mcdex/mai3.js'
 import { waitTransaction } from '@/utils/transaction'
 import { DAO_STAKE_TOKEN_SYMBOL } from '@mcdex/mcdex-governance.js'

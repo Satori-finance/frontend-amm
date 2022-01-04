@@ -41,7 +41,7 @@
 import { Component, Prop, Vue, Watch } from 'vue-property-decorator'
 import { TokenInfoItem } from '@/type'
 import { Provider } from '@ethersproject/providers'
-import { SUPPORTED_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID } from '@/const'
 import { ethers } from 'ethers'
 import { getERC20Contract } from '@mcdex/mai3.js'
 import _ from 'lodash'

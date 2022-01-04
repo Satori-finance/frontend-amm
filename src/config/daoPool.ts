@@ -1,4 +1,4 @@
-import { SUPPORTED_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID } from '@/const'
 
 export const daoPool: { [targetNetwork: number]: string[] } = {
   [SUPPORTED_NETWORK_ID.ARB]: ['0xab324146c49b23658e5b3930e641bdbdf089cbac', '0xc7b2ad78fded2bbc74b50dc1881ce0f81a7a0cca'],

@@ -83,7 +83,7 @@ import StakeDialog from '../Components/StakeDialog.vue'
 import { DaoProposalHistoryMixin, ProposalItem } from '@/template/components/DAO/daoProposalHistoryMixin'
 import { DaoProposalState } from '@/type'
 import * as _ from 'lodash'
-import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 
 @Component({
   components: {

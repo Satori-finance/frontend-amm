@@ -41,7 +41,7 @@ import {
   SATORI_ADDRESS_CONFIG,
   SUPPORTED_NETWORK_ID,
   TARGET_NETWORK_ID,
-} from '@/constants'
+} from '@/const'
 import { waitTransaction } from '@/utils/transaction'
 import { chainConfigs, currentChainConfig } from '@/config/chain'
 import { queryPoolLatestNAV, queryPoolsLiquidityHistory } from '@/api/pool'

@@ -9,7 +9,7 @@ import { Vue, Component } from 'vue-property-decorator'
 import { url } from 'inspector'
 import { ethers } from 'ethers'
 import { getTimestamp, setLocalStorage } from '@/utils'
-import {REFERRAL_KEY} from '@/constants'
+import {REFERRAL_KEY} from '@/const'
 import { ROUTE } from '@/router'
 
 @Component({})

@@ -1,7 +1,7 @@
 import { Component, Mixins, Watch } from 'vue-property-decorator'
 import { ButtonState, DaoGovernorProposal, DaoProposalState } from '@/type'
 import { queryDaoProposalByIndex } from '@/api/daoGovernor'
-import { DAO_GOVERNOR_VOTES_DECIMALS, L1_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { DAO_GOVERNOR_VOTES_DECIMALS, L1_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 import { DECIMALS, normalizeBigNumberish } from '@mcdex/mai3.js'
 import {
   getDaoGovernorContract,

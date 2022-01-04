@@ -12,7 +12,7 @@ import BigNumber from 'bignumber.js'
 import { Provider } from '@ethersproject/providers'
 import { currentChainConfig } from '@/config/chain'
 import { certifiedPoolsAddress, getCertifiedPoolsByChain } from '@/config/pool'
-import {  SATORI_ADDRESS_CONFIG, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import {  SATORI_ADDRESS_CONFIG, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 import { _0 } from '@mcdex/mai3.js'
 
 const tradingMiningPools: { [id: number]: string[] } = {

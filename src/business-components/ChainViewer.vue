@@ -102,7 +102,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import { chainConfigs, currentChainConfig } from '@/config/chain'
-import { NETWORK_ID_NAME, NETWORK_OPTIONS, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { NETWORK_ID_NAME, NETWORK_OPTIONS, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 import { namespace } from 'vuex-class'
 import { connectChain } from '@/utils/chain'
 import { SUPPORTED_WALLET, } from '@/business-components/wallet/wallet-connector'

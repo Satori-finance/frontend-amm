@@ -15,7 +15,7 @@ import { getGasStationTxParams } from '@/utils/gasPrice'
 import { gasLimitConfig } from '@/config/gas'
 import { PerpetualProperty } from '@/type'
 import { isNativeToken } from '@/utils/chain'
-import { ALLOWANCE_AMOUNT } from '@/constants'
+import { ALLOWANCE_AMOUNT } from '@/const'
 import { waitTransaction } from '@/utils/transaction'
 
 const wallet = namespace('wallet')

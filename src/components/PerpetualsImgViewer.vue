@@ -38,7 +38,7 @@ import { Perpetual } from '@/type'
 import * as _ from 'lodash'
 import { ROUTE } from '@/router'
 import TokenImageView from './TokenImageView.vue'
-import { SUPPORTED_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID } from '@/const'
 
 @Component({
   components: {

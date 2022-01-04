@@ -3,7 +3,7 @@ import VueRouter, { RawLocation, Route, RouteConfig } from 'vue-router'
 import { PERPETUAL_EVENT, VUE_EVENT_BUS } from '@/event'
 import * as _ from 'lodash'
 import { getLocalStorage } from '@/utils'
-import { DEFAULT_SYMBOL, PERP_SYMBOL_KEY, TARGET_NETWORK_ID } from '@/constants'
+import { DEFAULT_SYMBOL, PERP_SYMBOL_KEY, TARGET_NETWORK_ID } from '@/const'
 import store from '@/store'
 
 Vue.use(VueRouter)

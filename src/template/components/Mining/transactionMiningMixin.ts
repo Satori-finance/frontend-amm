@@ -9,7 +9,7 @@ import { queryBlockByTimestamp } from '@/api/block'
 import moment from 'moment/moment'
 import { currentChainConfig } from '@/config/chain'
 import { padLeft } from '@/utils'
-import { SATORI_ADDRESS } from '@/constants'
+import { SATORI_ADDRESS } from '@/const'
 
 interface TransactionMiningData {
   refundRate: BigNumber

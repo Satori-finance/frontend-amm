@@ -30,7 +30,7 @@ import {
   PERP_SLIPPAGE_TOLERANCE_PREFIX_KEY,
   TARGET_NETWORK_ID,
   TRADE_DEFAULT_SLIPPAGE,
-} from '@/constants'
+} from '@/const'
 import { Provider } from '@ethersproject/providers'
 import { isNativeToken } from '@/utils/chain'
 import { ethers } from 'ethers'

@@ -185,7 +185,7 @@ import {
   listLiquidityPoolOfOperator,
 } from '@mcdex/mai3.js'
 import { namespace } from 'vuex-class'
-import { TARGET_NETWORK_ID } from '@/constants'
+import { TARGET_NETWORK_ID } from '@/const'
 import { Provider } from '@ethersproject/providers'
 import { querySpecifiedPools } from '@/api/pool'
 import { LiquidityPoolStruct, Perpetual, PoolStatus, TokenInfoItem } from '@/type'

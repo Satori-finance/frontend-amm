@@ -188,7 +188,7 @@ import {
   McRadioGroup,
   TokenImageView
 } from '@/components'
-import { DAOUnstakePenalty, SATORI_ADDRESS } from '@/constants'
+import { DAOUnstakePenalty, SATORI_ADDRESS } from '@/const'
 import BigNumber from 'bignumber.js'
 import { DaoStakingMixin } from '@/template/components/DAO/daoStakingMixin'
 import { _0 } from '@mcdex/mai3.js'

@@ -31,7 +31,7 @@ import { currentChainConfig } from '@/config/chain'
 import { VUE_EVENT_BUS } from '@/event'
 import { COMMON_EVENT } from '@/mobile/event'
 import { InjectWallet, SUPPORTED_WALLET, Wallet } from '@/business-components/wallet/wallet-connector'
-import { SUPPORTED_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID } from '@/const'
 
 const wallet = namespace('wallet')
 

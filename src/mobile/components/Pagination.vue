@@ -70,7 +70,7 @@ export default class Pagination extends Vue{
     }
 
     button {
-      color:  #6678A9
+      color:  #999897
     }
 
     .active {

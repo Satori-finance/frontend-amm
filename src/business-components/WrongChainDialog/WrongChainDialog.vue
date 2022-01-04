@@ -27,7 +27,7 @@
 <script lang='ts'>
 import { Component, Mixins } from 'vue-property-decorator'
 import WrongChainMixin from './WrongChainMixin'
-import { TARGET_NETWORK_ID } from '@/constants'
+import { TARGET_NETWORK_ID } from '@/const'
 
 @Component
 export default class WrongChainDialog extends Mixins(WrongChainMixin) {

@@ -21,7 +21,7 @@ import {
   NETWORK_PROVIDER_RPC,
   SUPPORTED_NETWORK_ID,
   TARGET_NETWORK_ID,
-} from '@/constants'
+} from '@/const'
 import { ethers } from 'ethers'
 import { LOGIN_SESSION_EVENT, VUE_EVENT_BUS, WALLET_EVENT } from '@/event'
 import { _0 } from '@mcdex/mai3.js'

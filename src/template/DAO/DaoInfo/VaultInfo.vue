@@ -66,7 +66,7 @@
 import { Component, Mixins } from 'vue-property-decorator'
 import VaultInfoMixin from '@/template/components/DAO/Info/VaultInfoMixin'
 import { VaultAssetDetailsMixin } from '@/template/components/DAO/Info/vaultAssetDetailsMixin'
-import { SATORI_ADDRESS } from '@/constants'
+import { SATORI_ADDRESS } from '@/const'
 import VaultAssetDetailsDialog from '../Components/VaultAssetDetailsDialog.vue'
 import BigNumber from 'bignumber.js'
 import { McLoadingIcon } from '@/components'

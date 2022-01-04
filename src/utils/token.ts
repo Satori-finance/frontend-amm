@@ -1,4 +1,4 @@
-import { L1_NETWORK_ID, SATORI_ASSETS_BASE_URL, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { L1_NETWORK_ID, SATORI_ASSETS_BASE_URL, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 import vuexStore from '@/store'
 import { TokenInfoItem } from '@/type'
 import { ethers } from 'ethers'

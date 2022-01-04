@@ -120,7 +120,7 @@ import BigNumber from 'bignumber.js'
 import { isZeroAddress } from 'ethereumjs-util'
 import { checkPoolHasActiveProposal } from '@/template/components/Pool/lowLevelPoolProposal'
 import { ROUTE } from '@/router'
-import { POOL_GOVERNOR_VOTES_DECIMALS } from '@/constants'
+import { POOL_GOVERNOR_VOTES_DECIMALS } from '@/const'
 const wallet = namespace('wallet')
 @Component({
   components: {

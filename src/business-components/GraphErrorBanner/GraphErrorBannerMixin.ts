@@ -1,6 +1,6 @@
 import { Component, Mixins, Watch } from 'vue-property-decorator'
 import { ErrorHandlerMixin, SelectedPerpetualMixin } from '@/mixins'
-import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 import BigNumber from 'bignumber.js'
 import { queryLatestBlockNumber } from '@/api/block'
 import { currentChainConfig } from '@/config/chain'

@@ -14,7 +14,7 @@
 
 <script lang='ts'>
 import { Component, Mixins } from 'vue-property-decorator'
-import { NETWORK_ID_NAME } from '@/constants'
+import { NETWORK_ID_NAME } from '@/const'
 import { SupportNetworkMixin } from '@/mixins'
 
 @Component

@@ -178,7 +178,7 @@ import GasFeeRebateHeader from './GasFeeRebate/GasFeeRebateHeader.vue'
 import BigNumber from 'bignumber.js'
 import { _1 } from '@mcdex/mai3.js'
 import { currentChainConfig } from '@/config/chain'
-import { SUPPORTED_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID } from '@/const'
 
 const perpetual = namespace('perpetual')
 

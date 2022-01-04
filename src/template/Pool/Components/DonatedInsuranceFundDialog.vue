@@ -80,7 +80,7 @@ import { TokenBalanceDirectoryItem } from '@/type'
 import { ethers } from 'ethers'
 import { namespace } from 'vuex-class'
 import { gasLimitConfig } from '@/config/gas'
-import { ALLOWANCE_AMOUNT, SUPPORTED_NETWORK_ID } from '@/constants'
+import { ALLOWANCE_AMOUNT, SUPPORTED_NETWORK_ID } from '@/const'
 import { waitTransaction } from '@/utils/transaction'
 import { isNativeToken } from '@/utils/chain'
 

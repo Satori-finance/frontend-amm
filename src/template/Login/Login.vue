@@ -21,7 +21,7 @@ import { Component, Mixins, Watch } from 'vue-property-decorator'
 import { namespace } from 'vuex-class'
 import { VUE_EVENT_BUS, WALLET_EVENT } from '@/event'
 import { AuthMixin } from '@/mixins'
-import { NETWORK_ID_NAME, TARGET_NETWORK_ID } from '@/constants'
+import { NETWORK_ID_NAME, TARGET_NETWORK_ID } from '@/const'
 
 const wallet = namespace('wallet')
 

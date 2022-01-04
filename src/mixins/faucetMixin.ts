@@ -6,7 +6,7 @@ import { VUE_EVENT_BUS, ERROR_EVENTS, FAUCET_EVENT } from '@/event'
 import { RelayerServerAPIClient } from '@/api/client'
 import { MCError } from '@/type'
 import { ACCOUNT_EVENT } from '@/event'
-import { NETWORK_ENV } from '@/constants'
+import { NETWORK_ENV } from '@/const'
 
 export const BASE_URL = NETWORK_ENV.FAUCET_API_URL || ''
 

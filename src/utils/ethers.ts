@@ -1,4 +1,4 @@
-import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 import { chainConfigs } from '@/config/chain'
 
 export function etherBrowserTxURL(tx: string, networkId: SUPPORTED_NETWORK_ID = TARGET_NETWORK_ID) {

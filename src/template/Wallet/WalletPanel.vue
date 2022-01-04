@@ -60,7 +60,7 @@ import { currentChainConfig } from '@/config/chain'
 import { VUE_EVENT_BUS, WALLET_TOKEN_EVENT } from '@/event'
 import { McLoading } from '@/components'
 import { computeAccountDetails } from '@/utils/account'
-import { NETWORK_ENV, SUPPORTED_NETWORK_ID } from '@/constants'
+import { NETWORK_ENV, SUPPORTED_NETWORK_ID } from '@/const'
 
 interface TokenInfo {
   collateral: string

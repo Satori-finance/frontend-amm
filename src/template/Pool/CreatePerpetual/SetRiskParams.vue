@@ -716,7 +716,7 @@ import { ElForm } from 'element-ui/types/form'
 import { CollateralInfo, LiquidityContractParams, OracleInfo, RiskParams } from '@/template/Pool/type'
 import PreviewAMMDepth from '../Components/PreviewAMMDepth.vue'
 import { _1 } from '@mcdex/mai3.js'
-import { ALLOWANCE_AMOUNT } from '@/constants'
+import { ALLOWANCE_AMOUNT } from '@/const'
 
 function minMaxValidator(min: string, max: string): boolean {
   if (emptyValidator(min) || emptyValidator(max)) {

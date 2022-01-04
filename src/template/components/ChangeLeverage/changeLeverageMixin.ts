@@ -19,7 +19,7 @@ import {
 } from '@mcdex/mai3.js'
 import { isNativeToken } from '@/utils/chain'
 import _ from 'lodash'
-import { SUPPORTED_NETWORK_ID, WithdrawRelaxFactor } from '@/constants'
+import { SUPPORTED_NETWORK_ID, WithdrawRelaxFactor } from '@/const'
 
 const perpetual = namespace('perpetual')
 const wallet = namespace('wallet')

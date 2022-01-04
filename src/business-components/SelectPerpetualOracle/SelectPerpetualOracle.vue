@@ -37,7 +37,7 @@ import RegisteredOracleSelector from './RegisteredOracleSelector.vue'
 import UniswapOracleSelector from './UniswapOracleSelector.vue'
 import CustomOracleSelector from './CustomOracleSelector.vue'
 import { currentChainConfig } from '@/config/chain'
-import { SUPPORTED_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID } from '@/const'
 
 @Component({
   components: {

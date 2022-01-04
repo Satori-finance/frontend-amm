@@ -93,7 +93,7 @@ import { getBlockTimestampFromList } from '@/utils'
 import _ from 'lodash'
 import { queryTimeStampByBlockNumber } from '@/api/block'
 import { arbChainConfig, chainConfigs } from '@/config/chain'
-import { L1_NETWORK_ID, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { L1_NETWORK_ID, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 import { ErrorHandlerMixin } from '@/mixins'
 
 const wallet = namespace('wallet')

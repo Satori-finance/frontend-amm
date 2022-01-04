@@ -288,7 +288,7 @@
 import { Component, Mixins } from 'vue-property-decorator'
 import { McLoading, McNoData, PerpetualsViewer, McCountDown } from '@/components'
 import { etherBrowserAddressUrl, formatBigNumber } from '@/utils'
-import { SATORI_ADDRESS } from '@/constants'
+import { SATORI_ADDRESS } from '@/const'
 import { MiningPoolData, MiningPoolMixin } from '@/template/components/Mining/miningPoolMixin'
 import { COMMON_EVENT, VUE_EVENT_BUS, WALLET_EVENT } from '@/event'
 import * as _ from 'lodash'

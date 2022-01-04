@@ -13,7 +13,7 @@ import { getOperatorName } from '@/config/operator'
 import { getOracleInfo, OracleVendor, registeredOracles } from '@/config/oracle'
 import { namespace } from 'vuex-class'
 import { ethers } from 'ethers'
-import { TARGET_NETWORK_ID } from '@/constants'
+import { TARGET_NETWORK_ID } from '@/const'
 import { waitTransaction } from '@/utils/transaction'
 import { PerpetualState } from '@mcdex/mai3.js'
 import {

@@ -103,7 +103,7 @@ import { Component, Mixins } from 'vue-property-decorator'
 import TradingMiningHistoryMixin from '@/template/components/Mining/tradingMiningHistoryMixin'
 import BackNavBar from '@/mobile/template/Header/BackNavBar.vue'
 import { McMPopupSelector, McMTokenImageView } from '@/mobile/components'
-import { SATORI_ADDRESS } from '@/constants'
+import { SATORI_ADDRESS } from '@/const'
 
 @Component({
   components: {

@@ -452,7 +452,7 @@ import BigNumber from 'bignumber.js'
 import TradingMiningClaimMixin from '@/template/components/Mining/tradingMiningClaimMixin'
 import { formatBigNumber } from '@/utils'
 import { chainConfigs, currentChainConfig } from '@/config/chain'
-import { SUPPORTED_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID } from '@/const'
 
 const poolList = namespace('poolList')
 

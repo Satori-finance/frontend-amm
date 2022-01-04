@@ -1,6 +1,6 @@
 import { Component, Vue } from 'vue-property-decorator'
 import { SUPPORTED_WALLET } from '@/business-components/wallet/wallet-connector'
-import { NETWORK_ID_NAME, NETWORK_OPTIONS, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { NETWORK_ID_NAME, NETWORK_OPTIONS, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 import { supportChainAutoChange, connectChain } from '@/utils/chain'
 import { CHAIN_EVENT, VUE_EVENT_BUS } from '@/event'
 import { namespace } from 'vuex-class'

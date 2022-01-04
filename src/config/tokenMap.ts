@@ -1,4 +1,4 @@
-import { L1_NETWORK_ID, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { L1_NETWORK_ID, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 
 export const tokenMapPair: { [networkID: number]: [string, string][] } = {}
 

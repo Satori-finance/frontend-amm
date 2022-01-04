@@ -460,7 +460,7 @@ a {
 
 .blow {
   font-size: 12px;
-  color: #6678a9;
+  color: #999897;
 }
 
 .is-short .short {

@@ -2,7 +2,7 @@ import { Module } from 'vuex'
 import { Directory } from '@/type'
 import BigNumber from 'bignumber.js'
 import { queryTokenPrice } from '@/api/token'
-import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 import { isArray } from 'lodash'
 import { tokenMapPair } from '@/config/tokenMap'
 

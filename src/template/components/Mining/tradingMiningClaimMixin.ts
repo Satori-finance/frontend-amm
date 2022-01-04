@@ -12,7 +12,7 @@ import {
   SUPPORTED_NETWORK_ID,
   TRADING_MINING_CLAIM_CONTRACT_ADDRESS,
   TRADING_MINING_CLAIM_CONTRACT_ADDRESS_CONFIG,
-} from '@/constants'
+} from '@/const'
 import { waitTransaction } from '@/utils/transaction'
 import { MerkleRedeemFactory } from '@/assets/abi/MerkleRedeem/MerkleRedeemFactory'
 import BigNumber from 'bignumber.js'

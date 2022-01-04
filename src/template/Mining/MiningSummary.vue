@@ -26,7 +26,7 @@ import SwapLiquidityMining from './SwapLiquidityMining.vue'
 import SATORIStaking from './SatoriStaking.vue'
 import TransactionMining from './TransactionMining.vue'
 import TradingMining from './TradingMining.vue'
-import { NETWORK_ENV, SUPPORTED_NETWORK_ID } from '@/constants'
+import { NETWORK_ENV, SUPPORTED_NETWORK_ID } from '@/const'
 
 @Component({
   components: {

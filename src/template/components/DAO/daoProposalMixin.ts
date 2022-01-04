@@ -27,7 +27,7 @@ import { isNativeToken } from '@/utils/chain'
 import {
   EMPTY_ADDRESS,
   TARGET_NETWORK_ID
-} from '@/constants'
+} from '@/const'
 import BigNumber from 'bignumber.js'
 import store from '@/store'
 import {

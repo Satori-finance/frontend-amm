@@ -92,7 +92,7 @@
 import { Component, Mixins } from 'vue-property-decorator'
 import SATORIInfoMixin from '@/template/components/DAO/Info/SatoriInfoMixin'
 import { addERC20TokenToWallet } from '@/utils/chain'
-import { SATORI_TOKEN_INFO, SATORI_ADDRESS, SUPPORTED_NETWORK_ID } from '@/constants'
+import { SATORI_TOKEN_INFO, SATORI_ADDRESS, SUPPORTED_NETWORK_ID } from '@/const'
 import { SUPPORTED_WALLET } from '@/business-components/wallet/wallet-connector'
 import { currentChainConfig } from '@/config/chain'
 import { McCircleProgress, PNNumber, McCopy, McLoadingIcon } from '@/components'

@@ -51,7 +51,7 @@ import { namespace } from 'vuex-class'
 import { Provider } from '@ethersproject/providers'
 import { ethers } from 'ethers'
 import { TokenInfoItem } from '@/type'
-import { L1_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { L1_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 
 interface TableData {
   symbol: string

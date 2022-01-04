@@ -1,5 +1,5 @@
 import { ellipsisMiddle } from '@/utils'
-import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 
 // poolAddress: poolName
 export let certifiedPools: { [targetNetwork: number]: Array<{poolAddress: string, name: string, poolIcon?: string}> } = {}

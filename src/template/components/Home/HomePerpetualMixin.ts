@@ -9,7 +9,7 @@ import {
   PerpetualStorage,
 } from '@mcdex/mai3.js'
 import { queryPerpetuals } from '@/api/perpetual'
-import { ARB_ONE_DOMAIN, NETWORK_PROVIDER_RPC_CONFIG, SUPPORTED_NETWORK_ID } from '@/constants'
+import { ARB_ONE_DOMAIN, NETWORK_PROVIDER_RPC_CONFIG, SUPPORTED_NETWORK_ID } from '@/const'
 import { Watch, Component, Mixins } from 'vue-property-decorator'
 import { query24HPriceFromBackend } from '@/api/candle'
 import { ErrorHandlerMixin } from '@/mixins'

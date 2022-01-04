@@ -43,7 +43,7 @@
 <script lang='ts'>
 import { Component, Vue, Watch } from 'vue-property-decorator'
 import { getLocalStorage, setLocalStorage } from '@/utils'
-import { PROHIBIT_NOTICE_POP_UP } from '@/constants'
+import { PROHIBIT_NOTICE_POP_UP } from '@/const'
 import { namespace } from 'vuex-class'
 const wallet = namespace('wallet')
 

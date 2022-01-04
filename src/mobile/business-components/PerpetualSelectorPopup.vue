@@ -138,7 +138,7 @@ import { PerpetualSelectorMixin } from '@/business-components/PerpetualSelector/
 import { McLoading, PNNumber } from '@/components'
 import { McMNoData, McMRadioGroupTabs, McMTokenPairView } from '@/mobile/components'
 import { padLeft } from '@/utils'
-import { DEFAULT_SYMBOL_LENGTH } from '@/constants'
+import { DEFAULT_SYMBOL_LENGTH } from '@/const'
 import { ROUTE } from '@/mobile/router'
 import BigNumber from 'bignumber.js'
 import { _1 } from '@mcdex/mai3.js'

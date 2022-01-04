@@ -2,7 +2,7 @@ import { Component, Mixins, Watch } from 'vue-property-decorator'
 import { ErrorHandlerMixin, SelectedPerpetualMixin } from '@/mixins'
 import { getOracleInfo, OracleVendor } from '@/config/oracle'
 import { getLocalStorage } from '@/utils'
-import { RISK_NOTICE_POP_UP } from '@/constants'
+import { RISK_NOTICE_POP_UP } from '@/const'
 import { IOracleFactory } from '@mcdex/mai3.js'
 import { DumOracleRouterPath, DumUniswapV3RouterPath, PerpetualOracleType, TunableOracleInfo } from '@/type'
 import {

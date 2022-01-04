@@ -262,7 +262,7 @@ import {
   McMTooltip,
 } from '@/mobile/components'
 import { PNNumber } from '@/components'
-import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID, WithdrawRelaxFactor } from '@/constants'
+import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID, WithdrawRelaxFactor } from '@/const'
 import { DepositWithdrawMixin, ErrorHandlerMixin } from '@/mixins'
 import ChangeLeverageMixin from '@/template/components/ChangeLeverage/changeLeverageMixin'
 import { isLongPosition } from '@/utils'

@@ -1,6 +1,6 @@
 // operator configure
 
-import { NETWORK_ENV, SUPPORTED_NETWORK_ID } from '@/constants'
+import { NETWORK_ENV, SUPPORTED_NETWORK_ID } from '@/const'
 
 export let operatorWhiteList: { [operatorAddress: string]: string } = {}
 

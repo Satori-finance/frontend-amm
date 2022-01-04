@@ -285,7 +285,7 @@ import {
   McMTooltip,
 } from '@/mobile/components'
 import { copyToClipboard } from '@/utils'
-import { SATORI_ADDRESS_CONFIG, MiningTokenSymbol, SUPPORTED_NETWORK_ID } from '@/constants'
+import { SATORI_ADDRESS_CONFIG, MiningTokenSymbol, SUPPORTED_NETWORK_ID } from '@/const'
 import BackNavBar from '@/mobile/template/Header/BackNavBar.vue'
 import { ACCOUNT_EVENT, VUE_EVENT_BUS } from '@/event'
 import { COMMON_EVENT } from '@/mobile/event'

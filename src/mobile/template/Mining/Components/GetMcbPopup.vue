@@ -32,7 +32,7 @@
 <script lang='ts'>
 import { Component, Prop, Vue } from 'vue-property-decorator'
 import { chainConfigs } from '@/config/chain'
-import { SUPPORTED_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID } from '@/const'
 
 @Component
 export default class GetMcbPopup extends Vue {

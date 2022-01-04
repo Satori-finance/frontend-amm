@@ -55,7 +55,7 @@ import { ROUTE } from '@/mobile/router'
 import DelegatePopup from '../Components/DelegatePopup.vue'
 import AboutVotesPopup from '../Components/AboutVotesPopup.vue'
 import { DaoProposalState } from '@/type'
-import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 import { McLoadingIcon } from '@/components'
 
 @Component({

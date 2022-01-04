@@ -282,7 +282,7 @@ export default class WalletInfo extends Mixins(ErrorHandlerMixin) {
       font-family: Helvetica;
       font-size: 14px;
       line-height: 20px;
-      color: #6678a9;
+      color: #999897;
       font-weight: normal;
       margin-top: 4px;
     }
@@ -305,7 +305,7 @@ export default class WalletInfo extends Mixins(ErrorHandlerMixin) {
       font-family: Helvetica;
       font-size: 14px;
       line-height: 20px;
-      color: #6678a9;
+      color: #999897;
     }
 
     .wallet-info-balance {

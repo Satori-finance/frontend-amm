@@ -5,7 +5,7 @@
 import { TokenInfoItem } from '@/type'
 import _ from 'lodash'
 import { l1TokenMap, tokenMap } from '@/config/tokenMap'
-import { L1_NETWORK_ID, NETWORK_ENV, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { L1_NETWORK_ID, NETWORK_ENV, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 
 export const TOKEN_STORAGE_KEY = 'mcdex-token-list'
 

@@ -1,7 +1,7 @@
 import { Component, Prop, Vue } from 'vue-property-decorator'
 import { namespace } from 'vuex-class'
 import { SUPPORTED_WALLET } from '@/business-components/wallet/wallet-connector'
-import { L1_NETWORK_ID, NETWORK_ID_NAME, NETWORK_OPTIONS, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { L1_NETWORK_ID, NETWORK_ID_NAME, NETWORK_OPTIONS, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 import { supportChainAutoChange } from '@/utils/chain'
 import { getMetaProperty } from '@/utils'
 import { chainConfigs } from '@/config/chain'

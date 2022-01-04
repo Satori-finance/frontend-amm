@@ -51,7 +51,7 @@ import { Component, Prop, Mixins, Ref } from 'vue-property-decorator'
 import { McLoading, McLoadingIcon } from '@/components'
 import { VaultAssetDetailsMixin, VaultAssetItem } from '@/template/components/DAO/Info/vaultAssetDetailsMixin'
 import _ from 'lodash'
-import { SUPPORTED_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID } from '@/const'
 
 @Component({
   components: {

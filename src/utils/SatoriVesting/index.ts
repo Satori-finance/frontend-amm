@@ -1,6 +1,6 @@
 import { Signer } from 'ethers'
 import { Provider } from '@ethersproject/providers'
-import { SATORI_VESTING_ADDRESS } from '@/constants'
+import { SATORI_VESTING_ADDRESS } from '@/const'
 import { McbVestingFactory } from './McbVestingFactory'
 import { McbVesting } from './McbVesting'
 import BigNumber from 'bignumber.js'

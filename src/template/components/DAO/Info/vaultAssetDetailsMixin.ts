@@ -7,7 +7,7 @@ import { balanceOf, erc20Decimals, erc20Symbol, getERC20Contract } from '@mcdex/
 import { nullIfNotDeployed, toBigNumber } from '@/utils'
 import BigNumber from 'bignumber.js'
 import { namespace } from 'vuex-class'
-import { NETWORK_PROVIDER_RPC_CONFIG, SUPPORTED_NETWORK_ID } from '@/constants'
+import { NETWORK_PROVIDER_RPC_CONFIG, SUPPORTED_NETWORK_ID } from '@/const'
 import { queryPoolLatestNAV, querySpecifiedPools } from '@/api/pool'
 import { daoPool } from '@/config/daoPool'
 import { ethers } from 'ethers'

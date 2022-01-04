@@ -40,7 +40,7 @@ import { Component, Prop, Vue, Watch } from 'vue-property-decorator'
 import { McTokenSelector } from '@/components'
 import { namespace } from 'vuex-class'
 import { TokenInfoItem } from '@/type'
-import { TARGET_NETWORK_ID } from '@/constants'
+import { TARGET_NETWORK_ID } from '@/const'
 import { Provider } from '@ethersproject/providers'
 
 const token = namespace('token')

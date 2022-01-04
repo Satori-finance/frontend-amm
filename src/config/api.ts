@@ -1,4 +1,4 @@
-import { NETWORK_ENV } from '@/constants'
+import { NETWORK_ENV } from '@/const'
 
 export const BASE_URL = NETWORK_ENV.SERVER_API_URL || ''
 export const API_TIMEOUT = 20000

@@ -27,7 +27,7 @@
 <script lang="ts">
 import { Component, Vue, Watch } from 'vue-property-decorator'
 import { getLocalStorage, setLocalStorage } from '@/utils'
-import { COOKIE_STATUS_KEY } from '@/constants'
+import { COOKIE_STATUS_KEY } from '@/const'
 import { namespace } from 'vuex-class'
 const wallet = namespace('wallet')
 

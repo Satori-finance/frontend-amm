@@ -4,7 +4,7 @@ import { LiquidityPoolStorage, AccountStorage, PerpetualStorage, PerpetualState 
 import { PerpetualFormatDecimals } from '@/utils/formatDecimals'
 import { ORDER_SIDE, ORDER_TYPE } from '@/ts'
 import { getPerpetualID, padLeft } from '@/utils'
-import { DEFAULT_SYMBOL_LENGTH } from '@/constants'
+import { DEFAULT_SYMBOL_LENGTH } from '@/const'
 import { ethers } from 'ethers'
 
 export type BignumberString = string | BigNumber

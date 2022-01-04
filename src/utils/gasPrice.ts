@@ -2,7 +2,7 @@ import { BigNumber as ethersBigNumber, Signer, utils } from 'ethers'
 import { BigNumber } from 'bignumber.js'
 import vuexStore from '@/store'
 import { SUPPORT_ESTIMATE_GAS_CHAIN } from '@/config/gas'
-import { TARGET_NETWORK_ID } from '@/constants'
+import { TARGET_NETWORK_ID } from '@/const'
 
 class GasStation {
   // return gwei

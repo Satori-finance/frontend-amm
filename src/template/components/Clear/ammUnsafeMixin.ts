@@ -6,7 +6,7 @@ import { ethers } from 'ethers'
 import { getLiquidityPoolContract } from '@mcdex/mai3.js'
 import { getGasStationTxParams } from '@/utils/gasPrice'
 import { gasLimitConfig } from '@/config/gas'
-import { MAX_UINT256_VALUE } from '@/constants'
+import { MAX_UINT256_VALUE } from '@/const'
 import { waitTransaction } from '@/utils/transaction'
 
 const wallet = namespace('wallet')

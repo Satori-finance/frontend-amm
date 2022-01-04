@@ -22,7 +22,7 @@ import { VUE_EVENT_BUS } from '@/event'
 import { COMMON_EVENT } from '@/mobile/event'
 import { NetworkNotificationBar, NodeServerNotification } from '@/mobile/business-components'
 import { McMGlobalNotificationBar } from '@/mobile/components'
-import { NETWORK_ID_NAME, TARGET_NETWORK_ID } from '@/constants'
+import { NETWORK_ID_NAME, TARGET_NETWORK_ID } from '@/const'
 import { namespace } from 'vuex-class'
 import WalletViewer from './WalletViewer.vue'
 

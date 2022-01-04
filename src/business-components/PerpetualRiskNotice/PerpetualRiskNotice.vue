@@ -136,7 +136,7 @@ import { Component, Mixins, Watch } from 'vue-property-decorator'
 import { setLocalStorage } from '@/utils'
 import { McLoading, McCopy } from '@/components'
 import PerpetualRiskNoticeMixin from '@/business-components/PerpetualRiskNotice/PerpetualRiskNoticeMixin'
-import { RISK_NOTICE_POP_UP } from '@/constants'
+import { RISK_NOTICE_POP_UP } from '@/const'
 
 @Component({
   components: {

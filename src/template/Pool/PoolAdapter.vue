@@ -55,7 +55,7 @@ import {
   CHAIN_ID_TO_POOL_CREATOR_ADDRESS,
   PoolCreatorFactory,
 } from '@mcdex/mai3.js'
-import { TARGET_NETWORK_ID } from '@/constants'
+import { TARGET_NETWORK_ID } from '@/const'
 
 const routeValidator = async (to: Route) => {
   if (store.getters['routePassed'](to.params.poolAddress)) {

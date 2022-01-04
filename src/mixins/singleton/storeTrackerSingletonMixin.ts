@@ -10,7 +10,7 @@ import {
   VUE_EVENT_BUS,
   WALLET_EVENT,
 } from '@/event'
-import { PERP_SYMBOL_KEY, TARGET_NETWORK_ID } from '@/constants'
+import { PERP_SYMBOL_KEY, TARGET_NETWORK_ID } from '@/const'
 import { ErrorHandlerMixin } from '../errorHandlerMixin'
 import { getPerpetualID, setLocalStorage } from '@/utils'
 import { CHAIN_ID_SYMBOL_SERVICE_ADDRESS, SymbolServiceFactory } from '@mcdex/mai3.js'

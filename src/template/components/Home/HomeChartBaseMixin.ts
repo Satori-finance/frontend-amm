@@ -3,7 +3,7 @@ import { ErrorHandlerMixin } from '@/mixins'
 import { McdexData } from '@/type'
 import { queryMcdexDatasHistory } from '@/api/mcdexData'
 import { arbChainConfig, bscChainConfig, chainConfigs, currentChainConfig } from '@/config/chain'
-import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 
 @Component
 export default class HomeChartBaseMixin extends Mixins(ErrorHandlerMixin) {

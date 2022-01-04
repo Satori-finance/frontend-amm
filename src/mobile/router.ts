@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter, { RawLocation, Route, RouteConfig } from 'vue-router'
 import * as _ from 'lodash'
 import { getLocalStorage } from '@/utils'
-import { PERP_SYMBOL_KEY, TARGET_NETWORK_ID } from '@/constants'
+import { PERP_SYMBOL_KEY, TARGET_NETWORK_ID } from '@/const'
 import { PERPETUAL_EVENT, VUE_EVENT_BUS } from '@/event'
 
 Vue.use(VueRouter)
@@ -226,7 +226,7 @@ const routes: RouteConfig[] = [
       {
         name: ROUTE.SATORI_STAKE,
         path: 'mcb/stake',
-        component: () => import(/* webpackChunkName: "noprefetch-dao" */ '@/mobile/template/DAO/DAOSATORIStaking.vue'),
+        component: () => import(/* webpackChunkName: "noprefetch-dao" */ '@/mobile/template/DAO/DAOSatoriIStaking.vue'),
       },
     ],
   },

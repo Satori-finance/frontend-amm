@@ -9,7 +9,7 @@ import {
 export const createChartOptions: DeepPartial<ChartOptions> = {
   layout: {
     backgroundColor: '#232B48',
-    textColor: '#6678A9',
+    textColor: '#999897',
     fontSize: 12,
   },
   grid: {

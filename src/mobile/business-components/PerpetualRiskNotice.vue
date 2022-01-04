@@ -124,7 +124,7 @@ import { Component, Mixins, Watch } from 'vue-property-decorator'
 import PerpetualRiskNoticeMixin from '../../business-components/PerpetualRiskNotice/PerpetualRiskNoticeMixin'
 import McLoading from '@/components/McLoading.vue'
 import { copyToClipboard, setLocalStorage } from '@/utils'
-import { RISK_NOTICE_POP_UP } from '@/constants'
+import { RISK_NOTICE_POP_UP } from '@/const'
 import { McMTokenImageView } from '@/mobile/components'
 
 @Component({

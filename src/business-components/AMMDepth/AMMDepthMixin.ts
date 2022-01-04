@@ -5,7 +5,7 @@ import { _0, _1, _2, LiquidityPoolStorage } from '@mcdex/mai3.js'
 import { PerpetualStorage } from '@mcdex/mai3.js/dist/types'
 import BigNumber from 'bignumber.js'
 import { alignPriceToGroup, AMMDepthData, getAMMDepth } from '@/utils'
-import { SUPPORTED_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID } from '@/const'
 import { currentChainConfig } from '@/config/chain'
 
 const DefaultGroupLevel: {[id: number]: {

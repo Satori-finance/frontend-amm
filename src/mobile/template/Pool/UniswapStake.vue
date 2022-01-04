@@ -112,7 +112,7 @@ import BigNumber from 'bignumber.js'
 import { _0 } from '@mcdex/mai3.js'
 import { McMIconHeader, McMRadioGroupTabs, McMButtonRadioGroup, McMHorizontalSteps } from '@/mobile/components'
 import { ellipsisMiddle } from '@/utils'
-import { MiningTokenSymbol } from '@/constants'
+import { MiningTokenSymbol } from '@/const'
 import BackNavBar from '@/mobile/template/Header/BackNavBar.vue'
 
 @Component({

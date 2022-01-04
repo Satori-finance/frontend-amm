@@ -77,7 +77,7 @@ import UniswapFeeSelectorDialog from '@/business-components/UniswapFeeSelectorDi
 import _ from 'lodash'
 import BigNumber from 'bignumber.js'
 import { namespace } from 'vuex-class'
-import { TARGET_NETWORK_ID, UNISWAP_V3_FACTORY_ADDRESS } from '@/constants'
+import { TARGET_NETWORK_ID, UNISWAP_V3_FACTORY_ADDRESS } from '@/const'
 import { Provider } from '@ethersproject/providers'
 import { FeeAmount } from '@uniswap/v3-sdk/dist/constants'
 import { Token } from '@uniswap/sdk-core'

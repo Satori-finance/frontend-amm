@@ -39,7 +39,7 @@ export default {
   'scalesProperties.backgroundColor': '#0A1024',
   'scalesProperties.fontSize': 12,
   'scalesProperties.lineColor': '#242D43',
-  'scalesProperties.textColor': '#6678A9',
+  'scalesProperties.textColor': '#999897',
   'scalesProperties.scaleSeriesOnly': false,
   'scalesProperties.showSeriesLastValue': true,
   'scalesProperties.showSeriesPrevCloseValue': false,

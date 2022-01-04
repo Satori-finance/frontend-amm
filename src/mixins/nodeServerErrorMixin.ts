@@ -1,6 +1,6 @@
 import { Component, Prop, Vue } from 'vue-property-decorator'
 import { ERROR_EVENTS, GRAPH_EVENTS, PRICE_CHART_EVENTS, RELAYER_EVENTS, VUE_EVENT_BUS, WS_EVENTS } from '@/event'
-import { NETWORK_ID_NAME, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { NETWORK_ID_NAME, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 import { namespace } from 'vuex-class'
 import { Provider } from '@ethersproject/providers'
 import { loadSATORIAddress } from '@/utils'

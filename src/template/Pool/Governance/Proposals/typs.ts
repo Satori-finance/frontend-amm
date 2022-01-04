@@ -1,5 +1,5 @@
 import { _0, PerpetualStorage } from '@mcdex/mai3.js'
-import { ALLOWANCE_AMOUNT } from '@/constants'
+import { ALLOWANCE_AMOUNT } from '@/const'
 
 export interface ParamsItem {
   beforeValue: string

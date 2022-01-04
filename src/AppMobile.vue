@@ -57,7 +57,7 @@ import WrapPopup from '@/mobile/template/Trade/WrapPopup.vue'
 import ChangeTargetLeveragePopup from '@/mobile/business-components/ChangeTargetLeveragePopup.vue'
 import DialogProcess from '@/mobile/business-components/DialogProcess.vue'
 import NodeStatusViewer from '@/mobile/business-components/NodeStatusViewer.vue'
-import { NETWORK_ENV, SUPPORTED_NETWORK_ID } from '@/constants'
+import { NETWORK_ENV, SUPPORTED_NETWORK_ID } from '@/const'
 
 const isMainnet = NETWORK_ENV.CHAIN_ID === SUPPORTED_NETWORK_ID.MAINNET
 

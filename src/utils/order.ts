@@ -4,7 +4,7 @@ import { OrderTypeParams, PerpetualV3OrderToSign, OrderApiRequestParams, SignTyp
 import { UnsupportEIP712Error, Wallet } from '@/business-components/wallet/wallet-connector'
 import { ethers } from 'ethers'
 import { getLocalStorage } from '@/utils/storage'
-import { EMPTY_ADDRESS, REFERRAL_KEY } from '@/constants'
+import { EMPTY_ADDRESS, REFERRAL_KEY } from '@/const'
 import { TradeFlag } from '@mcdex/mai3.js';
 import { getLeverageFlag } from './leverage'
 

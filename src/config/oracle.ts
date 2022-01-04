@@ -3,7 +3,7 @@
 */
 
 import BigNumber from 'bignumber.js'
-import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 
 export enum OracleVendor {
   Chainlink,

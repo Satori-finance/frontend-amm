@@ -1,7 +1,7 @@
 import Datafeed from './datafeed'
 import pcOverride from './pc/override'
 import mobileOverride from './mobile/override'
-import { CHART_LIBRARY_PATH } from '@/constants'
+import { CHART_LIBRARY_PATH } from '@/const'
 import { mobileWidgetConfiguration } from '@/template/components/TradeChart/mobile/widgetConfiguration'
 import { ResolutionString } from '@/@types/tradingview'
 const tradingView = require('@/../vendor/charting_library/charting_library/charting_library.min')

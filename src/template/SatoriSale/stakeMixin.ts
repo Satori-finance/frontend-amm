@@ -14,7 +14,7 @@ import {
   SATORI_CROWD_SALE_SATORI,
   SATORI_CROWD_SALE_USDC,
   SUPPORTED_NETWORK_ID,
-} from '@/constants'
+} from '@/const'
 import { _0, approveToken, erc20Decimals, getERC20Contract } from '@mcdex/mai3.js'
 import { gasLimitConfig } from '@/config/gas'
 import { getMcbCrowdsaleContract, settle, subscribe } from '@/utils/SATORICrowdsale'

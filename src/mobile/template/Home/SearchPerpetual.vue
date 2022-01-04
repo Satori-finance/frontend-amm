@@ -61,7 +61,7 @@ export default class SearchPerpetual extends Vue{
         }
 
         div.van-field__left-icon{
-          color: #6678A9;
+          color: #999897;
         }
 
         .van-search__content {

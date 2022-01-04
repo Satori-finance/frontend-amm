@@ -34,7 +34,7 @@ import { Component, Mixins, Vue } from 'vue-property-decorator'
 import BigNumber from 'bignumber.js'
 import { PNNumber } from '@/components'
 import { ROUTE } from '@/mobile/router'
-import { SATORI_ADDRESS } from '@/constants'
+import { SATORI_ADDRESS } from '@/const'
 import { DaoStakingMixin } from '@/template/components/DAO/daoStakingMixin'
 
 @Component({

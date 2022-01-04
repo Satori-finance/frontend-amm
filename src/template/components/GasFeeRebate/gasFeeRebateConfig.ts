@@ -1,4 +1,4 @@
-import { SUPPORTED_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID } from '@/const'
 import { currentChainConfig } from '@/config/chain'
 import BigNumber from 'bignumber.js'
 

@@ -45,7 +45,7 @@ import {
 import { PageRouteMixinFactory } from '@/mixins'
 import { Route } from 'vue-router'
 import store from '@/store'
-import { TARGET_NETWORK_ID } from '@/constants'
+import { TARGET_NETWORK_ID } from '@/const'
 import { promiseTimeout } from '@/utils'
 
 const perpetual = namespace('perpetual')

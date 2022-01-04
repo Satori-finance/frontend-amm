@@ -18,7 +18,7 @@ import { ErrorHandlerMixin } from '@/mixins'
 import { getLpGovernorContract } from '@mcdex/mai3.js'
 import { namespace } from 'vuex-class'
 import { Provider } from '@ethersproject/providers'
-import { POOL_GOVERNOR_VOTES_DECIMALS } from '@/constants'
+import { POOL_GOVERNOR_VOTES_DECIMALS } from '@/const'
 import { POOL_GOVERNANCE_EVENT, VUE_EVENT_BUS } from '@/event'
 
 const wallet = namespace('wallet')

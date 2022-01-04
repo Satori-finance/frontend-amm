@@ -11,7 +11,7 @@ import {
   MiningTokenSymbol,
   OPERATOR_CHECK_IN_EXPIRE_TIMESTAMP,
   SUPPORTED_NETWORK_ID,
-} from '@/constants'
+} from '@/const'
 import {
   claimMiningReward,
   DECIMALS,

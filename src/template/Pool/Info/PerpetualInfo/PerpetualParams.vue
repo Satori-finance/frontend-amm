@@ -178,7 +178,7 @@ import { McLoading } from '@/components'
 import { _0, _1, LiquidityPoolStorage, PerpetualStorage } from '@mcdex/mai3.js'
 import { PerpetualProperty } from '@/type'
 import BigNumber from 'bignumber.js'
-import { EMPTY_ADDRESS } from '@/constants';
+import { EMPTY_ADDRESS } from '@/const';
 
 @Component({
   components: {

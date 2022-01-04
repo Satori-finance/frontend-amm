@@ -1,5 +1,5 @@
 import { Component, Mixins, Watch } from 'vue-property-decorator'
-import { DAO_GOVERNOR_VOTES_DECIMALS, SATORI_ADDRESS, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { DAO_GOVERNOR_VOTES_DECIMALS, SATORI_ADDRESS, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 import { DaoActionData } from './Actions/types'
 import BigNumber from 'bignumber.js'
 import { namespace } from 'vuex-class'

@@ -142,7 +142,7 @@ import { Component, Prop, Mixins } from 'vue-property-decorator'
 import { LiquidationTakeOverMixin } from '@/template/components/Liquidation/liquidationTakeOverMixin'
 import BigNumber from 'bignumber.js'
 import { McSimpleSlider, PNNumber } from '@/components'
-import { LEVERAGE_DECIMALS } from '@/constants'
+import { LEVERAGE_DECIMALS } from '@/const'
 
 @Component({
   components: {

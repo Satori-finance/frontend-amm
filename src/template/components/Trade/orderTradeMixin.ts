@@ -32,7 +32,7 @@ import { currentChainConfig } from '@/config/chain'
 import { BTCTokenSet, ETHTokenSet, USDTokenSet } from '@/config/tokens'
 import _ from 'lodash'
 import { GLOBAL_NOTIFICATION_EVENT, PLACE_ORDER_EVENT, VUE_EVENT_BUS } from '@/event'
-import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID, TRADE_DEFAULT_SLIPPAGE } from '@/constants'
+import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID, TRADE_DEFAULT_SLIPPAGE } from '@/const'
 import { queryTransactionMiningInfo } from '@/api/mining'
 import { SATORIOracleConfigs } from '@/config/oracle'
 

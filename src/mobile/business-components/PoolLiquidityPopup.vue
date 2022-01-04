@@ -247,7 +247,7 @@ import { copyToClipboard, toBigNumber } from '@/utils'
 import { VUE_EVENT_BUS } from '@/event'
 import BigNumber from 'bignumber.js'
 import { _0, computeAMMShareToMint } from '@mcdex/mai3.js'
-import { SATORI_ADDRESS_CONFIG, SUPPORTED_NETWORK_ID } from '@/constants'
+import { SATORI_ADDRESS_CONFIG, SUPPORTED_NETWORK_ID } from '@/const'
 import AddLiquidityRiskPopup from '@/mobile/business-components/AddLiquidityRiskPopup.vue'
 import {
   McMNumberField,

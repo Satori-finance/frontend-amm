@@ -18,7 +18,7 @@ import {
   NETWORK_ID_TO_ARB_TOKEN_BRIDGE_ADDRESS,
   SUPPORTED_NETWORK_ID,
   TARGET_NETWORK_ID,
-} from '@/constants'
+} from '@/const'
 import { Provider } from '@ethersproject/providers'
 import { currentChainConfig } from '@/config/chain'
 import { Bridge } from 'arb-ts'

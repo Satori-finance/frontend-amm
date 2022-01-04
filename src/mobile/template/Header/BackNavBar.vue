@@ -19,7 +19,7 @@
 
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator'
-import { NETWORK_ID_NAME, TARGET_NETWORK_ID } from '@/constants'
+import { NETWORK_ID_NAME, TARGET_NETWORK_ID } from '@/const'
 import { namespace } from 'vuex-class'
 import { McMGlobalNotificationBar } from '@/mobile/components'
 import { NetworkNotificationBar, NodeServerNotification } from '@/mobile/business-components'

@@ -58,7 +58,7 @@ import { AccountWithSelectedPerpetualMixin } from '@/mixins'
 import WrapDialog from '@/template/Dialogs/WrapDialog.vue'
 import WrapMixin from '@/template/components/Wrap/WrapMixin'
 import { COMMON_EVENT, VUE_EVENT_BUS } from '@/event'
-import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 
 const wallet = namespace('wallet')
 

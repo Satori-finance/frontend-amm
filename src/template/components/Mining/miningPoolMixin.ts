@@ -16,7 +16,7 @@ import {
   initAMMTradingContext,
   LiquidityPoolStorage,
 } from '@mcdex/mai3.js'
-import { SATORI_ADDRESS_CONFIG, NETWORK_PROVIDER_RPC_CONFIG, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { SATORI_ADDRESS_CONFIG, NETWORK_PROVIDER_RPC_CONFIG, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 import { getBeforeTimestamp, toBigNumber } from '@/utils'
 import { isNativeToken } from '@/utils/chain'
 import { chainConfigs, currentChainConfig } from '@/config/chain'

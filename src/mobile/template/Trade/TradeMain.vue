@@ -129,7 +129,7 @@ import { ACCOUNT_EVENT, PERPETUAL_EVENT, VUE_EVENT_BUS } from '@/event'
 import { COMMON_EVENT } from '@/mobile/event'
 import { ROUTE } from '@/mobile/router'
 import { MarginChangeRiskNotice } from '@/mobile/business-components'
-import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 import GasFeeRebateHeader from './GasFeeRebate/GasFeeRebateHeader.vue'
 
 const wallet = namespace('wallet')

@@ -10,7 +10,7 @@ import { computeDayBlockTotalCount } from '@/utils'
 import { currentChainConfig } from '@/config/chain'
 import { VaultAssetsMixin } from '@/template/components/DAO/Actions/vaultAssetsMixin'
 import { VaultAssetItem } from '@/template/components/DAO/Info/vaultAssetDetailsMixin'
-import { TARGET_NETWORK_ID } from '@/constants'
+import { TARGET_NETWORK_ID } from '@/const'
 
 const wallet = namespace('wallet')
 

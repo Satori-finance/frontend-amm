@@ -9,7 +9,7 @@ import {
   NETWORK_PROVIDER_RPC,
   NETWORK_PROVIDER_RPC_CONFIG,
   SUPPORTED_NETWORK_ID,
-} from '@/constants'
+} from '@/const'
 import { toBigNumber } from "@/utils"
 import {  normalizeBigNumberish } from "@mcdex/mai3.js"
 import { namespace } from "vuex-class"

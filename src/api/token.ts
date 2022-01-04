@@ -10,7 +10,7 @@ import {
 } from '@/type/index.validator'
 import { QueryTokenPriceResult, QueryUniswapV3PoolsByAddressesResult } from '@/type/validatable/token'
 import { getGraphClient } from '@/utils'
-import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 import { UNISWAP_V3_GRAPH_URL } from '@/config/uniswap'
 import { pancakeClient } from '@/utils/uniswap'
 import BigNumber from 'bignumber.js'

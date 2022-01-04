@@ -2,9 +2,10 @@
   <header class="dex-header">
     <div class="logo">
       <a href="http://satori.finance/">
-        <img :src="require(`@/assets/img/${theme}/logo.png`)"/>
+        <!-- <img :src="require(`@/assets/img/${theme}/logo.png`)"/> -->
+        {{$root.$data.appName}}
       </a>
-      <div class="beta">Beta</div>
+      <!-- <div class="beta">Beta</div> -->
     </div>
 
     <el-menu :default-active="activeIndex" class="router-nav" mode="horizontal" @select="onMenuChange">
@@ -30,20 +31,15 @@
 
     <div class="preferences">
       <div class="item" v-if="$route.name === 'tradeMain'">
-        <Layout
-          ref="layout"
-          :initalTheme="theme"
-          @girdItemsChanged="
+        <Layout ref="layout" :initalTheme="theme" @girdItemsChanged="
             (items) => {
               $emit('girdItemsChanged', items)
             }
-          "
-          @defaultLayout="
+          " @defaultLayout="
             () => {
               $emit('defaultLayout')
             }
-          "
-        />
+          " />
       </div>
       <!--      <div class="item">-->
       <!--        <DisplaySetting class="display-setting-wrapper"/>-->
@@ -51,21 +47,10 @@
     </div>
     <div class="dividing-line" v-if="$route.name === 'tradeMain'"></div>
     <div class="chain">
-      <ChainViewer/>
+      <ChainViewer />
     </div>
-    <ConnectedWallet
-      :walletAddress="walletAddress"
-      :walletType="walletType"
-      :isValidSession="isValidSessionFunc()"
-      :noAuth="noAuth"
-      v-if="isShowConnectedWallet"
-    />
-    <ConnectWallet
-      class="connect-wallet"
-      :class="{ 'margin-left': !wallet }"
-      v-if="!wallet"
-      :buttonText="$t('connectWalletButton.header')"
-    ></ConnectWallet>
+    <ConnectedWallet :walletAddress="walletAddress" :walletType="walletType" :isValidSession="isValidSessionFunc()" :noAuth="noAuth" v-if="isShowConnectedWallet" />
+    <ConnectWallet class="connect-wallet" :class="{ 'margin-left': !wallet }" v-if="!wallet" :buttonText="$t('connectWalletButton.header')"></ConnectWallet>
 
     <MenuViewer></MenuViewer>
   </header>
@@ -82,9 +67,8 @@ import { ChainViewer, MenuViewer } from '@/business-components'
 import { SelectedPerpetualMixin } from '@/mixins'
 import DisplaySetting from './DisplaySetting.vue'
 import { getLocalStorage } from '@/utils'
-import { PERP_SYMBOL_KEY } from '@/constants'
+import { PERP_SYMBOL_KEY } from '@/const'
 import { ROUTE } from '@/router'
-
 const wallet = namespace('wallet')
 const auth = namespace('auth')
 
@@ -201,6 +185,8 @@ export default class Header extends Mixins(SelectedPerpetualMixin) {
       display: flex;
       justify-content: center;
       align-items: center;
+      font-size: 40px;
+      font-weight: bold;
     }
 
     img {
@@ -254,7 +240,7 @@ export default class Header extends Mixins(SelectedPerpetualMixin) {
     margin: 0 16px;
     height: 16px;
     width: 1px;
-    background: #242D43;
+    background: #242d43;
   }
 
   .connect-wallet {
@@ -299,7 +285,7 @@ export default class Header extends Mixins(SelectedPerpetualMixin) {
 </style>
 
 <style scoped lang="scss">
-@import "~@mcdex/style/common/fantasy-var";
+@import '~@mcdex/style/common/fantasy-var';
 
 .satori-fantasy {
   .dex-header {

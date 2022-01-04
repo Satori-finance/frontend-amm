@@ -1,30 +1,26 @@
 <template>
   <div id="app" class="scroll" ref="app">
     <div class="content-wrap">
-      <DEXHeader :walletAddress="wallet.address" :walletType="wallet.walletType"/>
-      <NetworkNotification/>
-      <GlobalNotificationBar/>
+      <DEXHeader :walletAddress="wallet.address" :walletType="wallet.walletType" />
+      <NetworkNotification />
+      <GlobalNotificationBar />
       <main id="main">
         <transition name="switch-stack" mode="out-in">
           <router-view v-bind="{ layout }"></router-view>
         </transition>
       </main>
 
-      <NodeStatusViewer/>
+      <NodeStatusViewer />
 
-      <ChangeMarginDialog
-        :perpetualID="changeMarginData.perpetualID"
-        :action-type.sync="changeMarginData.type"
-        :visible.sync="showChangeMarginDialog"
-      />
+      <ChangeMarginDialog :perpetualID="changeMarginData.perpetualID" :action-type.sync="changeMarginData.type" :visible.sync="showChangeMarginDialog" />
     </div>
-    <ConnectWalletDialog ref="connectWallet"/>
-    <WalletSignatureDialog/>
-    <AuthPopper/>
-    <ChangeTargetLeverageDialog/>
-    <DialogProgress/>
-    <WrongChainDialog/>
-    <PoolLiquidityDialog/>
+    <ConnectWalletDialog ref="connectWallet" />
+    <WalletSignatureDialog />
+    <AuthPopper />
+    <ChangeTargetLeverageDialog />
+    <DialogProgress />
+    <WrongChainDialog />
+    <PoolLiquidityDialog />
   </div>
 </template>
 <script lang="ts">
@@ -61,7 +57,7 @@ import DialogProgress from '@/business-components/DialogProcess.vue'
 import NodeServerNotification from '@/business-components/NodeServerNotification.vue'
 import NodeStatusViewer from '@/business-components/NodeStatusViewer.vue'
 import { ROUTE } from '@/router'
-import { NETWORK_ENV, SUPPORTED_NETWORK_ID } from '@/constants'
+import { NETWORK_ENV, SUPPORTED_NETWORK_ID, APP } from '@/const'
 
 const isMainnet = NETWORK_ENV.CHAIN_ID === SUPPORTED_NETWORK_ID.MAINNET
 
@@ -92,8 +88,14 @@ const token = namespace('token')
     PoolLiquidityDialog,
   },
 })
-export default class App extends Mixins(WalletSingletonMixin, StoreTrackerSingletonMixin, AuthSingletonMixin,
-  OrderSingletonMixin, OrderWSSingletonMixin, FaucetMixin) {
+export default class App extends Mixins(
+  WalletSingletonMixin,
+  StoreTrackerSingletonMixin,
+  AuthSingletonMixin,
+  OrderSingletonMixin,
+  OrderWSSingletonMixin,
+  FaucetMixin
+) {
   @wallet.Mutation('setWallet') setWallet!: Function
   @wallet.Action('recover') recoverWallet!: Function
   @preference.State('theme') theme!: string
@@ -124,6 +126,8 @@ export default class App extends Mixins(WalletSingletonMixin, StoreTrackerSingle
     this.listenErrorEvents()
     this.listenWalletEvents()
     this.listenUIEvents()
+
+    this.$root.$data.appName = APP.title
   }
 
   beforeDestroy() {
@@ -152,14 +156,14 @@ export default class App extends Mixins(WalletSingletonMixin, StoreTrackerSingle
     VUE_EVENT_BUS.on(
       ERROR_EVENTS.ShowTextError,
       ({
-         type,
-         message,
-         args,
-         title,
-       }: {
+        type,
+        message,
+        args,
+        title,
+      }: {
         type: 'error' | 'success' | 'warning' | 'info' | undefined
         message: string
-        args: any,
+        args: any
         title?: string
       }) => {
         if (typeof args === 'undefined') {
@@ -173,16 +177,15 @@ export default class App extends Mixins(WalletSingletonMixin, StoreTrackerSingle
           position: 'bottom-right',
           customClass: `is-${type}`,
         })
-      },
+      }
     )
     // websocket
-    VUE_EVENT_BUS.on(PLACE_ORDER_EVENT.WSOrderChanged, async (params: {
-      order: OrderStruct
-      blockNumber: number
-      transactionHash: string
-    }) => {
-      await this.onWsOrderChangeEvent(params)
-    })
+    VUE_EVENT_BUS.on(
+      PLACE_ORDER_EVENT.WSOrderChanged,
+      async (params: { order: OrderStruct; blockNumber: number; transactionHash: string }) => {
+        await this.onWsOrderChangeEvent(params)
+      }
+    )
   }
 
   listenWalletEvents() {
@@ -195,30 +198,42 @@ export default class App extends Mixins(WalletSingletonMixin, StoreTrackerSingle
   }
 
   listenUIEvents() {
-    const setNotifyData = (data: Omit<OrderStruct, 'covert' | 'filledAmount'> & {
+    const setNotifyData = (
+      data: Omit<OrderStruct, 'covert' | 'filledAmount'> & {
+        side: string
+        symbol: string
+        pendingDelta: BigNumber
+        confirmDelta: BigNumber
+        canceledDelta: BigNumber
+        closed: boolean
+      }
+    ): Omit<OrderStruct, 'covert' | 'filledAmount' | 'price' | 'stopPrice'> & {
       side: string
-      symbol: string,
-      pendingDelta: BigNumber,
-      confirmDelta: BigNumber,
-      canceledDelta: BigNumber,
-      closed: boolean,
-    }): Omit<OrderStruct, 'covert' | 'filledAmount' | 'price' | 'stopPrice'> & {
-      side: string
-      symbol: string,
-      pendingDelta: string,
-      confirmDelta: string,
-      canceledDelta: string,
-      closed: boolean,
-      price: string,
-      triggerPrice: string,
+      symbol: string
+      pendingDelta: string
+      confirmDelta: string
+      canceledDelta: string
+      closed: boolean
+      price: string
+      triggerPrice: string
     } => {
       const perpetualID = `${data.liquidityPoolAddress}-${data.perpetualIndex}`.toLowerCase()
       const perpetual = this.getPerpetualFunc(perpetualID)
       const side = perpetual?.perpetualProperty.isInverse
-        ? data.side === 'sell' ? this.$t('orderNotifications.buy').toString() : this.$t('orderNotifications.sell').toString()
-        : data.side === 'buy' ? this.$t('orderNotifications.buy').toString() : this.$t('orderNotifications.sell').toString()
-      const priceDecimals = perpetual?.perpetualProperty.priceFormatDecimals === undefined ? 5 : perpetual.perpetualProperty.priceFormatDecimals
-      const underlyingAssetFormatDecimals = perpetual?.perpetualProperty.underlyingAssetFormatDecimals === undefined ? 2 : perpetual.perpetualProperty.underlyingAssetFormatDecimals
+        ? data.side === 'sell'
+          ? this.$t('orderNotifications.buy').toString()
+          : this.$t('orderNotifications.sell').toString()
+        : data.side === 'buy'
+        ? this.$t('orderNotifications.buy').toString()
+        : this.$t('orderNotifications.sell').toString()
+      const priceDecimals =
+        perpetual?.perpetualProperty.priceFormatDecimals === undefined
+          ? 5
+          : perpetual.perpetualProperty.priceFormatDecimals
+      const underlyingAssetFormatDecimals =
+        perpetual?.perpetualProperty.underlyingAssetFormatDecimals === undefined
+          ? 2
+          : perpetual.perpetualProperty.underlyingAssetFormatDecimals
       return {
         ...data,
         side,
@@ -280,7 +295,7 @@ export default class App extends Mixins(WalletSingletonMixin, StoreTrackerSingle
       this.$i18n.locale = lang
       setLocalStorage('lang', lang)
     })
-    VUE_EVENT_BUS.on(ACCOUNT_EVENT.CHANGE_MARGIN, (data: { perpetualID: string, type: string }) => {
+    VUE_EVENT_BUS.on(ACCOUNT_EVENT.CHANGE_MARGIN, (data: { perpetualID: string; type: string }) => {
       this.changeMarginData = data
       this.showChangeMarginDialog = true
     })
@@ -341,7 +356,6 @@ export default class App extends Mixins(WalletSingletonMixin, StoreTrackerSingle
     }
 
     .network-notification + main {
-
       .trade-container {
         margin-top: 0;
       }
@@ -459,7 +473,7 @@ export default class App extends Mixins(WalletSingletonMixin, StoreTrackerSingle
 
 <style lang="scss">
 .satori-fantasy #app {
-  background-color: #242D43;
+  background-color: #242d43;
 }
 </style>
 

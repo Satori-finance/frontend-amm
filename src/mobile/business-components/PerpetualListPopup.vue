@@ -25,7 +25,7 @@ import { Component, Prop, Vue } from 'vue-property-decorator'
 import { Perpetual } from '@/type'
 import { McMTokenImageView, McMNoData } from '@/mobile/components'
 import { padLeft } from '@/utils'
-import { DEFAULT_SYMBOL_LENGTH } from '@/constants'
+import { DEFAULT_SYMBOL_LENGTH } from '@/const'
 import { ROUTE } from '@/mobile/router'
 
 @Component({

@@ -1,3 +1,7 @@
+export const APP = {
+  title: 'Satori',
+}
+
 export enum SUPPORTED_NETWORK_ID {
   MAINNET = 1,
   RINKEBY = 4,

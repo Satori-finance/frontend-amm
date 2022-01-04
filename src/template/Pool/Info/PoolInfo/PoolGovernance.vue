@@ -77,7 +77,7 @@ import { PoolProposalMixin } from '@/template/components/Pool/poolProposalMixin'
 import { getLpGovernorContract } from '@mcdex/mai3.js'
 import { chainConfigs } from '@/config/chain'
 import { queryTimeStampByBlockNumber } from '@/api/block'
-import { L1_NETWORK_ID } from '@/constants'
+import { L1_NETWORK_ID } from '@/const'
 import { estimateBlockTime } from '@/utils/chain'
 
 interface ProposalItem {

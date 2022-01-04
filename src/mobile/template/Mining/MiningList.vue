@@ -7,7 +7,7 @@
           <img src="@/assets/img/satori-bg.png" alt="">
         </div>
         <div class="tabs-box" v-if="miningTypeOptions.length > 1">
-          <McTabs v-model="selectMiningType" :tabs="miningTypeOptions" :auto-size="true"/>
+          <McTabs v-model="selectMiningType" :tabs="miningTypeOptions" :auto-size="true" />
         </div>
       </div>
     </div>
@@ -36,17 +36,17 @@
 import { Component, Vue } from 'vue-property-decorator'
 import { McTabs } from '@/components'
 import MiningPools from './MiningPools.vue'
-import SATORIStaking from './SatoriStaking.vue'
+import SATORIStaking from './SatoriStaking.vue' 
 import TransactionMining from './TransactionMining.vue'
 import HeaderBar from '@/mobile/template/Header/HeaderBar.vue'
 import SwapLiquidityMining from './SwapLiquidityMining.vue'
-import TradingMining from './TradingMining.vue'
-import { SUPPORTED_NETWORK_ID } from '@/constants'
+import TradingMining from './TradingMining.vue' 
+import { SUPPORTED_NETWORK_ID } from '@/const'
 import { currentChainConfig } from '@/config/chain'
 
 type miningType = 'tradingMining' | 'ammMining' | 'mcbPool2' | ''
 
-const chainMiningType: { [ chainId: number ]: miningType[] } = {
+const chainMiningType: { [chainId: number]: miningType[] } = {
   [SUPPORTED_NETWORK_ID.BSC]: ['tradingMining', 'ammMining', 'mcbPool2'],
   [SUPPORTED_NETWORK_ID.ARB]: ['tradingMining', 'ammMining', 'mcbPool2'],
   [SUPPORTED_NETWORK_ID.ARB_TESTNET]: ['tradingMining', 'ammMining', 'mcbPool2'],
@@ -64,10 +64,10 @@ const chainMiningType: { [ chainId: number ]: miningType[] } = {
   },
 })
 export default class MiningList extends Vue {
-
   private selectMiningType: miningType =
-    chainMiningType[currentChainConfig.chainID] && chainMiningType[currentChainConfig.chainID].length > 0 ?
-      chainMiningType[currentChainConfig.chainID][0] : ''
+    chainMiningType[currentChainConfig.chainID] && chainMiningType[currentChainConfig.chainID].length > 0
+      ? chainMiningType[currentChainConfig.chainID][0]
+      : ''
 
   get miningTypeOptions() {
     let r: any[] = []
@@ -77,7 +77,7 @@ export default class MiningList extends Vue {
     chainMiningType[currentChainConfig.chainID].forEach((item) => {
       r.push({
         value: item,
-        label: this.$t(`miningPoolType.${item.toString()}`).toString()
+        label: this.$t(`miningPoolType.${item.toString()}`).toString(),
       })
     })
     return r
@@ -86,7 +86,6 @@ export default class MiningList extends Vue {
 </script>
 
 <style lang="scss" scoped>
-
 .mining-list-page {
   .page-container {
     height: calc(100% - 103px);

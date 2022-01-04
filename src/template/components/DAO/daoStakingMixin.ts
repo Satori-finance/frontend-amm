@@ -27,7 +27,7 @@ import {
   SATORI_ADDRESS,
   SUPPORTED_NETWORK_ID,
   TARGET_NETWORK_ID,
-} from '@/constants'
+} from '@/const'
 import { ButtonState, TokenBalanceDirectoryItem } from '@/type'
 import { ethers } from 'ethers'
 import { ellipsisMiddle, nullIfNotDeployed } from '@/utils'

@@ -101,7 +101,7 @@ import {
   LiquidityPoolStorage,
 } from '@mcdex/mai3.js'
 import { Provider } from '@ethersproject/providers'
-import { SATORI_ADDRESS, SATORI_ADDRESS_CONFIG, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { SATORI_ADDRESS, SATORI_ADDRESS_CONFIG, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 import { PoolListType } from '@/template/Pool/type'
 import { certifiedPoolsAddress } from '@/config/pool'
 import { isNativeToken } from '@/utils/chain'

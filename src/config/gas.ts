@@ -1,4 +1,4 @@
-import { NETWORK_ENV, SUPPORTED_NETWORK_ID } from '@/constants'
+import { NETWORK_ENV, SUPPORTED_NETWORK_ID } from '@/const'
 
 export const gasStationConfig = {
   apiUrl: 'https://data-api.defipulse.com/api/v1/egs/api/',

@@ -1,7 +1,7 @@
 import { Signer } from 'ethers'
 import { Provider } from '@ethersproject/providers'
 import { McbCrowdsaleFactory } from './SatoriCrowdsaleFactory'
-import { SATORI_CROWD_SALE_ADDRESS } from '@/constants'
+import { SATORI_CROWD_SALE_ADDRESS } from '@/const'
 import { McbCrowdsale } from './SatoriCrowdsale'
 import { McbCrowdsaleAccountStorage, McbCrowdsaleStorage } from './type'
 import BigNumber from 'bignumber.js'

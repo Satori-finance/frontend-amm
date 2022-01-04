@@ -28,7 +28,7 @@ import { Directory, AccountStorageDirectoryItem, AccountGasStorage, TokenBalance
 import { ROOT_GETTER } from '@/store/constant'
 import { queryMarginAccounts } from '@/api/marginAccount'
 import { Provider } from '@ethersproject/providers'
-import { L1_NETWORK_ID, SUPPORTED_NETWORK_ID, TARGET_LEVERAGE_KEY, TARGET_NETWORK_ID } from '@/constants'
+import { L1_NETWORK_ID, SUPPORTED_NETWORK_ID, TARGET_LEVERAGE_KEY, TARGET_NETWORK_ID } from '@/const'
 
 const logger = mcLogger('STORE', 'Account')
 const readingAccountStorages = new Set()

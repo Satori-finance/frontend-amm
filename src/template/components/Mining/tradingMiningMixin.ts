@@ -14,7 +14,7 @@ import {
   TradingMiningMultiChainID,
 } from '@/type'
 import { MINING_EVENT, VUE_EVENT_BUS } from '@/event'
-import { SATORI_ADDRESS_CONFIG, NETWORK_ENV, SUPPORTED_NETWORK_ID } from '@/constants'
+import { SATORI_ADDRESS_CONFIG, NETWORK_ENV, SUPPORTED_NETWORK_ID } from '@/const'
 import { queryPerpetualByPool } from '@/api/perpetual'
 import { _0 } from '@mcdex/mai3.js'
 import moment from 'moment'

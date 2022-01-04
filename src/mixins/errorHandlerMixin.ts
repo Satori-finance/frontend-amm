@@ -7,7 +7,7 @@ import {
   RelayerApiError,
   WrongNetworkError,
 } from '@/type'
-import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 import {
   CHAIN_EVENT,
   ERROR_EVENTS,

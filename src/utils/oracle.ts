@@ -8,7 +8,7 @@ import {
   OracleRouterFactory,
   UniswapV3OracleAdaptorFactory,
 } from '@mcdex/mai3.js'
-import { NETWORK_PROVIDER_RPC_CONFIG, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/constants'
+import { NETWORK_PROVIDER_RPC_CONFIG, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID } from '@/const'
 import { TunableOracleRegisterFactory } from '@mcdex/mai3.js/dist/abi/TunableOracleRegisterFactory'
 import { TunableOracleFactory } from '@mcdex/mai3.js/dist/abi/TunableOracleFactory'
 import BigNumber from 'bignumber.js'

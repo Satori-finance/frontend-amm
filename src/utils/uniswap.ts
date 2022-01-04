@@ -1,4 +1,4 @@
-import { PANCAKE_GRAPH_URL, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID, UNISWAP_GRAPH_URL } from '@/constants'
+import { PANCAKE_GRAPH_URL, SUPPORTED_NETWORK_ID, TARGET_NETWORK_ID, UNISWAP_GRAPH_URL } from '@/const'
 import { ApolloClient } from 'apollo-client'
 import { HttpLink } from 'apollo-link-http'
 import { InMemoryCache } from 'apollo-cache-inmemory'

@@ -5,7 +5,7 @@ import {
   NETWORK_PROVIDER_RPC,
   NETWORK_PROVIDER_RPC_CONFIG,
   TARGET_NETWORK_ID,
-} from '@/constants'
+} from '@/const'
 import {
   UnavailableWalletError,
   UserCanceledError,

@@ -54,7 +54,7 @@ export default class walletReferralLink extends Mixins(ErrorHandlerMixin) {
   &-desc {
     font-size: 14px;
     line-height: 20px;
-    color: #6678a9;
+    color: #999897;
     margin-bottom: 24px;
   }
 

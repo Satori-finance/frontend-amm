@@ -19,7 +19,7 @@ import {
 } from '@/api/tradingMiningV2'
 import BigNumber from 'bignumber.js'
 import _ from 'lodash'
-import { NETWORK_ENV, SUPPORTED_NETWORK_ID } from '@/constants'
+import { NETWORK_ENV, SUPPORTED_NETWORK_ID } from '@/const'
 
 const wallet = namespace('wallet')
 
