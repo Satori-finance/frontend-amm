@@ -20,7 +20,7 @@ import { ROUTE } from '@/router'
 
 @Component
 export default class Error404 extends Vue {
-  private ROUTE = ROUTE
+  private ROUTE = ROUTE 
 }
 </script>
 

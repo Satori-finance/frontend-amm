@@ -162,9 +162,9 @@
         </div>
       </div>
     </div>
-    <div class="right-container">
+    <!-- <div class="right-container">
       <GasFeeRebateHeader v-if="isBscChain || isArbTestnet" />
-    </div>
+    </div> -->
   </div>
 </template>
 

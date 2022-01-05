@@ -473,7 +473,7 @@ export default class App extends Mixins(
 
 <style lang="scss">
 .satori-fantasy #app {
-  background-color: #242d43;
+  background-color: #22352C;
 }
 </style>
 

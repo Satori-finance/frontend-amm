@@ -17,18 +17,7 @@
     </div>
     <div class="table" ref="tableBox">
       <div class="table-box ask">
-        <AMMDepthTable
-          ref="askTable"
-          side="sell"
-          :activeOrderPrices="activeOrderPrices.sell"
-          :tableBody="visibleAsks"
-          :maxTotal="maxTotal"
-          :totals="askTotals"
-          :rowHeight="rowHeight"
-          :amountFormatDecimals="contractFormatDecimals"
-          :priceFormatDecimals="priceFormatDecimals"
-          :loading="loading"
-        ></AMMDepthTable>
+        <AMMDepthTable ref="askTable" side="sell" :activeOrderPrices="activeOrderPrices.sell" :tableBody="visibleAsks" :maxTotal="maxTotal" :totals="askTotals" :rowHeight="rowHeight" :amountFormatDecimals="contractFormatDecimals" :priceFormatDecimals="priceFormatDecimals" :loading="loading"></AMMDepthTable>
       </div>
 
       <div class="spread-box" v-if="!isHorizontal">
@@ -38,18 +27,7 @@
       </div>
 
       <div class="table-box bid">
-        <AMMDepthTable
-          ref="bidTable"
-          side="buy"
-          :activeOrderPrices="activeOrderPrices.buy"
-          :tableBody="visibleBids"
-          :totals="bidTotals"
-          :maxTotal="maxTotal"
-          :rowHeight="rowHeight"
-          :amountFormatDecimals="contractFormatDecimals"
-          :priceFormatDecimals="priceFormatDecimals"
-          :loading="loading"
-        ></AMMDepthTable>
+        <AMMDepthTable ref="bidTable" side="buy" :activeOrderPrices="activeOrderPrices.buy" :tableBody="visibleBids" :totals="bidTotals" :maxTotal="maxTotal" :rowHeight="rowHeight" :amountFormatDecimals="contractFormatDecimals" :priceFormatDecimals="priceFormatDecimals" :loading="loading"></AMMDepthTable>
       </div>
     </div>
   </div>
@@ -91,14 +69,16 @@ export default class AMMDepth extends Mixins(AMMDepthMixin) {
   }
 
   get tableTitle() {
-    const sizeString = this.$t('tableTitle.sizeNumber').toString() + (this.perpetualProperty?.contractSymbol ? ` (${this.perpetualProperty?.underlyingAssetSymbol})` : '')
-    const priceStr = this.$t('tableTitle.price').toString() + (this.perpetualProperty?.priceSymbol ? ` (${this.perpetualProperty?.priceSymbol})` : '')
-    const totalStr = this.$t('tableTitle.total').toString() + (this.perpetualProperty?.contractSymbol ? ` (${this.perpetualProperty?.underlyingAssetSymbol})` : '')
-    return [
-      priceStr,
-      sizeString,
-      totalStr,
-    ]
+    const sizeString =
+      this.$t('tableTitle.sizeNumber').toString() +
+      (this.perpetualProperty?.contractSymbol ? ` (${this.perpetualProperty?.underlyingAssetSymbol})` : '')
+    const priceStr =
+      this.$t('tableTitle.price').toString() +
+      (this.perpetualProperty?.priceSymbol ? ` (${this.perpetualProperty?.priceSymbol})` : '')
+    const totalStr =
+      this.$t('tableTitle.total').toString() +
+      (this.perpetualProperty?.contractSymbol ? ` (${this.perpetualProperty?.underlyingAssetSymbol})` : '')
+    return [priceStr, sizeString, totalStr]
   }
 
   get isShowGroup() {
@@ -116,7 +96,6 @@ export default class AMMDepth extends Mixins(AMMDepthMixin) {
     }
     return this.isLoading
   }
-
 
   private calcCount() {
     const height = this.tableBox.clientHeight
@@ -291,7 +270,8 @@ $spread-box-height: 34px;
       }
     }
 
-    .ask, .bid {
+    .ask,
+    .bid {
       height: calc((100% - #{$spread-box-height}) / 2);
     }
   }
@@ -317,6 +297,7 @@ $spread-box-height: 34px;
 
   .spread-box {
     border-color: var(--mc-border-color);
+    background-color: #22352c;
   }
 }
 </style>

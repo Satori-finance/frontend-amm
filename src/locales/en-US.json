@@ -206,7 +206,7 @@
         "bidAmount": "Bid Amount ({tokenName})",
         "ask": "Ask",
         "amountAsk": "Amount ({tokenName}) Ask",
-        "AMMDepth": "AMM Depth",
+        "AMMDepth": "Order Book",
         "marketHistory": "Market History",
         "asset": "Asset",
         "connectToNetwork": "Connect to {networkName}",
@@ -233,7 +233,7 @@
         "volume/24H": "Volume / 24H",
         "comingSoon": "Coming Soon",
         "coming": "Coming",
-        "trades": "Trades",
+        "trades": "Latest Transactions",
         "30DApy": "30-Day APY",
         "30dApy": "30d APY",
         "quantity": "Quantity",
@@ -275,11 +275,11 @@
             "contractParams": "Contract parameters"
         },
         "previewAMMDepth": {
-            "title": "AMM Depth Preview",
+            "title": "Order Book Preview",
             "ammPosition": "AMM Position"
         },
         "riskParams": {
-            "previewTip": "Please finish step 1, 2 and 3 to preview the AMM depth.",
+            "previewTip": "Please finish step 1, 2 and 3 to preview the Order Book.",
             "config": "Risk Parameter Configuration",
             "closeSlippage": "β<sub>2</sub>(Close Slippage)",
             "maxAMMMaxLeverage": "Max λ(AMM Max Leverage)",
@@ -877,7 +877,7 @@
         "isEmergencyPrompt": "The perpetual contract is under clearing.",
         "isGlobalSettledPrompt": "The perpetual contract is cleared."
     },
-    "trade": "Trade",
+    "trade": "Perpetual Trade",
     "displaySetting": {
         "orderConfirm": "Need order confirmation",
         "title": "Display Setting"
@@ -1205,7 +1205,7 @@
         "expandUniswap": "Set Oracle TWAP",
         "setContractDisplay": "Set Contract Display"
     },
-    "AMMDepth": "AMM Depth",
+    "AMMDepth": "Order Book",
     "saveAsCsv": "Save as CSV",
     "preferences": {
         "caption": "Preferences"
@@ -1703,7 +1703,7 @@
         "betaMessage": "Arbitrum and SATORI are still in beta mode, trade at your own risk!",
         "bscBetaMessage": "SATORI is still in beta mode, trade at your own risk!",
         "noErrorTip": "All sections functioning",
-        "nodeErrorPrompt": "Index price and AMM depth might be out of sync. Sorry for the inconvenience, and please wait for the service to recover.",
+        "nodeErrorPrompt": "Index price and Order book might be out of sync. Sorry for the inconvenience, and please wait for the service to recover.",
         "graphErrorPrompt": "Entry price and pool information might be out of sync. Sorry for the inconvenience, and please wait for the service to recover.",
         "relayerErrorPrompt": "Orders information might be out of sync. Sorry for the inconvenience, and please wait for the service to recover.",
         "priceChartErrorPrompt": "The index chart might be out of sync. Sorry for the inconvenience, and please wait for the service to recover.",

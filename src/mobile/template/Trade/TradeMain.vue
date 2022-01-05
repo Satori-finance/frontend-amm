@@ -24,9 +24,9 @@
           </div>
         </div>
       </div>
-      <div class="gas-fee-container" ref="gasFeeContainer" v-if="isBSC || isArbTestnet">
+      <!-- <div class="gas-fee-container" ref="gasFeeContainer" v-if="isBSC || isArbTestnet">
         <GasFeeRebateHeader/>
-      </div>
+      </div> -->
       <div class="content-box" ref="scrollElm" :style="{ height: 'calc(100% - ' + outsideContentHeight + 'px)' }">
         <div class="content-container">
           <div

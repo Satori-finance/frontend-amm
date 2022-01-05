@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .satori-fantasy {
-  --mc-color-blue: #00d8e2;
-  --mc-color-orange: #d98041;
+  --mc-color-blue: #39AC59;
+  --mc-color-orange: #DB574B;
   --mc-color-primary: #27a2f8;
   --mc-color-secondary: #4d5e90;
   --mc-color-success: #09c0a0;
@@ -1752,8 +1752,8 @@
   bottom: 0;
   left: 12px;
   right: 12px;
-  height: 1px;
-  background: #fff;
+  height: 2px;
+  background: #f8f7f0;
 }
 .satori-fantasy .el-menu--collapse {
   width: 64px;
