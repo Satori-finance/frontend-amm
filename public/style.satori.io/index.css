@@ -49,7 +49,7 @@
   --mc-color-error-gradient: linear-gradient(90deg, #ef4751 0%, #f0455a 100%);
   --mc-color-warning-gradient: linear-gradient(90deg, #ffb110 0%, #ffd249 100%);
   --mc-color-info-gradient: linear-gradient(90deg, #7e9db9 0%, #9cb9d3 100%);
-  --mc-color-blue-gradient: linear-gradient(90deg, #2cadac 0%, #47e7e3 100%);
+  --mc-color-blue-gradient: linear-gradient(90deg, #39AC59 0%, #47e7e3 100%);
   --mc-color-orange-gradient: linear-gradient(90deg, #cd7231 0%, #f59e60 100%);
   --mc-color-primary-gradient-alpha: linear-gradient(
     90deg,
@@ -12469,8 +12469,8 @@
 }
 .dex-theme-dark .el-button--blue {
   color: #fff;
-  background: -webkit-gradient(linear, left top, right top, from(#2cadac), to(#47e7e3));
-  background: linear-gradient(90deg, #2cadac 0, #47e7e3 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#39AC59), to(#47e7e3));
+  background: linear-gradient(90deg, #39AC59 0, #47e7e3 100%);
 }
 .dex-theme-dark .el-button--blue:focus,
 .dex-theme-dark .el-button--blue:hover {

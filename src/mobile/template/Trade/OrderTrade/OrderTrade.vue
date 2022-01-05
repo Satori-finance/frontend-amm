@@ -494,10 +494,10 @@ export default class OrderTrade extends Mixins(OrderTradeMixin, TradePanelMixin)
         label: this.$t('placeOrder.orderTypeSelect.limitOrder').toString(),
         value: ORDER_TYPE.LimitOrder,
       },
-      {
-        label: this.$t('placeOrder.orderTypeSelect.stopLimitOrder').toString(),
-        value: ORDER_TYPE.StopLimitOrder,
-      },
+      // {
+      //   label: this.$t('placeOrder.orderTypeSelect.stopLimitOrder').toString(),
+      //   value: ORDER_TYPE.StopLimitOrder,
+      // },
     ]
   }
 

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .satori-fantasy {
-  --mc-color-blue: #39AC59;
-  --mc-color-orange: #DB574B;
+  --mc-color-blue: #39ac59;
+  --mc-color-orange: #db574b;
   --mc-color-primary: #27a2f8;
   --mc-color-secondary: #4d5e90;
   --mc-color-success: #09c0a0;
@@ -12375,8 +12375,7 @@
 }
 .satori-fantasy .el-button--blue {
   color: #fff;
-  background: -webkit-gradient(linear, left top, right top, from(#00b9c1), to(#00d8e2));
-  background: linear-gradient(90deg, #00b9c1 0, #00d8e2 100%);
+  background: #39ac59;
 }
 .satori-fantasy .el-button--blue:focus,
 .satori-fantasy .el-button--blue:hover {
@@ -12412,8 +12411,7 @@
 }
 .satori-fantasy .el-button--orange {
   color: #fff;
-  background: -webkit-gradient(linear, left top, right top, from(#cd7231), to(#f59e60));
-  background: linear-gradient(90deg, #cd7231 0, #f59e60 100%);
+  background: #db574b;
 }
 .satori-fantasy .el-button--orange:focus,
 .satori-fantasy .el-button--orange:hover {

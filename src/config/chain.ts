@@ -365,8 +365,8 @@ export const chainConfigs: { [targetNetwork: number]: ChainConfig } = {
     explorer: 'https://www.bscscan.com',
     subgraphConfig: {
       // subgraph (checkBlockSubgraph and dataSubgraph need to be consistent)
-      // blockSubgraph: 'https://api.thegraph.com/subgraphs/name/generatefinance/bsc-blocks',
-      blockSubgraph: 'https://api.thegraph.com/subgraphs/name/venomprotocol/bsc-blocks',
+      blockSubgraph: 'https://api.thegraph.com/subgraphs/name/generatefinance/bsc-blocks',
+      // blockSubgraph: 'https://api.thegraph.com/subgraphs/name/venomprotocol/bsc-blocks',
       // dataSubgraph: 'https://api.thegraph.com/subgraphs/name/mcdexio/mcdex3-bsc-perpetual',
       dataSubgraph: 'https://graph-bsc.mcdex.io/subgraphs/name/mcdexio/mcdex3-bsc-perpetual2',
       // checkBlockSubgraph: 'https://api.thegraph.com/index-node/graphql',

@@ -49,7 +49,7 @@ export default class PlaceOrderAdapter extends Vue {
     return [
       { label: this.$t('placeOrder.orderTypeSelect.market').toString(), value: ORDER_TYPE.MarketOrder },
       { label: this.$t('placeOrder.orderTypeSelect.limit').toString(), value: ORDER_TYPE.LimitOrder },
-      { label: this.$t('placeOrder.orderTypeSelect.stopLimit').toString(), value: ORDER_TYPE.StopLimitOrder },
+      // { label: this.$t('placeOrder.orderTypeSelect.stopLimit').toString(), value: ORDER_TYPE.StopLimitOrder },
     ]
   }
 }

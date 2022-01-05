@@ -30,7 +30,6 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-const VueGridLayout = require('vue-grid-layout')
 import { DEXGridItem } from '@/components'
 import OrderBook from './OrderBook/OrderBook.vue'
 import PositionsAndOrders from './PositionAndOrders/PositionsAndOrders.vue'
@@ -40,6 +39,7 @@ import { TilesItem, Layout, LAYOUT_ITEM } from '@/type'
 import TradePanel from '@/template/Trade/OrderTrade/TradePanel.vue'
 import { VUE_EVENT_BUS } from '@/event'
 
+const VueGridLayout = require('vue-grid-layout')
 const preference = namespace('preference')
 
 @Component({

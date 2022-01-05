@@ -1818,7 +1818,7 @@ export default class OrderTrade extends Mixins(OrderTradeMixin) {
   }
 
   .confirm-button {
-    height: 40px;
+    height: 48px;
     border-radius: 8px;
   }
 
