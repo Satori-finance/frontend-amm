@@ -72,7 +72,7 @@ export class PerpetualProperty {
   }
 
   get name() {
-    return `${this.underlyingAssetSymbol.toUpperCase()}-${this.collateralTokenSymbol.toUpperCase()}`
+    return `${this.underlyingAssetSymbol.toUpperCase()}/${this.collateralTokenSymbol.toUpperCase()}`
   }
 
   get perpetualID() {

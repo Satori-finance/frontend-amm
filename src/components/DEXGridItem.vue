@@ -12,13 +12,13 @@
 </template>
 
 <script lang="ts">
-import {Vue, Component, Prop} from 'vue-property-decorator'
+import { Vue, Component, Prop } from 'vue-property-decorator'
 
 @Component
 export default class DEXGridItem extends Vue {
-  @Prop({default: false}) isMaximized!: boolean
-  @Prop({default: false}) closable!: boolean
-  @Prop({default: false}) maximizable!: boolean
+  @Prop({ default: false }) isMaximized!: boolean
+  @Prop({ default: false }) closable!: boolean
+  @Prop({ default: false }) maximizable!: boolean
 
   private onClickShrink() {
     this.$emit('shrinkGridItem')

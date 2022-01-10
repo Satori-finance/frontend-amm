@@ -1,7 +1,6 @@
 <template>
   <div class="contract-selector">
-    <el-popover ref="selector" placement="bottom-start" width="400" :visible-arrow="false"
-                popper-class="contract-selector-popover fantasy" v-model="visible" trigger="manual">
+    <el-popover ref="selector" placement="bottom-start" width="400" :visible-arrow="false" popper-class="contract-selector-popover fantasy" v-model="visible" trigger="manual">
       <div class="search-box popover-content">
         <div class="tab-box">
           <el-radio-group class="type-selector" v-model="tempPerpetualType">
@@ -19,8 +18,7 @@
           </el-radio-group>
         </div>
         <div class="search">
-          <el-input size="large" v-model.trim="tempSearchKey" clearable
-                    :placeholder="$t('perpetualSearch.placeholder')">
+          <el-input size="large" v-model.trim="tempSearchKey" clearable :placeholder="$t('perpetualSearch.placeholder')">
             <template slot="prefix"><i class="el-icon-search"></i></template>
           </el-input>
         </div>
@@ -41,12 +39,9 @@
                     <McNoData></McNoData>
                   </td>
                 </tr>
-                <tr v-for="(item, index) in tableBody" :key="index" @click="switchContract(item)"
-                    class="perpetual-item">
+                <tr v-for="(item, index) in tableBody" :key="index" @click="switchContract(item)" class="perpetual-item">
                   <td>
-                    <McPerpetualSummary :collateral-address="item.collateralAddress"
-                                        :underlying-symbol="item.underlyingSymbol" :name="item.name"
-                                        :symbol="item.symbolStr" :is-inverse="item.isInverse"></McPerpetualSummary>
+                    <McPerpetualSummary :collateral-address="item.collateralAddress" :underlying-symbol="item.underlyingSymbol" :name="item.name" :symbol="item.symbolStr" :is-inverse="item.isInverse"></McPerpetualSummary>
                   </td>
                   <td v-if="tempPerpetualType==='uncertified'" class="is-left">
                     <template v-if="item.liquidityAmountUSD.gt(0)">
@@ -89,21 +84,20 @@
           </McLoading>
         </div>
       </div>
-      <div class="selected-contract" :class="{selecting: visible}" slot="reference" @click="toggle"
-           style="outline: none" v-click-outside="onClosePopover">
+      <div class="selected-contract" :class="{selecting: visible}" slot="reference" @click="toggle" style="outline: none" v-click-outside="onClosePopover">
         <div class="container">
-          <div class="left">
+          <!-- <div class="left">
             <McTokenPairView :collateralAddress="selectedLiquidityPoolStorage ? selectedLiquidityPoolStorage.collateral : ''"
                              :underlyingSymbol="selectedPerpetual ? selectedPerpetual.perpetualStorage.underlyingSymbol : ''" />
-          </div>
+          </div> -->
           <div class="center">
             <div class="perpetual-name">{{ selectedPerpetualProperty ? selectedPerpetualProperty.name : '' }}</div>
-            <div class="perpetual-box">
+            <!-- <div class="perpetual-box">
               <span class="perpetual-symbol">{{
                   selectedPerpetualProperty ? selectedPerpetualProperty.symbolStr : ''
                 }}</span>
               <span class="inverse-card" v-if="selectedPerpetualIsInverse">{{ $t('base.inverse') }}</span>
-            </div>
+            </div> -->
           </div>
           <div class="right">
             <i class="iconfont icon-drop-down" />
@@ -138,9 +132,9 @@ import { _1 } from '@mcdex/mai3.js'
       if (!val) {
         return
       }
-     return _1.div(price).times(val)
+      return _1.div(price).times(val)
     },
-  }
+  },
 })
 export default class PerpetualSelector extends Mixins(PerpetualSelectorMixin) {
   @Ref('selector') selector!: Popover
@@ -391,6 +385,7 @@ export default class PerpetualSelector extends Mixins(PerpetualSelectorMixin) {
 .satori-fantasy {
   .selected-contract {
     .perpetual-name {
+      font-size: 24px;
       color: var(--mc-text-color-white);
     }
 
@@ -405,6 +400,7 @@ export default class PerpetualSelector extends Mixins(PerpetualSelectorMixin) {
 
       .right {
         .icon-triangle-bottom {
+          font-size: 12px;
           color: var(--mc-text-color);
         }
       }

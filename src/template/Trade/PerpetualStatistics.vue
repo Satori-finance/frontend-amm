@@ -7,11 +7,11 @@
 
       <el-divider direction="vertical"></el-divider>
 
-      <el-button class="btn" type="secondary" size="small" plain @click="toInfo" :disabled="!selectedPerpetual">
+      <!-- <el-button class="btn" type="secondary" size="small" plain @click="toInfo" :disabled="!selectedPerpetual">
         <span class='text'>{{ $t('info') }}</span>
-      </el-button>
+      </el-button> -->
 
-      <el-divider direction="vertical"></el-divider>
+      <!-- <el-divider direction="vertical"></el-divider> -->
 
       <div v-if="selectedPerpetualMarkPrice" class="mark-price">
         <template v-if="selectedPerpetualIsSettle">

@@ -1,5 +1,5 @@
 <template>
-  <header class="dex-header">
+  <header class="header">
     <div class="logo">
       <a href="http://satori.finance/">
         <!-- <img :src="require(`@/assets/img/${theme}/logo.png`)"/> -->
@@ -163,12 +163,12 @@ export default class Header extends Mixins(SelectedPerpetualMixin) {
 <style lang="scss" scoped>
 @import '~@mcdex/style/common/var.scss';
 
-.dex-header {
+.header {
   z-index: 11;
   position: sticky;
   top: 0;
   display: flex;
-  height: 56px;
+  height: 60 px;
   align-items: center;
   font-size: 16px;
   padding: 0 16px;
@@ -262,7 +262,7 @@ export default class Header extends Mixins(SelectedPerpetualMixin) {
 
 <style lang="scss" scoped>
 .dex-theme-dark {
-  .dex-header {
+  .header {
     background: var(--mc-background-color);
 
     .route-item {
@@ -288,7 +288,7 @@ export default class Header extends Mixins(SelectedPerpetualMixin) {
 @import '~@mcdex/style/common/fantasy-var';
 
 .satori-fantasy {
-  .dex-header {
+  .header {
     background-color: var(--mc-background-color-darkest);
 
     .logo {
