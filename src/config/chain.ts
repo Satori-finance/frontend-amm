@@ -163,7 +163,7 @@ export const chainParamsMap: Map<SUPPORTED_NETWORK_ID, any> = new Map([
           decimals: 18,
         },
         rpcUrls: ['https://rpc.clover.finance', 'https://rpc-2.clover.finance', 'https://rpc-3.clover.finance'],
-        blockExplorerUrls: [],
+        blockExplorerUrls: ['https://clover-testnet.subscan.io/'],
         iconUrls: ['https://clover.finance/favicon.ico'], // Currently ignored.
       },
     ],

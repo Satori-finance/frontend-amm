@@ -15,18 +15,18 @@
       <el-menu-item index="pool">
         {{ $t('base.pool') }}
       </el-menu-item>
-      <el-menu-item index="mining">
+      <!-- <el-menu-item index="mining">
         {{ $t('base.farm') }}
-      </el-menu-item>
+      </el-menu-item> -->
       <el-menu-item index="wallet">
         {{ $t('base.account') }}
       </el-menu-item>
-      <el-menu-item index="dao">
+      <!-- <el-menu-item index="dao">
         {{ $t('base.dao') }}
       </el-menu-item>
       <el-menu-item index="stats">
         {{ $t('base.stats') }}
-      </el-menu-item>
+      </el-menu-item> -->
     </el-menu>
 
     <div class="preferences">

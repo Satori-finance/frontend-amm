@@ -3,7 +3,8 @@ import {
   connectCoin98Wallet,
   connectImTokenWallet,
   connectMetaMaskWallet,
-  connectMobileInjectWallet, connectTrustWallet,
+  connectMobileInjectWallet,
+  connectTrustWallet,
   connectWCWallet,
   connectWLWallet,
   getLastWalletType,
@@ -102,17 +103,17 @@ const module: Module<WalletState, any> = {
       return null
     },
     isMobileWallet: (state) => {
-      if (state.walletType
-        && (
-          state.walletType === SUPPORTED_WALLET.WalletLink
-          || state.walletType === SUPPORTED_WALLET.WalletConnect
-          || state.walletType === SUPPORTED_WALLET.imToken
-          || state.walletType === SUPPORTED_WALLET['Trust Wallet']
-        )) {
+      if (
+        state.walletType &&
+        (state.walletType === SUPPORTED_WALLET.WalletLink ||
+          state.walletType === SUPPORTED_WALLET.WalletConnect ||
+          state.walletType === SUPPORTED_WALLET.imToken ||
+          state.walletType === SUPPORTED_WALLET['Trust Wallet'])
+      ) {
         return true
       }
       return false
-    }
+    },
   },
   actions: {
     async connectWallet({ commit, rootState }, walletType: SUPPORTED_WALLET = SUPPORTED_WALLET.MetaMask) {

@@ -34,6 +34,7 @@ export const NETWORK_ID_NAME: { [networkID: number]: string } = {
   [SUPPORTED_NETWORK_ID.BSC]: 'BSC',
   [SUPPORTED_NETWORK_ID.OPTIMISM]: 'Optimistic',
   [SUPPORTED_NETWORK_ID.OPTIMISM_TESTNET]: 'Optimistic Kovan',
+  [SUPPORTED_NETWORK_ID.CLOVER_TEST]: 'Clover Testnet',
 }
 
 export const BRIDGE_WITHDRAW_CONFIRM_BLOCKS: { [networkID: number]: number } = {
@@ -89,7 +90,7 @@ export const DEFAULT_NETWORK = (() => {
   return chainId && NETWORK_ENV_CONFIG[chainId] ? chainId : SUPPORTED_NETWORK_ID.BSC
 })()
 
-export const NETWORK_OPTIONS = [SUPPORTED_NETWORK_ID.ARB, SUPPORTED_NETWORK_ID.BSC]
+export const NETWORK_OPTIONS = [SUPPORTED_NETWORK_ID.RINKEBY, SUPPORTED_NETWORK_ID.CLOVER_TEST]
 
 // set default NETWORK_ENV
 export let NETWORK_ENV: NetworkEnvConfig = NETWORK_ENV_CONFIG[DEFAULT_NETWORK]

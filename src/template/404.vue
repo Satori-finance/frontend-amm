@@ -1,16 +1,17 @@
 <template>
   <div class="error-404">
-    <img src="@/assets/img/404.png" alt="">
+    <!-- <img src="@/assets/img/404.png" alt=""> -->
+    <h1>404</h1>
     <div class="title">{{$t('404.title')}}</div>
     <div class="subtitle" v-html="$t('404.subtitle')"></div>
-    <div class="links">
+    <!-- <div class="links">
       <router-link :to="{name: ROUTE.TRADE_MAIN}">{{ $t('trade') }}</router-link>
       <router-link :to="{name: ROUTE.POOL}">{{ $t('base.pool') }}</router-link>
       <router-link :to="{name: ROUTE.MINING}">{{ $t('base.farm') }}</router-link>
       <router-link :to="{name: ROUTE.WALLET}">{{ $t('base.account') }}</router-link>
       <router-link :to="{name: ROUTE.DAO}">{{ $t('base.dao') }}</router-link>
 
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -20,7 +21,7 @@ import { ROUTE } from '@/router'
 
 @Component
 export default class Error404 extends Vue {
-  private ROUTE = ROUTE 
+  private ROUTE = ROUTE
 }
 </script>
 
@@ -34,7 +35,9 @@ export default class Error404 extends Vue {
   justify-content: center;
   background-color: var(--mc-background-color-darkest);
   text-align: center;
-
+  h1 {
+    font-size: 150px;
+  }
   .title {
     margin-top: 24px;
     font-size: 18px;
