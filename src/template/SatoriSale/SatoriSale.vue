@@ -37,7 +37,7 @@ import { BaseCardFrame } from '@/components'
 import RoundInfo from './RoundInfo.vue'
 import SubscriptionInfo from './SubscriptionInfo.vue'
 import Stake from './Stake.vue'
-import SATORISaleMixin from './SATORISaleMixin'
+import SatoriSaleMixin from './SatoriSaleMixin'
 
 @Component({
   components: {
@@ -47,7 +47,7 @@ import SATORISaleMixin from './SATORISaleMixin'
     Stake,
   },
 })
-export default class SATORISale extends Mixins(SATORISaleMixin) {
+export default class SATORISale extends Mixins(SatoriSaleMixin) {
 
 }
 </script>

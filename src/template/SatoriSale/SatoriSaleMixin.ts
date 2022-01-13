@@ -7,7 +7,7 @@ import { namespace } from 'vuex-class'
 const wallet = namespace('wallet')
 
 @Component
-export default class SATORISaleMixin extends Vue {
+export default class SatoriSaleMixin extends Vue {
   @wallet.Getter('address') address!: string | null
   @wallet.Getter('provider') provider!: Provider | null
  

@@ -24,7 +24,7 @@
 
 <script lang="ts">
 import { Component, Mixins } from 'vue-property-decorator'
-import SATORISaleMixin from '@/template/SatoriSale/SatoriSaleMixin'
+import SatoriSaleMixin from '@/template/SatoriSale/SatoriSaleMixin'
 import BackNavBar from '@/mobile/template/Header/BackNavBar.vue'
 import RoundInfo from './RoundInfo.vue'
 import SubscriptionInfo from './SubscriptionInfo.vue'
@@ -38,7 +38,7 @@ import Stake from './Stake.vue'
     Stake,
   },
 })
-export default class SATORISale extends Mixins(SATORISaleMixin) {}
+export default class SATORISale extends Mixins(SatoriSaleMixin) {}
 </script>
 
 <style scoped lang="scss">
