@@ -1,5 +1,5 @@
 import { Component, Prop, Vue } from 'vue-property-decorator'
-import { McbCrowdsaleAccountStorage, McbCrowdsaleStorage } from '@/utils/SATORICrowdsale/type'
+import { McbCrowdsaleAccountStorage, McbCrowdsaleStorage } from '@/utils/SatoriCrowdsale/type'
 import { _0 } from '@mcdex/mai3.js'
 
 @Component

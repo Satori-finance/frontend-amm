@@ -1,5 +1,5 @@
 import { Component, Prop, Vue, Watch } from 'vue-property-decorator'
-import { McbCrowdsaleAccountStorage, McbCrowdsaleStorage } from '@/utils/SATORICrowdsale/type'
+import { McbCrowdsaleAccountStorage, McbCrowdsaleStorage } from '@/utils/SatoriCrowdsale/type'
 import { ethers, Signer } from 'ethers'
 import { ButtonState, TokenBalanceDirectoryItem } from '@/type'
 import BigNumber from 'bignumber.js'
@@ -17,7 +17,7 @@ import {
 } from '@/const'
 import { _0, approveToken, erc20Decimals, getERC20Contract } from '@mcdex/mai3.js'
 import { gasLimitConfig } from '@/config/gas'
-import { getMcbCrowdsaleContract, settle, subscribe } from '@/utils/SATORICrowdsale'
+import { getMcbCrowdsaleContract, settle, subscribe } from '@/utils/SatoriCrowdsale'
 import { waitTransaction } from '@/utils/transaction'
 
 const wallet = namespace('wallet')

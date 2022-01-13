@@ -1,5 +1,5 @@
 import { Component, Prop, Vue } from 'vue-property-decorator'
-import { McbCrowdsaleStorage } from '@/utils/SATORICrowdsale/type'
+import { McbCrowdsaleStorage } from '@/utils/SatoriCrowdsale/type'
 import { padLeft } from '@/utils'
 
 @Component

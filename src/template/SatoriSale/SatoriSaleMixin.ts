@@ -1,7 +1,7 @@
 import { Component, Vue, Watch } from 'vue-property-decorator'
 import { Provider } from '@ethersproject/providers'
-import { McbCrowdsaleAccountStorage, McbCrowdsaleStorage } from '@/utils/SATORICrowdsale/type'
-import { getCrowdsaleStorage, getMcbCrowdsaleContract, getCrowdsaleAccountStorage } from '@/utils/SATORICrowdsale'
+import { McbCrowdsaleAccountStorage, McbCrowdsaleStorage } from '@/utils/SatoriCrowdsale/type'
+import { getCrowdsaleStorage, getMcbCrowdsaleContract, getCrowdsaleAccountStorage } from '@/utils/SatoriCrowdsale'
 import { namespace } from 'vuex-class'
 
 const wallet = namespace('wallet')
