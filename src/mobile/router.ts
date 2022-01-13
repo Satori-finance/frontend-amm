@@ -233,7 +233,7 @@ const routes: RouteConfig[] = [
   // {
   //   name: ROUTE.SATORI_SALE,
   //   path: '/mcbsale',
-  //   component: () => import(/* webpackChunkName: "mcbsale" */ '@/mobile/template/SATORISale/SATORISale.vue'),
+  //   component: () => import(/* webpackChunkName: "mcbsale" */ '@/mobile/template/SatoriSale/SATORISale.vue'),
   //   meta: {
   //     showTabbar: false,
   //   },

@@ -30,7 +30,7 @@
 
 <script lang="ts">
 import { Component, Mixins } from 'vue-property-decorator'
-import SubscriptionInfoMixin from '@/template/SATORISale/subscriptionInfoMixin'
+import SubscriptionInfoMixin from '@/template/SatoriSale/subscriptionInfoMixin'
 
 @Component
 export default class SubscriptionInfo extends Mixins(SubscriptionInfoMixin) {

@@ -188,7 +188,7 @@ const routes: RouteConfig[] = [
   // {
   //   name: ROUTE.SATORI_SALE,
   //   path: '/mcbsale',
-  //   component: () => import(/* webpackChunkName: "mcbsale" */ '@/template/SATORISale/SATORISale.vue'),
+  //   component: () => import(/* webpackChunkName: "mcbsale" */ '@/template/SatoriSale/SATORISale.vue'),
   // },
   {
     name: ROUTE.WALLET,

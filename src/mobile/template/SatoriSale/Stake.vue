@@ -95,7 +95,7 @@
 import { Component, Mixins } from 'vue-property-decorator'
 import { McSimpleSlider, McSteps, McStepItem } from '@/components'
 import BigNumber from 'bignumber.js'
-import { StakeMixin } from '@/template/SATORISale/stakeMixin'
+import { StakeMixin } from '@/template/SatoriSale/stakeMixin'
 import { McMButtonRadioGroup, McMNumberField, McMStateButton } from '@/mobile/components'
 
 @Component({

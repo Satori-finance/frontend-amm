@@ -2,11 +2,9 @@
   <div class="mcb-sale scroll-container safe-area-inset-bottom">
     <BackNavBar :title="$t('mcbSale.roundTitle')"></BackNavBar>
     <div class="mcb-sale-container page-container">
-      <RoundInfo class="mcb-sale-section" :crowdsale-storage="mcbCrowdsaleStorage"/>
-      <Stake class="mcb-sale-section" :mcbCrowdsaleStorage="mcbCrowdsaleStorage"
-             :mcbCrowdsaleAccountStorage="mcbCrowdsaleAccountStorage" @staked="updateData" @unstaked="updateData"/>
-      <SubscriptionInfo class="mcb-sale-section" :mcbCrowdsaleStorage="mcbCrowdsaleStorage"
-                        :mcbCrowdsaleAccountStorage="mcbCrowdsaleAccountStorage"/>
+      <RoundInfo class="mcb-sale-section" :crowdsale-storage="mcbCrowdsaleStorage" />
+      <Stake class="mcb-sale-section" :mcbCrowdsaleStorage="mcbCrowdsaleStorage" :mcbCrowdsaleAccountStorage="mcbCrowdsaleAccountStorage" @staked="updateData" @unstaked="updateData" />
+      <SubscriptionInfo class="mcb-sale-section" :mcbCrowdsaleStorage="mcbCrowdsaleStorage" :mcbCrowdsaleAccountStorage="mcbCrowdsaleAccountStorage" />
       <div class="mcb-sale-section rule-box">
         <div class="title">
           {{ $t('mcbSale.releaseRule') }}
@@ -26,12 +24,11 @@
 
 <script lang="ts">
 import { Component, Mixins } from 'vue-property-decorator'
-import SATORISaleMixin from '@/template/SATORISale/SATORISaleMixin'
+import SATORISaleMixin from '@/template/SatoriSale/SatoriSaleMixin'
 import BackNavBar from '@/mobile/template/Header/BackNavBar.vue'
 import RoundInfo from './RoundInfo.vue'
 import SubscriptionInfo from './SubscriptionInfo.vue'
 import Stake from './Stake.vue'
-
 
 @Component({
   components: {
@@ -41,9 +38,7 @@ import Stake from './Stake.vue'
     Stake,
   },
 })
-export default class SATORISale extends Mixins(SATORISaleMixin) {
-
-}
+export default class SATORISale extends Mixins(SATORISaleMixin) {}
 </script>
 
 <style scoped lang="scss">

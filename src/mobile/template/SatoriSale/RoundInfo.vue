@@ -28,7 +28,7 @@
 
 <script lang="ts">
 import { Component, Mixins } from 'vue-property-decorator'
-import RoundInfoMixin from '@/template/SATORISale/roundInfoMixin'
+import RoundInfoMixin from '@/template/SatoriSale/roundInfoMixin'
 
 @Component
 export default class RoundInfo extends Mixins(RoundInfoMixin) {
