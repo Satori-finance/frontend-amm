@@ -1,7 +1,7 @@
 <template>
   <div>
     <PerpetualRiskNotice ref="risk" />
-    <LegalBanner ref="legal" @close="initPerpetualRiskNotice" />
+    <!-- <LegalBanner ref="legal" @close="initPerpetualRiskNotice" /> -->
     <ProhibitionUseNotice ref="prohibition" @close="initLegalBanner" />
     <GraphErrorBanner ref="graph" />
   </div>

@@ -156,7 +156,6 @@ $spread-box-height: 34px;
 .ammDepth {
   width: 100%;
   height: 100%;
-  min-width: 360px;
 
   header {
     display: flex;

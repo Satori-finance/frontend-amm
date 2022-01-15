@@ -504,7 +504,7 @@ export const chainConfigs: { [targetNetwork: number]: ChainConfig } = {
     marketOrderExpireTime: 600,
     blockGenerationInterval: 6,
     blockNumberPerDay: 86400 / 6,
-    explorer: '',
+    explorer: 'https://clover-testnet.subscan.io',
     subgraphConfig: {
       blockSubgraph: 'https://graph-clover-test.mcdex.io/subgraphs/name/mcdexio/clover-test-blocks',
       dataSubgraph: 'https://graph-clover-test.mcdex.io/subgraphs/name/mcdexio/mcdex3-clover-test-perpetual',

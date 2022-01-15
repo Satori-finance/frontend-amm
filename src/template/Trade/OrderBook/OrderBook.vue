@@ -1,26 +1,13 @@
 <template>
   <div class="order-book">
-    <AMMDepth
-      v-if="selectedType === 'ammDepth'"
-      :h="h"
-      :w="w"
-      :max-w="maxW"
-      :active-orders="openOrders"
-      :perpetual-property="selectedPerpetualProperty"
-      :perpetual-storage="selectedPerpetualStorage"
-      :liquidity-pool="selectedLiquidityPoolStorage"
-    >
+    <AMMDepth v-if="selectedType === 'ammDepth'" :h="h" :w="w" :max-w="maxW" :active-orders="openOrders" :perpetual-property="selectedPerpetualProperty" :perpetual-storage="selectedPerpetualStorage" :liquidity-pool="selectedLiquidityPoolStorage">
       <template #head>
-        <McTabs v-model="selectedType" :tabs="typeOptions" :equal-width="true"/>
+        <McTabs v-model="selectedType" :tabs="typeOptions" :equal-width="true" />
       </template>
     </AMMDepth>
-    <RecentTrades
-      :h="h"
-      :w="w"
-      :max-w="maxW"
-    >
+    <RecentTrades :h="h" :w="w" :max-w="maxW">
       <template #head>
-        <McTabs v-model="selectedType" :tabs="typeOptions" :equal-width="true"/>
+        <McTabs v-model="selectedType" :tabs="typeOptions" :equal-width="true" />
       </template>
     </RecentTrades>
   </div>
@@ -58,12 +45,12 @@ export default class OrderBook extends Mixins(SelectedPerpetualMixin) {
     return [
       {
         label: this.$t('AMMDepth').toString(),
-        value: 'ammDepth'
+        value: 'ammDepth',
       },
       {
         label: this.$t('base.trades').toString(),
-        value: 'recentTrades'
-      }
+        value: 'recentTrades',
+      },
     ]
   }
 }
@@ -72,6 +59,8 @@ export default class OrderBook extends Mixins(SelectedPerpetualMixin) {
 <style lang="scss" scoped>
 .order-book {
   height: 100%;
+
+  min-width: 360px;
 
   .mc-tabs {
     height: 48px;

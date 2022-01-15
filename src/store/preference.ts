@@ -31,7 +31,7 @@ const initialDefaultLayout: () => Layout = () => {
         y: 0,
         w: 0,
         h: 0,
-        minW: 0,
+        minW: 360,
         isDraggable: true,
         isResizable: true,
         maximizable: false,
@@ -81,21 +81,21 @@ const fitWidthTable: { [key: string]: Array<LayoutBreakPointSetting> } = {
   [LAYOUT_ITEM.AMM_DEPTH]: [
     {
       breakPoint: 0,
-      width: 5,
+      width: 6,
     },
     {
       breakPoint: 1920 - fitBuffer,
-      width: 4,
+      width: 5,
     },
   ],
   [LAYOUT_ITEM.CHARTS]: [
     {
       breakPoint: 0,
-      width: 14,
+      width: 13,
     },
     {
       breakPoint: 1920 - fitBuffer,
-      width: 16,
+      width: 15,
     },
   ],
   [LAYOUT_ITEM.POSITIONS_AND_ORDERS]: [

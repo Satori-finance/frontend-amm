@@ -71,10 +71,10 @@
           </div>
           <div class="qrcode-box">
             <div class="qrcode">
-              <img src="@/assets/img/home-qrcode.png" alt="">
+              <img src="@/assets/img/home-qrcode.jpg" alt="">
             </div>
             <div class="info">
-              <div class="mcdex">mcdex.io</div>
+              <div class="mcdex">satori.finance</div>
               <div class="time">{{ Date.now() | datetimeFormatter('MM-DD-YYYY hh:mmA') }}</div>
             </div>
           </div>

@@ -19,7 +19,7 @@
               onMaximize(item.i)
             }
           ">
-          <component v-if="gridItems && gridItems[item.i]" :is="gridItems[item.i].component" :ref="item.i" :x="item.x"
+          <component :data-xxxxxxxx="item.i" v-if="gridItems && gridItems[item.i]" :is="gridItems[item.i].component" :ref="item.i" :x="item.x"
                      :y="item.y" :h="item.h" :w="item.w" :minW="item.minW" :rowHeight="gridRowHeight"
                      v-bind="gridItems[item.i].props"></component>
         </DEXGridItem>
